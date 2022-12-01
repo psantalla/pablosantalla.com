@@ -1,7 +1,48 @@
 :root {
-	--alabaster: #f9f9f9;
-	--pine: #131117;
-	--space-m: 16px;
-	--height-for-h: 140%;
-	--height-for-p: 160%;
+  --breakpoint-tablet: 768px;
+  --breakpoint-phone: 568px;
+}
+
+/* Desktop variables */
+:root {
+  --alabaster: #f9f9f9;
+  --pine: #131117;
+
+  --height-for-h: 140%;
+  --height-for-p: 160%;
+
+  --text-size-5xl: 48px;
+
+  --space-2xl: 40px;
+  --text-size-m: 16px;
+  --text-size-l: 19px;
+
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  --space-6xl: 192px;
+  --space-7xl: 256px;
+}
+
+/* Tablet variables */
+@media screen and (max-width: var(--breakpoint-tablet)) {
+  :root {
+    --text-size-5xl: 32px;
+    --text-size-l: 18px;
+  }
+}
+
+/* Phone variables */
+@media screen and (max-width: var(--breakpoint-phone)) {
+  :root {
+    --text-size-5xl: 32px;
+    --text-size-l: 18px;
+  }
 }
