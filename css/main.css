@@ -1,14 +1,42 @@
 body {
-	max-width: 1600px;
-	padding: 32px 5%;
-	background-color: var(--alabaster);
-	font-family: inter;
+  max-width: 1600px;
+  padding: 32px 5%;
+  background-color: var(--alabaster);
+  font-family: inter;
+  line-height: var(--height-for-p);
+  color: var(--pine);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--height-for-h);
+  color: var(--pine);
+  opacity: 90%;
+}
+
+p {
+  opacity: 80;
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
 
 .logomark {
-	height: 30px;
-	width: auto;
+  height: 32px;
+  margin: auto 0;
+  opacity: 90%;
 }
 
-
+.logotext {
+  height: 18px;
+  position: relative;
+  bottom: 2px;
+  opacity: 90%;
+}
