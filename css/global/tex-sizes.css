@@ -19,12 +19,7 @@
 }
 
 /* Phone variables */
-@media screen and (max-width: 558px) {
-  :root {
-    --text-size-5xl: 32px;
-    --text-size-l: 18px;
-  }
-}
+@media screen and (max-width: 558px) {}
 
 .text-size-5xl {
   font-size: var(--text-size-5xl);
