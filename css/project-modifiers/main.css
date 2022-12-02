@@ -1,10 +1,10 @@
 body {
   max-width: 1600px;
   padding: var(--space-xl) 5%;
-  background-color: var(--alabaster);
   font-family: 'Inter', sans-serif;
   line-height: var(--height-for-p);
   color: var(--pine);
+  margin: auto;
 }
 
 h1,
@@ -49,10 +49,24 @@ p {
   opacity: 90%;
 }
 
-.hero {
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    min-height: 70vh;
+  }
+}
+
+.row {
   display: flex;
   align-items: center;
-  min-height: 70vh;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 .button {
@@ -81,4 +95,24 @@ p {
 .button-image {
   height: 32px;
   border-radius: 32px;
+}
+
+.card {
+  padding: var(--space-l);
+  min-width: 320px;
+  max-width: 320px;
+  border: 4px solid white;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.card-image {
+  max-width: 100%;
+  border-radius: 12px;
 }

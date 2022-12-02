@@ -1,4 +1,9 @@
 :root {
     --alabaster: #f9f9f9;
+    --alabaster: #f5f5f5;
     --pine: #131117;
+}
+
+body {
+    background-color: var(--alabaster);
 }
