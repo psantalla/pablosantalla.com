@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pablo Santalla</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
   <link rel="stylesheet" type="text/css" href="css/global/initial/normalize-custom.css" />
   <link rel="stylesheet" type="text/css" href="css/global/space-system.css" />
   <link rel="stylesheet" type="text/css" href="css/global/text-sizes.css" />
   <link rel="stylesheet" type="text/css" href="css/global/colors.css" />
   <link rel="stylesheet" type="text/css" href="css/project-modifiers/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/special/pulse-animation.css" />
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     </div>
   </nav>
 
-  <section class="hero">
+  <section class="hero margin-bottom-4xl">
     <div class="row gap-3xl">
       <div class="column">
         <h1 class="text-size-5xl semi-bold margin-bottom-l">
@@ -37,13 +39,45 @@
             Book a call
           </button></a>
       </div>
-      <div class="column">
+      <div class="column auto-width">
         <div class="card">
-          <img class="card-image"" src=" /assets/card-image.png" alt="Screenshot of Perpetuo, a new website conept.">
+          <img class="card-image margin-bottom-xl" src=" /assets/card-image.png"
+            alt="Screenshot of Perpetuo, a new website conept.">
+          <div class="row force start gap-s margin-bottom-xs">
+
+            <div class="pulse"></div>
+
+            <h2 class="text-size-xs uppercase">Currently working on</h2>
+          </div>
+          <h3 class="text-size-l semi-bold margin-bottom-m">Perpetuo</h3>
+          <p class="text-size-s margin-bottom-2xl">Perpetuo™ is a discreet space to preserve and share stories with your
+            loved ones.</p>
+          <div class="row force end"><button class="button button-mini semi-bold">Get updates</button></div>
         </div>
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="row gap-4xl">
+      <div class="colummn">
+        <img width="100%" src="assets/showcase-01.png"
+          alt="Screenshot of the website made for Ginevida, an obstrtrician clinic.">
+      </div>
+      <div class="colummn">
+        <blockquote class="quote no-quotes text-size-m margin-bottom-l">
+          It has been and continues to be a pleasure to work with him. Using a practical and functional approach, he can
+          listen to your ideas and make them happen. The result was extraordinary.
+        </blockquote>
+        <div class="row force start gap-m">
+          <img class="avatar" src="assets/avatar-01.png" alt="Irene Vico, director and ginecologist at Ginevida.">
+          <p class="text-size-s"> <span class="semi-bold">Irene Vico</span> <br>Director at Ginevida</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 
 </html>

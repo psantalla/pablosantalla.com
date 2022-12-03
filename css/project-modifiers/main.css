@@ -4,7 +4,6 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: var(--height-for-p);
   color: var(--pine);
-  margin: auto;
 }
 
 h1,
@@ -20,6 +19,10 @@ h6 {
 
 p {
   opacity: 80;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .a-not-underline {
@@ -60,13 +63,33 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
   }
+}
+
+.start {
+  justify-content: left;
+}
+
+.end {
+  justify-content: end;
+}
+
+.force {
+  flex-direction: row;
+}
+
+.column {
+  width: 100%;
+}
+
+.auto-width {
+  width: auto;
 }
 
 .button {
@@ -85,6 +108,10 @@ p {
 
 .button-primary {
   padding-left: 8px;
+}
+
+.button-mini {
+  font-size: var(--text-size-s);
 }
 
 .button:hover {
@@ -107,7 +134,7 @@ p {
 
 @media (max-width: 768px) {
   .card {
-    min-width: 100%;
+    min-width: auto;
     max-width: 100%;
   }
 }
@@ -115,4 +142,17 @@ p {
 .card-image {
   max-width: 100%;
   border-radius: 12px;
+}
+
+.quote {
+  padding-left: var(--space-m);
+  border-left: 2px solid var(--accent);
+}
+
+.no-quotes {
+  quotes: none;
+}
+
+.avatar {
+  width: 40px;
 }
