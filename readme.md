@@ -2,7 +2,7 @@
 
 
 This is my personal website. I use it as a portfolio but also to test new technologies or framworks that I am trying to learn.
-You can contact me at pablo@pablosantalla.com or as @psantalla at the main social media platforms. wtv
+You can contact me at pablo@pablosantalla.com or as @psantalla at the main social media platforms.
 
 ----------------------
 1. PROJECT DESCRIPTION
