@@ -1,0 +1,12 @@
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.pablosantalla.com [NC]
+RewriteRule ^(.*)$ http://pablosantalla.com/$1 [L,R=301]
+
+Redirect 301 /call.html http://www.domainname.com/newdirectory/file.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
