@@ -4,6 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: var(--height-for-p);
   color: var(--pine);
+  background-color: var(--alabaster);
 }
 
 h1,
@@ -21,8 +22,34 @@ p {
   opacity: 80;
 }
 
+ul {
+  list-style-position: outside;
+  padding: 0;
+  list-style-type: square;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--space-xl);
+}
+
+li {
+  line-height: var(--height-for-p);
+}
+
 input:focus {
   outline-color: var(--pine-80);
+}
+
+::-moz-selection {
+  background: var(--accent-60);
+}
+
+::selection {
+  color: var(--pine-70);
+  background: var(--accent-60);
 }
 
 .rrss-icon {
@@ -33,6 +60,11 @@ input:focus {
 .rrss-icon:hover {
   opacity: 100%;
   transition: all 200ms;
+}
+
+.format-icon {
+  height: var(--text-size-2xl);
+  opacity: 90%;
 }
 
 .uppercase {
@@ -140,8 +172,36 @@ input:focus {
 }
 
 @media (min-width: 991px) {
+  .ninety {
+    width: 90%;
+  }
+
+  .eighty {
+    width: 80%;
+  }
+
+  .seventy {
+    width: 70%;
+  }
+
+  .sixty-five {
+    width: 65%;
+  }
+
+  .sixty {
+    width: 60%;
+  }
+
   .forty {
     width: 40%;
+  }
+
+  .thirty {
+    width: 30%;
+  }
+
+  .twenty {
+    width: 20%;
   }
 }
 
@@ -150,6 +210,8 @@ input:focus {
 }
 
 .button {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   padding: 8px 16px;
   font-family: inherit;
@@ -304,6 +366,7 @@ input:focus {
 
 .fitncenter {
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -318,13 +381,29 @@ input:focus {
 
 .underline-effect {
   text-decoration: underline;
+  -webkit-text-decoration-color: var(--pine-20);
   text-decoration-color: var(--pine-20);
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
-  underline-
 }
 
 .underline-effect:hover {
   text-decoration-color: var(--pine-60);
   text-underline-offset: 4px;
+}
+
+.guide-category {
+  position: relative;
+  top: 27px;
+  padding-top: var(--space-m);
+  border-top: 1.5px solid var(--pine);
+}
+
+.full-width {
+  width: 100%;
+  ;
+}
+
+.display-none {
+  display: none;
 }

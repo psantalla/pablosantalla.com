@@ -2,13 +2,12 @@
     --alabaster: #f9f9f9;
     --pine: #131117;
     --pine-80: rgba(19, 17, 23, .8);
+    --pine-70: rgba(19, 17, 23, .7);
     --pine-60: rgba(19, 17, 23, .6);
     --pine-20: rgba(19, 17, 23, .2);
     --pine-5: rgba(19, 17, 23, .05);
     --accent: #F55D3E;
+    --accent-60: rgba(245, 93, 62, .6);
     --soft: #EAE8EE;
 }
 
-body {
-    background-color: var(--alabaster);
-}

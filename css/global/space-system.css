@@ -1,6 +1,8 @@
 /* Desktop variables */
 :root {
+  --space-zero: 0px;
   --space-2xs: 4px;
+  --space-2_5xs: 6px;
   --space-xs: 8px;
   --space-s: 12px;
   --space-m: 16px;
@@ -37,6 +39,38 @@
   }
 }
 
+.margin-top-zero {
+  margin: var(--space-zero) 0 0 0
+}
+
+.margin-right-zero {
+  margin: 0 var(--space-zero) 0 0
+}
+
+.margin-bottom-zero {
+  margin: 0 0 var(--space-zero) 0
+}
+
+.margin-left-zero {
+  margin: 0 0 0 var(--space-zero)
+}
+
+
+.margin-top-2_5xs {
+  margin: var(--space-2_5xs) 0 0 0
+}
+
+.margin-right-2_5xs {
+  margin: 0 var(--space-2_5xs) 0 0
+}
+
+.margin-bottom-2_5xs {
+  margin: 0 0 var(--space-2_5xs) 0
+}
+
+.margin-left-2_5xs {
+  margin: 0 0 0 var(--space-2_5xs)
+}
 .margin-top-2xs {
   margin: var(--space-2xs) 0 0 0
 }
