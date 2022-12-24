@@ -62,6 +62,16 @@ input:focus {
   transition: all 200ms;
 }
 
+.medium-icon {
+  height: 20px;
+  opacity: 90%;
+}
+
+.medium-icon:hover {
+  opacity: 100%;
+  transition: all 200ms;
+}
+
 .format-icon {
   height: var(--text-size-2xl);
   opacity: 90%;
