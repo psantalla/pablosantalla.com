@@ -1,3 +1,5 @@
+
+
 body {
   max-width: 1600px;
   padding: var(--space-xl) 5%;
@@ -220,6 +222,7 @@ input:focus {
 }
 
 .button {
+  white-space: nowrap;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -290,6 +293,8 @@ input:focus {
   border: 2px solid var(--pine-60);
   border-radius: 2px;
 }
+
+
 
 @media (max-width: 991px) {
   .card {
