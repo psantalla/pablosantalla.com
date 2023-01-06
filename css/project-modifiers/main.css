@@ -1,5 +1,3 @@
-
-
 body {
   max-width: 1600px;
   padding: var(--space-xl) 5%;
@@ -290,11 +288,17 @@ input:focus {
 }
 
 .card-classic {
-  border: 2px solid var(--pine-60);
+  border: .5px dashed var(--pine-80);
   border-radius: 2px;
 }
 
-
+.blog-card {
+  padding: 24px 0px 16px 16px;
+  min-height: 72px;
+  width: auto;
+  border: .5px dashed var(--pine-80);
+  border-radius: 2px;
+}
 
 @media (max-width: 991px) {
   .card {
@@ -403,6 +407,7 @@ input:focus {
 }
 
 .underline-effect:hover {
+  -webkit-text-decoration-color: var(--pine-60);
   text-decoration-color: var(--pine-60);
   text-underline-offset: 4px;
 }
