@@ -127,6 +127,7 @@ input:focus {
   .hero {
     display: flex;
     min-height: 70vh;
+
   }
 }
 
