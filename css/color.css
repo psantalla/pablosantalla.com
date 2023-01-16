@@ -1,0 +1,63 @@
+:root {
+    --alabaster: #f5f5f5;
+    --pine: rgba(19, 17, 23, 1);
+    --pine-90: rgba(19, 17, 23, 0.9);
+    --pine-80: rgba(19, 17, 23, 0.8);
+    --pine-60: rgba(19, 17, 23, 0.6);
+    --pine-50: rgba(19, 17, 23, 0.5);
+    --pine-30: rgba(19, 17, 23, 0.3);
+    --pine-20: rgba(19, 17, 23, 0.2);
+    --pine-10: rgba(19, 17, 23, 0.1);
+    --accent: rgba(245, 93, 62, 1);
+    --accent-90: rgba(245, 93, 62, .9);
+    --accent-80: rgba(245, 93, 62, .8);
+}
+
+::-moz-selection {
+    background: var(--accent-90);
+}
+
+::selection {
+   
+    background: var(--accent-90);
+}
+
+.color-background-white {
+    background-color: white;
+}
+
+.color-background-alabaster {
+    background-color: var(--alabaster);
+}
+
+.color-background-pine {
+    background-color: var(--pine);
+}
+
+.color-background-transparent {
+    background-color: transparent;
+}
+
+.color-font-pine {
+    color: var(--pine);
+}
+
+.color-font-pine-80 {
+    color: var(--pine-80);
+}
+
+.color-font-pine-90 {
+    color: var(--pine-90);
+}
+
+.color-font-pine-60 {
+    color: var(--pine-50);
+}
+
+.color-font-pine-50 {
+    color: var(--pine-60);
+}
+
+.color-font-white {
+    color: white;
+}

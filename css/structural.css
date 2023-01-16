@@ -1,0 +1,159 @@
+@media only screen and (min-width: 482px) and (max-width: 991px) {
+    /* styles to apply only on tablets go here */
+}
+
+@media only screen and (max-width: 481px) {
+    /* styles to apply only on phones go here */
+}
+
+.structure-section-normal {
+    max-width: 1400px;
+    padding: 0 56px;
+    margin: auto;
+}
+
+.structure-section-full-width {
+    margin: auto;
+}
+
+.structure-z-index--1 {
+    z-index: -1;
+}
+
+@media only screen and (max-width: 481px) {
+
+    /* styles to apply only on phones go here */
+    .structure-section-normal {
+        padding: 0 24px;
+    }
+}
+
+.structure-position-relative {
+    position: relative;
+}
+
+.structure-position-absolute {
+    position: absolute;
+}
+
+.structure-nav {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.structure-hero {
+    height: calc(100vh - 72px - 56px);
+    display: table-cell;
+    vertical-align: bottom;
+    padding-left: 7vw;
+}
+
+.structure-sub-hero {
+    position: relative;
+    top: 56px;
+    padding: 112px
+        /* Esto debería ser una variable de space responsive */
+        0;
+}
+
+.structure-padding-left-7vw {
+    padding-left: 7vw;
+}
+
+@media only screen and (max-width: 481px) {
+
+    /* styles to apply only on phones go here */
+    .structure-hero {
+        padding-left: 0vw;
+    }
+
+    .structure-padding-left-7vw {
+        padding-left: 0vw;
+    }
+}
+
+.structure-hero-title {
+    max-width: 854px;
+}
+
+.structure-hero-p {
+    max-width: 504px;
+}
+
+.structure-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.structure-justify-content-row-left {
+    justify-content: left;
+}
+
+.structure-row-to-colum-tablet {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 991px) {
+    .structure-row-to-column-tablet {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .structure-row-to-column-mobile {
+        flex-direction: column;
+    }
+}
+
+.structure-button {
+    white-space: nowrap;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding: 8px 12px;
+    border-radius: 32px;
+}
+
+.structure-fern-position {
+    position: relative;
+    left: 45vw;
+    top: 60px;
+}
+
+@media only screen and (min-width: 482px) and (max-width: 991px) {
+    .structure-fern-position {
+        left: 45vw;
+        top: 34px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .structure-fern-position {
+        left: 45vw;
+        top: 60px;
+    }
+}
+
+.structure-fern-position-under-construction {
+    position: relative;
+    left: 45vw;
+    top: 148px;
+}
+
+@media only screen and (min-width: 482px) and (max-width: 991px) {
+    .structure-fern-position-under-construction {
+        left: 45vw;
+        top: 154px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .structure-fern-position-under-construction {
+        left: 45vw;
+        top: 180px;
+    }
+}
