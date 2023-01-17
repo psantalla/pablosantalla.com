@@ -2,18 +2,23 @@ html {
     scroll-behavior: smooth;
 }
 
-.under-construction-warning-message {
-
-padding: 20px;
-background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23333' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
-opacity: 50%;
-border-radius: 16px;
+html,
+body {
+    overflow-x: hidden;
 }
 
+body {
+    position: relative
+}
 
+.under-construction-warning-message {
+    padding: 20px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23333' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    opacity: 50%;
+    border-radius: 16px;
+}
 
 .highlight {
-   
     box-shadow: inset 0 -.55em 0 var(--accent-80);
     transition: all .2s;
 }
@@ -21,7 +26,6 @@ border-radius: 16px;
 .highlight:hover {
     box-shadow: inset 0 -1.15em 0 var(--accent-80);
 }
-
 
 .hid {
     display: none;
@@ -112,6 +116,7 @@ border-radius: 16px;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
 }
+
 .body-link:hover {
     text-decoration: underline;
     text-underline-offset: 4px;
