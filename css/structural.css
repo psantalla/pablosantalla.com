@@ -87,15 +87,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.structure-grid-3-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-
-
-
-
-
-
-
-
+.structure-grid-2-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 
