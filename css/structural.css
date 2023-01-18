@@ -82,6 +82,41 @@
     max-width: 504px;
 }
 
+.structure-grid-4-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 482px) and (max-width: 991px) {
+
+    /* styles to apply only on tablets go here */
+    .structure-grid-2-tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+
+    /* styles to apply only on phones go here */
+    .structure-grid-1-mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .structure-row {
     display: flex;
     flex-direction: row;
