@@ -96,6 +96,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.structure-grid-2-75-desktop {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.structure-grid-2-67-desktop {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
 
 
@@ -191,4 +199,9 @@
         left: 45vw;
         top: 180px;
     }
+}
+
+
+.structure-position-parent {
+    position: static;
 }

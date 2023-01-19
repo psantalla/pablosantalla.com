@@ -6,6 +6,7 @@
 #mlb2-5642190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
     font-family: 'n27regular' !important;
     font-size: calc(var(--base)*1/var(--scale));
+    text-transform: lowercase;
     padding-left: var(--base) !important;
 }
 
@@ -15,5 +16,6 @@ input {
 
 #mlb2-5642190.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
     font-family: 'n27bold' !important;
+
 }
 
