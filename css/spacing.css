@@ -26,7 +26,7 @@
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     :root {
         --space-3xl: 48px;
         --space-4xl: 64px;
@@ -312,97 +312,97 @@
     .space-gap-7xl-tablet {
         gap: var(--space-7xl);
     }
-    
+
     .space-gap-6xl-tablet {
         gap: var(--space-6xl);
     }
-    
+
     .space-gap-5xl-tablet {
         gap: var(--space-5xl);
     }
-    
+
     .space-gap-4xl-tablet {
         gap: var(--space-4xl);
     }
-    
+
     .space-gap-3xl-tablet {
         gap: var(--space-3xl);
     }
-    
+
     .space-gap-2xl-mobile {
         gap: var(--space-2xl);
     }
-    
+
     .space-gap-xl-tablet {
         gap: var(--space-xl);
     }
-    
+
     .space-gap-l-tablet {
         gap: var(--space-l);
     }
-    
+
     .space-gap-m-tablet {
         gap: var(--space-m);
     }
-    
+
     .space-gap-s-tablet {
         gap: var(--space-s);
     }
-    
+
     .space-gap-xs-tablet {
         gap: var(--space-xs);
     }
-    
+
     .space-gap-2xs-tablet {
         gap: var(--space-2xs);
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     .space-gap-7xl-mobile {
         gap: var(--space-7xl);
     }
-    
+
     .space-gap-6xl-mobile {
         gap: var(--space-6xl);
     }
-    
+
     .space-gap-5xl-mobile {
         gap: var(--space-5xl);
     }
-    
+
     .space-gap-4xl-mobile {
         gap: var(--space-4xl);
     }
-    
+
     .space-gap-3xl-mobile {
         gap: var(--space-3xl);
     }
-    
+
     .space-gap-2xl-mobile {
         gap: var(--space-2xl);
     }
-    
+
     .space-gap-xl-mobile {
         gap: var(--space-xl);
     }
-    
+
     .space-gap-l-mobile {
         gap: var(--space-l);
     }
-    
+
     .space-gap-m-mobile {
         gap: var(--space-m);
     }
-    
+
     .space-gap-s-mobile {
         gap: var(--space-s);
     }
-    
+
     .space-gap-xs-mobile {
         gap: var(--space-xs);
     }
-    
+
     .space-gap-2xs-mobile {
         gap: var(--space-2xs);
     }

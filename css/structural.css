@@ -1,9 +1,17 @@
-@media only screen and (min-width: 482px) and (max-width: 991px) {
-    /* styles to apply only on tablets go here */
+@media only screen and (min-width: 992px) {
+    /* only desktop */
 }
 
-@media only screen and (max-width: 481px) {
-    /* styles to apply only on phones go here */
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+    /* only tablet */
+}
+
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+}
+
+@media only screen and (max-width: 619px) {
+    /* only mobile */
 }
 
 .structure-section-normal {
@@ -20,7 +28,7 @@
     z-index: -1;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
     .structure-section-normal {
@@ -62,7 +70,7 @@
     padding-left: 7vw;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
     .structure-hero {
@@ -96,18 +104,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .structure-grid-2-75-desktop {
     display: grid;
     grid-template-columns: 75% 25%;
 }
+
 .structure-grid-2-67-desktop {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
+.structure-grid-1-desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-
-@media only screen and (min-width: 482px) and (max-width: 991px) {
+@media only screen and (min-width: 620px) and (max-width: 991px) {
 
     /* styles to apply only on tablets go here */
     .structure-grid-2-tablet {
@@ -116,7 +129,7 @@
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
     .structure-grid-1-mobile {
@@ -146,7 +159,7 @@
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     .structure-row-to-column-mobile {
         flex-direction: column;
     }
@@ -164,43 +177,42 @@
 .structure-fern-position {
     position: relative;
     left: 45vw;
-    top: 60px;
+    top: 64px;
 }
 
-@media only screen and (min-width: 482px) and (max-width: 991px) {
+@media only screen and (min-width: 620px) and (max-width: 991px) {
     .structure-fern-position {
         left: 45vw;
-        top: 34px;
+        top: 68px;
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     .structure-fern-position {
         left: 45vw;
-        top: 60px;
+        top: 24px;
     }
 }
 
 .structure-fern-position-under-construction {
     position: relative;
     left: 45vw;
-    top: 148px;
+    top: 48px;
 }
 
-@media only screen and (min-width: 482px) and (max-width: 991px) {
+@media only screen and (min-width: 620px) and (max-width: 991px) {
     .structure-fern-position-under-construction {
         left: 45vw;
         top: 154px;
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     .structure-fern-position-under-construction {
         left: 45vw;
         top: 180px;
     }
 }
-
 
 .structure-position-parent {
     position: static;

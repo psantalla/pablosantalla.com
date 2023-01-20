@@ -30,41 +30,39 @@ button {
     text-decoration: none;
 }
 
-
 .text-link-showcase::after {
     content: " ↗";
-    
 }
+
 .text-link-showcase:hover:after {
     content: " ↗";
     ;
-    
 }
 
-
 :root {
-    --scale: 1.31; /* value for typography scale on desktop */
-    --base: 16px; /* value for typography base size on desktop */
+    --scale: 1.31;
+    /* value for typography scale on desktop */
+    --base: 16px;
+    /* value for typography base size on desktop */
     --line-height-h: 110%;
     --line-height-p: 155%;
     --letter-spacing-h: -0.015em;
     --letter-spacing-p: normal;
 }
 
-@media only screen and (min-width: 482px) and (max-width: 991px) {
-
-    
+@media only screen and (min-width: 620px) and (max-width: 991px) {
     :root {
-        --scale: 1.26; /* value for typography scale on tablet */
+        --scale: 1.26;
+        /* value for typography scale on tablet */
     }
 }
 
-@media only screen and (max-width: 481px) {
-
-    
+@media only screen and (max-width: 619px) {
     :root {
-        --scale: 1.19; /* value for typography scale on mobile */
-        --base: 15px; /* value for typography base size on mobile */
+        --scale: 1.19;
+        /* value for typography scale on mobile */
+        --base: 15px;
+        /* value for typography base size on mobile */
     }
 }
 

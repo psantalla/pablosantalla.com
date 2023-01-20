@@ -100,7 +100,7 @@ input:focus {
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 619px) {
     .width-100-mobile {
         max-width: 100%;
     }
@@ -253,4 +253,19 @@ input:focus {
 
 .image-filter-grayscale {
     filter: grayscale(100%);
+}
+
+.icon-rrss {
+    height: var(--base);
+    opacity: 90%;
+}
+
+.icon-rrss:hover {
+    opacity: 100%;
+    transition: all 200ms;
+}
+
+.icon-button {
+    width: 28px;
+    margin-left: -4px;
 }
