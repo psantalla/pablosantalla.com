@@ -130,6 +130,15 @@ input:focus {
     transition: all .2s;
 }
 
+
+
+@media only screen and (max-width: 619px) {
+    .button-fix-hero-mobile {
+margin-bottom: 24px;
+    }
+}
+
+
 .section-border-active {
     border: 1px dashed var(--pine-20);
 }
