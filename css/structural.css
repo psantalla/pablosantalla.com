@@ -75,6 +75,7 @@
     /* styles to apply only on phones go here */
     .structure-hero {
         padding-left: 0vw;
+        padding-bottom: 32px;
     }
 
     .structure-padding-left-7vw {
@@ -147,6 +148,10 @@
 
 .structure-justify-content-row-left {
     justify-content: left;
+}
+
+.structure-justify-content-row-right {
+    justify-content: right;
 }
 
 .structure-row-to-colum-tablet {
