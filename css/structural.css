@@ -146,6 +146,12 @@
     justify-content: space-between;
 }
 
+.structure-row-align-items-top {
+   
+align-items: top;
+
+}
+
 .structure-justify-content-row-left {
     justify-content: left;
 }

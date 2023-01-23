@@ -283,11 +283,18 @@ margin-bottom: 24px;
 
 
 .pulse {
-    width: calc(var(--base)*1/var(--scale)*.9/var(--scale));
-    height: calc(var(--base)*1/var(--scale)*.9/var(--scale));
+    min-width: calc(var(--base)*1/var(--scale)*.9/var(--scale));
+    min-height: calc(var(--base)*1/var(--scale)*.9/var(--scale));
+    align-self: flex-start;
+position: relative;
+   
     border-radius: 50%;
     background: var(--accent);
     animation: pulse 2s infinite;
+}
+
+.pulse-position-text-size-s-fix {
+    top: 6px;
 }
 
 @-webkit-keyframes pulse {
