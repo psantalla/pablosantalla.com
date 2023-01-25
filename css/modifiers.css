@@ -7,6 +7,12 @@ input:focus {
 }
 
 .under-construction-warning-message {
+    position: absolute;
+    top: 96px;
+    max-width: 480px;
+    margin-right: 24px !important;
+    font-size: var(--base) ;
+    line-height: var(--line-height-p);
     padding: 20px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23131117' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
     opacity: 50%;
@@ -337,4 +343,10 @@ input:focus {
         -moz-box-shadow: 0 0 0 0 rgba(245, 93, 62, 0);
         box-shadow: 0 0 0 0 rgba(245, 93, 62, 0);
     }
+}
+
+
+
+.tag-soon {
+    display: inline;
 }
