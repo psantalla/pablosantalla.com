@@ -17,7 +17,14 @@
 .structure-section-normal {
     max-width: 1400px;
     padding: 0 56px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.structure-section-900 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .structure-section-full-width {
@@ -139,6 +146,15 @@
     }
 }
 
+
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+    .structure-grid-1-tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .structure-row {
     display: flex;
     flex-direction: row;
@@ -147,9 +163,7 @@
 }
 
 .structure-row-align-items-top {
-   
-align-items: top;
-
+    align-items: top;
 }
 
 .structure-justify-content-row-left {
@@ -158,6 +172,10 @@ align-items: top;
 
 .structure-justify-content-row-right {
     justify-content: right;
+}
+
+.structure-justify-content-row-center {
+    justify-content: cenet;
 }
 
 .structure-row-to-colum-tablet {
@@ -228,3 +246,13 @@ align-items: top;
 .structure-position-parent {
     position: static;
 }
+
+.structure-card-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+   
+}
+

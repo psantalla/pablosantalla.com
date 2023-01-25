@@ -8,6 +8,7 @@
     --pine-30: rgba(19, 17, 23, 0.3);
     --pine-20: rgba(19, 17, 23, 0.2);
     --pine-10: rgba(19, 17, 23, 0.1);
+    --pine-5: rgba(19, 17, 23, 0.05);
     --accent: rgba(245, 93, 62, 1);
     --accent-90: rgba(245, 93, 62, .9);
     --accent-80: rgba(245, 93, 62, .8);
@@ -33,6 +34,51 @@
 .color-background-pine {
     background-color: var(--pine);
 }
+
+.color-background-pine-90 {
+    background-color: var(--pine-90);
+}
+
+.color-background-pine-80 {
+    background-color: var(--pine-80);
+}
+
+.color-background-pine-70 {
+    background-color: var(--pine-70);
+}
+
+.color-background-pine-60 {
+    background-color: var(--pine-60);
+}
+
+.color-background-pine-50 {
+    background-color: var(--pine-50);
+}
+
+.color-background-pine-40 {
+    background-color: var(--pine-40);
+}
+
+.color-background-pine-30 {
+    background-color: var(--pine-30);
+}
+
+
+.color-background-pine-20 {
+    background-color: var(--pine-20);
+}
+
+
+.color-background-pine-10 {
+    background-color: var(--pine-10);
+}
+
+.color-background-pine-5 {
+    background-color: var(--pine-5);
+}
+
+
+
 
 .color-background-transparent {
     background-color: transparent;
