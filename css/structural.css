@@ -182,6 +182,8 @@
     justify-content: cenet;
 }
 
+
+
 .structure-row-to-colum-tablet {
     flex-direction: column;
 }
@@ -257,4 +259,16 @@
     align-items: center;
     padding: 40px;
     border-radius: 8px;
+}
+
+.structure-box-width-630 {
+    max-width: 630px;
+}
+
+.structure-viewport-100 {
+    height: 100vh;
+}
+
+.structure-flex {
+    display: flex;
 }
