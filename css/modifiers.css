@@ -347,6 +347,12 @@ input:focus {
 
 
 
-.tag-soon {
-    display: inline;
+
+
+
+
+.image-background-pablo-santalla-about {
+    background-image: url("/assets/pablo-santalla-about.png");
+    background-size: cover;
+
 }
