@@ -11,7 +11,7 @@ input:focus {
     top: 96px;
     max-width: 480px;
     margin-right: 24px !important;
-    font-size: var(--base) ;
+    font-size: var(--base);
     line-height: var(--line-height-p);
     padding: 20px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23131117' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
@@ -345,14 +345,51 @@ input:focus {
     }
 }
 
-
-
-
-
-
-
 .image-background-pablo-santalla-about {
     background-image: url("/assets/pablo-santalla-about.png");
-    background-size: cover;
+}
 
+.container-cover-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.container-cover-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+    .container-cover-hero {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 40vh;
+        z-index: -1;
+    }
+    
+    .container-cover-hero img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
 }
