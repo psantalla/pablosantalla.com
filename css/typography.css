@@ -49,7 +49,9 @@ button {
     --base: 16px;
     /* value for typography base size on desktop */
     --line-height-h: 110%;
+    
     --line-height-p: 155%;
+    --line-height-h-p: 128%;
     --letter-spacing-h: -0.015em;
     --letter-spacing-p: normal;
 }
@@ -90,13 +92,13 @@ button {
 
 .text-size-2xl {
     font-size: calc(var(--base)*var(--scale)*var(--scale)*var(--scale));
-    line-height: var(--line-height-h);
+    line-height: var(--line-height-h-p);
     letter-spacing: var(--letter-spacing-h);
 }
 
 .text-size-xl {
     font-size: calc(var(--base)*var(--scale)*var(--scale));
-    line-height: var(--line-height-h);
+    line-height: var(--line-height-h-p);
     letter-spacing: var(--letter-spacing-h);
 }
 
