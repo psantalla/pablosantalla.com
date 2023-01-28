@@ -28,6 +28,7 @@
 }
 
 .structure-section-full-width {
+
     margin: auto;
 }
 
@@ -92,6 +93,7 @@
     .structure-padding-left-7vw {
         padding-left: 0vw;
     }
+
     .structure-max-width-2_3 {
         max-width: calc(100vw * 1);
     }
@@ -142,6 +144,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     /* styles to apply only on tablets go here */
     .structure-grid-1-tablet {
         display: grid;
@@ -281,4 +284,10 @@
 
 .structure-flex {
     display: flex;
+}
+
+.structure-about-hero-content {
+    position: absolute;
+    bottom: var(--space-3xl);
+    padding-right: 24px;
 }
