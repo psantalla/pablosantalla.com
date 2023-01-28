@@ -28,7 +28,6 @@
 }
 
 .structure-section-full-width {
-
     margin: auto;
 }
 
@@ -196,7 +195,6 @@
 .structure-justify-content-row-center {
     justify-content: cenet;
 }
-
 
 .structure-row-to-colum {
     flex-direction: column;
