@@ -197,6 +197,11 @@
     justify-content: cenet;
 }
 
+
+.structure-row-to-colum {
+    flex-direction: column;
+}
+
 .structure-row-to-colum-tablet {
     flex-direction: column;
 }
