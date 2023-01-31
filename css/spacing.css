@@ -260,6 +260,16 @@
     margin: 0 0 0 var(--space-7xl)
 }
 
+
+
+
+
+
+                        
+
+
+
+
 .space-gap-7xl {
     gap: var(--space-7xl);
 }
@@ -406,4 +416,243 @@
     .space-gap-2xs-mobile {
         gap: var(--space-2xs);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.space-padding-top-zero {
+    padding: var(--space-zero) 0 0 0
+}
+
+.space-padding-right-zero {
+    padding: 0 var(--space-zero) 0 0
+}
+
+.space-padding-bottom-zero {
+    padding: 0 0 var(--space-zero) 0
+}
+
+.space-padding-left-zero {
+    padding: 0 0 0 var(--space-zero)
+}
+
+.space-padding-top-2_5xs {
+    padding: var(--space-2_5xs) 0 0 0
+}
+
+.space-padding-right-2_5xs {
+    padding: 0 var(--space-2_5xs) 0 0
+}
+
+.space-padding-bottom-2_5xs {
+    padding: 0 0 var(--space-2_5xs) 0
+}
+
+.space-padding-left-2_5xs {
+    padding: 0 0 0 var(--space-2_5xs)
+}
+
+.space-padding-top-2xs {
+    padding: var(--space-2xs) 0 0 0
+}
+
+.space-padding-right-2xs {
+    padding: 0 var(--space-2xs) 0 0
+}
+
+.space-padding-bottom-2xs {
+    padding: 0 0 var(--space-2xs) 0
+}
+
+.space-padding-left-2xs {
+    padding: 0 0 0 var(--space-2xs)
+}
+
+.space-padding-top-xs {
+    padding: var(--space-xs) 0 0 0
+}
+
+.space-padding-right-xs {
+    padding: 0 var(--space-xs) 0 0
+}
+
+.space-padding-bottom-xs {
+    padding: 0 0 var(--space-xs) 0
+}
+
+.space-padding-left-xs {
+    padding: 0 0 0 var(--space-xs)
+}
+
+.space-padding-top-s {
+    padding: var(--space-s) 0 0 0
+}
+
+.space-padding-right-s {
+    padding: 0 var(--space-s) 0 0
+}
+
+.space-padding-bottom-s {
+    padding: 0 0 var(--space-s) 0
+}
+
+.space-padding-left-s {
+    padding: 0 0 0 var(--space-s)
+}
+
+.space-padding-top-m {
+    padding: var(--space-m) 0 0 0
+}
+
+.space-padding-right-m {
+    padding: 0 var(--space-m) 0 0
+}
+
+.space-padding-bottom-m {
+    padding: 0 0 var(--space-m) 0
+}
+
+.space-padding-left-m {
+    padding: 0 0 0 var(--space-m)
+}
+
+.space-padding-top-l {
+    padding: var(--space-l) 0 0 0
+}
+
+.space-padding-right-l {
+    padding: 0 var(--space-l) 0 0
+}
+
+.space-padding-bottom-l {
+    padding: 0 0 var(--space-l) 0
+}
+
+.space-padding-left-l {
+    padding: 0 0 0 var(--space-l)
+}
+
+.space-padding-top-xl {
+    padding: var(--space-xl) 0 0 0
+}
+
+.space-padding-right-xl {
+    padding: 0 var(--space-xl) 0 0
+}
+
+.space-padding-bottom-xl {
+    padding: 0 0 var(--space-xl) 0
+}
+
+.space-padding-left-xl {
+    padding: 0 0 0 var(--space-xl)
+}
+
+.space-padding-top-2xl {
+    padding: var(--space-2xl) 0 0 0
+}
+
+.space-padding-right-2xl {
+    padding: 0 var(--space-2xl) 0 0
+}
+
+.space-padding-bottom-2xl {
+    padding: 0 0 var(--space-2xl) 0
+}
+
+.space-padding-left-2xl {
+    padding: 0 0 0 var(--space-2xl)
+}
+
+.space-padding-top-3xl {
+    padding: var(--space-3xl) 0 0 0
+}
+
+.space-padding-right-3xl {
+    padding: 0 var(--space-3xl) 0 0
+}
+
+.space-padding-bottom-3xl {
+    padding: 0 0 var(--space-3xl) 0
+}
+
+.space-padding-left-3xl {
+    padding: 0 0 0 var(--space-3xl)
+}
+
+.space-padding-top-4xl {
+    padding: var(--space-4xl) 0 0 0
+}
+
+.space-padding-right-4xl {
+    padding: 0 var(--space-4xl) 0 0
+}
+
+.space-padding-bottom-4xl {
+    padding: 0 0 var(--space-4xl) 0
+}
+
+.space-padding-left-4xl {
+    padding: 0 0 0 var(--space-4xl)
+}
+
+.space-padding-top-5xl {
+    padding: var(--space-5xl) 0 0 0
+}
+
+.space-padding-right-5xl {
+    padding: 0 var(--space-5xl) 0 0
+}
+
+.space-padding-bottom-5xl {
+    padding: 0 0 var(--space-5xl) 0
+}
+
+.space-padding-left-5xl {
+    padding: 0 0 0 var(--space-5xl)
+}
+
+.space-padding-top-6xl {
+    padding: var(--space-6xl) 0 0 0
+}
+
+.space-padding-right-6xl {
+    padding: 0 var(--space-6xl) 0 0
+}
+
+.space-padding-bottom-6xl {
+    padding: 0 0 var(--space-6xl) 0
+}
+
+.space-padding-left-6xl {
+    padding: 0 0 0 var(--space-6xl)
+}
+
+.space-padding-top-7xl {
+    padding: var(--space-7xl) 0 0 0
+}
+
+.space-padding-right-7xl {
+    padding: 0 var(--space-7xl) 0 0
+}
+
+.space-padding-bottom-7xl {
+    padding: 0 0 var(--space-7xl) 0
+}
+
+.space-padding-left-7xl {
+    padding: 0 0 0 var(--space-7xl)
 }
