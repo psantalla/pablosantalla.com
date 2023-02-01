@@ -407,13 +407,9 @@ input:focus {
 }
 
 .world {
-    position: absolute;
-    width: 42.5%;
-    min-width: 380px;
-    right: 5vw;
-    top: calc(-100vh - 200px);
+    width: 100%;
     opacity: 40%;
-    object-position: left;
+    object-position: right;
 }
 
 @media only screen and (max-width: 991px) {
