@@ -30,6 +30,11 @@ button {
     text-decoration: none;
 }
 
+.text-link-inline {
+    color: inherit;
+    text-underline-offset: 15%;
+}
+
 .text-link-showcase::after {
     content: " ↗";
 }
