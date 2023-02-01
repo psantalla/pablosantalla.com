@@ -19,7 +19,6 @@
 }
 
 ::selection {
-   
     background: var(--accent-90);
 }
 
@@ -63,11 +62,9 @@
     background-color: var(--pine-30);
 }
 
-
 .color-background-pine-20 {
     background-color: var(--pine-20);
 }
-
 
 .color-background-pine-10 {
     background-color: var(--pine-10);
@@ -76,9 +73,6 @@
 .color-background-pine-5 {
     background-color: var(--pine-5);
 }
-
-
-
 
 .color-background-transparent {
     background-color: transparent;
