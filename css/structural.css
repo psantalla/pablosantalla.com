@@ -131,6 +131,17 @@
     grid-template-columns: 2fr 1fr;
 }
 
+.structure-grid-2-60-desktop {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.structure-grid-2-55-desktop {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+
 .structure-grid-1-desktop {
     display: grid;
     grid-template-columns: 1fr;

@@ -434,3 +434,20 @@ input:focus {
         display: none !important;
     }
 }
+
+.container-cs-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.container-cs-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s ease;
+}
+
+.container-cs-image img:hover {
+    transform: scale(1.025);
+}
