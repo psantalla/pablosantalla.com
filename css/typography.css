@@ -32,7 +32,13 @@ button {
 
 .text-link-inline {
     color: inherit;
-    text-underline-offset: 15%;
+    text-underline-offset: 20%;
+}
+
+
+.text-link-inline:hover {
+
+    text-underline-offset: 10%;
 }
 
 .text-link-showcase::after {
