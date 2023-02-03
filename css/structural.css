@@ -294,3 +294,11 @@
     bottom: var(--space-3xl);
     padding-right: 24px;
 }
+
+@media (max-height: 500px) {
+    .structure-about-hero-content {
+        position: relative;
+        bottom: calc(-1*var(--space-3xl));
+        padding-right: 24px;
+    }
+}
