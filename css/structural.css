@@ -141,7 +141,6 @@
     grid-template-columns: 55% 45%;
 }
 
-
 .structure-grid-1-desktop {
     display: grid;
     grid-template-columns: 1fr;
@@ -311,5 +310,17 @@
         position: relative;
         bottom: calc(-1*var(--space-3xl));
         padding-right: 24px;
+    }
+}
+
+.structure-column-right-in-full-width {
+    padding: 0 56px 0 0;
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* styles to apply only on phones go here */
+    .structure-column-in-full-width-mobile {
+        padding: 0 24px !important;
     }
 }
