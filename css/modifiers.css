@@ -450,6 +450,11 @@ input:focus {
     width: 100%;
     height: auto;
     transition: transform 0.8s ease;
+
+    margin: auto;
+
+
+
 }
 
 .container-cs-image img:hover {
@@ -467,4 +472,9 @@ input:focus {
         position: relative;
         top: -190px;
     }
+}
+
+
+.icon-minify {
+    width:    calc(var(--base)*var(--scale)*var(--scale)*var(--scale)) ;
 }
