@@ -49,6 +49,10 @@ input:focus {
     display: none;
 }
 
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+}
+
 .scrollbar-hidden::-webkit-scrollbar {
     width: 0
 }
@@ -450,4 +454,17 @@ input:focus {
 
 .container-cs-image img:hover {
     transform: scale(1.025);
+}
+
+@media only screen and (min-width: 992px) {
+    .position-absolute-desktop {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .showcase-fix-position {
+        position: relative;
+        top: -220px;
+    }
 }

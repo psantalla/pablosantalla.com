@@ -52,14 +52,14 @@
 }
 
 .structure-nav {
-    height: 72px;
+    height: 96px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .structure-hero {
-    height: calc(100vh - 72px - 56px);
+    height: calc(100vh - 96px - 56px);
     display: table-cell;
     vertical-align: bottom;
     padding-left: 7vw;
@@ -133,7 +133,7 @@
 
 .structure-grid-2-60-desktop {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 6fr 4fr;
 }
 
 .structure-grid-2-55-desktop {
@@ -313,9 +313,7 @@
     }
 }
 
-.structure-column-right-in-full-width {
-    padding: 0 56px 0 0;
-}
+
 
 @media only screen and (max-width: 619px) {
 

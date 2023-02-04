@@ -22,9 +22,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
         gtag('config', 'G-H0G57Y360B');
     </script>
     </script>
@@ -32,22 +34,41 @@
 
 <body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
     <div class="structure-section-full-width structure-section-normal ">
-        <section class="structure-nav space-gap-l space-margin-bottom-m">
-            <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
-            <nav class="structure-row space-gap-l"><a
-                    class="text-size-m color-font-pine text-decoration-not-underline nav-link"
+        <section class="structure-nav space-gap-l">
+            <a href="index.html">
+                <img src="assets/logo.svg" alt="Logo of Pablo Santalla">
+            </a>
+            <nav class="structure-row space-gap-l">
+                <a class="text-size-m color-font-pine text-decoration-not-underline nav-link"
                     href="about.html">About</a>
                 <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
                     href="index.html#work">Work</a>
-                <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
-                        class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
-                            class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
+                <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com">
+                    <button class="structure-button structure-row space-gap-xs text-size-m button-primary">
+                        <img class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola </button>
+                </a>
             </nav>
         </section>
     </div>
-    <div class="structure-section-full-width structure-grid-2-60-desktop structure-grid-1-mobile space-gap-5xl  ">
-        <div class="container-cs-image"><img width="100%" src="/assets/showcase-02-cs-01-zoom.png"
-                alt="Macbook Pro showing the hero section of the website ginevidagranada.com"></div>
-        <div class="structure-column-right-in-full-widthb structure-column-in-full-width-mobile">hola</div>
+    <div
+        class=" position-absolute-desktop structure-section-full-width structure-grid-2-60-desktop structure-grid-1-tablet space-gap-5xl">
+        <div class="container-cs-image">
+            <img src="/assets/showcase-02-cs-01-zoom.png"
+                alt="Macbook Pro showing the hero section of the website ginevidagranada.com">
+        </div>
+        <div class="hid-tablet">
+        </div>
+    </div>
+    <div class="showcase-fix-position {
+
+    }">
+        <div class="structure-section-normal structure-grid-2-60-desktop structure-grid-1-tablet space-gap-7xl  ">
+            <div class="hid-tablet"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; height: 92vh; ">
+                <h1 class="  text-size-5xl space-margin-bottom-xl">Ginevida</h1>
+                <p class="  text-size-l">Este es un texto de aproximadamente esta longitud porque necesito
+                    que ocupe dos frases. Hasta aquí.</p>
+            </div>
+        </div>
     </div>
 </body>
