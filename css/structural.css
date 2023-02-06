@@ -106,6 +106,8 @@
     max-width: 504px;
 }
 
+
+
 .structure-grid-4-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -324,20 +326,13 @@
 .structure-cs-hero-right-column {
     display: flex;
     flex-direction: column;
-padding-top:calc(2*var(--space-7xl)) ;
-
+    padding-top: calc(2*var(--space-7xl));
 }
-
 
 @media only screen and (min-width: 992px) {
-    /* tablet and mobile */
 
+    /* tablet and mobile */
     .structure-cs-hero-right-column {
-       
-    padding-top:calc(1*var(--space-4xl)) ;
-    
+        padding-top: calc(1*var(--space-4xl));
     }
 }
-
-
-
