@@ -30,15 +30,13 @@ input:focus {
 
 .cool-message-alt {
     font-size: calc(var(--base)*1/var(--scale));
-    line-height:  calc(2.5*var(--line-height-p))  ;
     padding: 12px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23131117' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
     opacity: 90%;
     border-radius: 0px;
-    white-space:nowrap;
+    display: inline-block;
+    margin:   calc(var(--space-xs)/1.75) 
 }
-
-
 
 .border {
     border: calc(var(--base) / 5) solid var(--pine);
@@ -458,15 +456,36 @@ input:focus {
     height: auto;
 }
 
+.container-cs-image {
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+}
+
 .container-cs-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: transform 0.8s ease;
-
     margin: auto;
+    object-fit: cover;
+}
 
+@media only screen and (max-width: 991px) {
 
+    /* tablet and mobile */
+    .container-cs-image {
+        position: relative;
+        overflow: hidden;
+        min-height: auto;
+    }
 
+    .container-cs-image img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.8s ease;
+        margin: auto;
+        object-fit: cover;
+    }
 }
 
 .container-cs-image img:hover {
@@ -486,7 +505,6 @@ input:focus {
     }
 }
 
-
 .icon-minify {
-    width:    calc(var(--base)*var(--scale)*var(--scale)*var(--scale)) ;
+    width: calc(var(--base)*var(--scale)*var(--scale)*var(--scale));
 }

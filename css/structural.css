@@ -27,6 +27,18 @@
     margin-right: auto;
 }
 
+.structure-section-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.structure-section-600 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .structure-section-full-width {
     margin: auto;
 }
@@ -141,6 +153,11 @@
 .structure-grid-2-55-desktop {
     display: grid;
     grid-template-columns: 55% 45%;
+}
+
+.structure-grid-2-33-desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .structure-grid-1-desktop {
@@ -333,6 +350,6 @@
 
     /* tablet and mobile */
     .structure-cs-hero-right-column {
-        padding-top: calc(1*var(--space-4xl));
+        padding-top: calc(1*var(--space-2xl));
     }
 }
