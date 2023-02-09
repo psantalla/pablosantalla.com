@@ -35,9 +35,7 @@ button {
     text-underline-offset: 20%;
 }
 
-
 .text-link-inline:hover {
-
     text-underline-offset: 10%;
 }
 
@@ -48,6 +46,10 @@ button {
 .text-link-showcase:hover:after {
     content: " ↗";
     ;
+}
+
+.text-decoration-strikethrough {
+    text-decoration: line-through;
 }
 
 .text-align-center {

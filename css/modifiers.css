@@ -35,7 +35,7 @@ input:focus {
     opacity: 90%;
     border-radius: 0px;
     display: inline-block;
-    margin:   calc(var(--space-xs)/1.75) 
+    margin: calc(var(--space-xs)/1.75)
 }
 
 .border {
@@ -459,7 +459,7 @@ input:focus {
 .container-cs-image {
     position: relative;
     overflow: hidden;
-    min-height: 90vh;
+    min-height: calc(100vh - 96px);
 }
 
 .container-cs-image img {
@@ -507,4 +507,13 @@ input:focus {
 
 .icon-minify {
     width: calc(var(--base)*var(--scale)*var(--scale)*var(--scale));
+}
+
+.effect-gray-to-color {
+    filter: grayscale(85%);
+    transition: all 2000ms;
+}
+
+.effect-gray-to-color:hover {
+    filter: grayscale(0%);
 }
