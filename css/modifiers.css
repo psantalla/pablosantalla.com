@@ -517,3 +517,7 @@ input:focus {
 .effect-gray-to-color:hover {
     filter: grayscale(0%);
 }
+
+.videocase-container {
+    border: calc(var(--base) / 5) solid var(--pine);
+}
