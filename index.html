@@ -19,14 +19,18 @@
     <link rel="stylesheet" href="css/mailerlite.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="javascript/mailerlite.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <script type="text/javascript">
+        if (document.location.hostname.search("myproductiondomainname.com") !== -1) {
 
-        gtag('config', 'G-H0G57Y360B');
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-H0G57Y360B');
+    </script>
+    }
     </script>
 </head>
 
@@ -136,7 +140,9 @@
                         got up to speed with a new web agency by working on a project using Duda web builder. I added
                         custom CSS and created two high-performing SEO landing pages. All in just 6 hours! It was a
                         great way to showcase my ability to learn and work with new tools quickly.</p>
-                    <p class=" cool-message space-margin-bottom-2xl">This client is moving their website to a new domain. The link may no longer be active, so if you're interested I'd be happy to privately share parts of the design or development with you.</p>
+                    <p class=" cool-message space-margin-bottom-2xl">This client is moving their website to a new
+                        domain. The link may no longer be active, so if you're interested I'd be happy to privately
+                        share parts of the design or development with you.</p>
                     <div class="structure-row structure-justify-content-row-left space-gap-l"><a
                             class="hid text-size-l text-weight-bold color-font-pine text-decoration-not-underline body-link text-link-showcase"
                             href="#">Case study</a><a
