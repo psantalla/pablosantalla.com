@@ -29,9 +29,10 @@
         gtag('config', 'G-H0G57Y360B');
     </script>
     <script>
-        var host = "pablosantalla.com";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-            window.location.protocol = "https";
+        var loc = window.location.href + '';
+        if (loc.indexOf('http://') == 0) {
+            window.location.href = loc.replace('http://', 'https://');
+        }
     </script>
 </head>
 
