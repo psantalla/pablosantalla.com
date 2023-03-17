@@ -2,6 +2,10 @@
     /* only desktop */
 }
 
+@media only screen and (min-width: 620px) {
+    /* tablet and desktop */
+}
+
 @media only screen and (min-width: 620px) and (max-width: 991px) {
     /* only tablet */
 }
@@ -119,10 +123,8 @@
 }
 
 .structure-reader-p {
-max-width: calc(var(--space-7xl)*3.25);
+    max-width: calc(var(--space-7xl)*3.25);
 }
-
-
 
 .structure-grid-4-desktop {
     display: grid;
@@ -362,3 +364,4 @@ max-width: calc(var(--space-7xl)*3.25);
         padding-top: calc(1*var(--space-2xl));
     }
 }
+
