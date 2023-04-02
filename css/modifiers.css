@@ -34,7 +34,7 @@ input:focus {
     opacity: 90%;
     border-radius: 0px;
     display: inline-block;
-    margin: calc(var(--sp-xs)/1.75)
+    margin: calc(var(--space-xs)/1.75)
 }
 
 .border {
@@ -292,7 +292,7 @@ input:focus {
 .image-action {
     position: absolute;
     margin-top: -2px;
-    margin-left: var(--sp-xs);
+    margin-left: var(--space-xs);
     width: calc(var(--base) * var(--scale)* var(--scale));
     border-radius: 50%;
     box-shadow: 7px 10px 5px rgba(0, 0, 0, 0.01), 4px 6px 4px rgba(0, 0, 0, 0.04), 2px 3px 3px rgba(0, 0, 0, 0.07), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.09);

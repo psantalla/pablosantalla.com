@@ -67,11 +67,11 @@
     position: absolute;
 }
 
-.structure-nv {
+.structure-nav {
     height: 96px;
     display: flex;
     align-items: center;
-    justify-content: sp-between;
+    justify-content: space-between;
 }
 
 .structure-hero {
@@ -85,11 +85,11 @@
     position: relative;
     top: 56px;
     padding: 112px
-        /* Esto debería ser una variable de sp responsive */
+        /* Esto debería ser una variable de space responsive */
         0;
 }
 
-.structure-pl-7vw {
+.structure-padding-left-7vw {
     padding-left: 7vw;
 }
 
@@ -105,7 +105,7 @@
         padding-bottom: 32px;
     }
 
-    .structure-pl-7vw {
+    .structure-padding-left-7vw {
         padding-left: 0vw;
     }
 
@@ -123,7 +123,7 @@
 }
 
 .structure-reader-p {
-    max-width: calc(var(--sp-7xl)*3.25);
+    max-width: calc(var(--space-7xl)*3.25);
 }
 
 .structure-grid-4-desktop {
@@ -209,15 +209,15 @@
     }
 }
 
-.structure-sp-between {
-    justify-content: sp-between
+.structure-space-between {
+    justify-content: space-between
 }
 
 .structure-row {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: sp-between;
+    justify-content: space-between;
 }
 
 .structure-row-align-items-top {
@@ -257,7 +257,7 @@
 }
 
 .structure-button {
-    white-sp: nowrap;
+    white-space: nowrap;
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -331,14 +331,14 @@
 
 .structure-about-hero-content {
     position: absolute;
-    bottom: var(--sp-3xl);
+    bottom: var(--space-3xl);
     padding-right: 24px;
 }
 
 @media (max-height: 500px) {
     .structure-about-hero-content {
         position: relative;
-        bottom: calc(-1*var(--sp-3xl));
+        bottom: calc(-1*var(--space-3xl));
         padding-right: 24px;
     }
 }
@@ -354,13 +354,14 @@
 .structure-cs-hero-right-column {
     display: flex;
     flex-direction: column;
-    padding-top: calc(2*var(--sp-7xl));
+    padding-top: calc(2*var(--space-7xl));
 }
 
 @media only screen and (min-width: 992px) {
 
     /* tablet and mobile */
     .structure-cs-hero-right-column {
-        padding-top: calc(1*var(--sp-2xl));
+        padding-top: calc(1*var(--space-2xl));
     }
 }
+
