@@ -51,6 +51,25 @@
     z-index: -1;
 }
 
+.structure-section-height-100 {
+    height: 100vh;
+    position: relative;
+}
+
+.structure-sink {
+    position: absolute;
+    bottom: 0px;
+    padding-right: 56px;
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* styles to apply only on phones go here */
+    .structure-sink {
+        padding-right: 24px;
+    }
+}
+
 @media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
@@ -364,4 +383,3 @@
         padding-top: calc(1*var(--space-2xl));
     }
 }
-
