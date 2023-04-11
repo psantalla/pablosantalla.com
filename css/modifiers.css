@@ -557,5 +557,5 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: var(--pine-10) 1px solid;
+    border: var(--pine-50) 1.8px solid;
 }

@@ -68,6 +68,11 @@
     .structure-sink {
         padding-right: 24px;
     }
+
+    .structure-section-height-100 {
+        height: 100svh;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 619px) {
