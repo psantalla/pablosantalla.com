@@ -30,33 +30,57 @@
     </script>
 </head>
 
-<body lass="color-background-alabaster overflow-x-hidden scrollbar-hidden">
-    <section class="structure-section-normal ">
-        <section class="structure-nav space-gap-l">
-            <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
-            <nav class="structure-row space-gap-l"><a
-                    class="text-size-m color-font-pine text-decoration-not-underline nav-link"
-                    href="about.html">About</a>
-                <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
-                    href="index.html#work">Work</a>
-                <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
-                        class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
-                            class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
-            </nav>
-        </section>
-        <h1 class="text-size-5xl">Frase de introducción al blog</h1>
-        <h2 class="text-size-3xl">Temáticas</h2>
-        <nav>
-            <ul class="structure-row structure-justify-content-row-left space-gap-xl">
-                <li>Temática 1</li>
-                <li>Temática 2</li>
-                <li>Temática 3</li>
-            </ul>
-        </nav>
+<body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
+    <div style="height: 100vh; position: relative;">
+        <section class="structure-section-normal ">
+            <section class="structure-nav space-gap-l">
+                <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
+                <nav class="structure-row space-gap-l"><a
+                        class="text-size-m color-font-pine text-decoration-not-underline nav-link"
+                        href="about.html">About</a>
+                    <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
+                        href="index.html#work">Work</a>
+                    <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
+                            class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
+                                class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
+                </nav>
+            </section>
+            <div style="position: absolute; bottom: 0px;">
+                <div style="max-width: 960px;">
+                    <h1 class="text-size-4xl space-margin-bottom-xl">Frase de introducción al blog</h1>
+                    <p class="text-size-l space-margin-bottom-5xl">I post stuff every now and then on Twitter or
+                        LinkedIn,
+                        but
+                        if
+                        you want the good stuff, here's where I really put in the effort to curate my content.</p>
+                </div>
+                <h2 class="text-size-l space-margin-bottom-s">Temáticas</h2>
+                <nav class="space-margin-bottom-2xl">
+                    <ul class="structure-row structure-justify-content-row-left space-gap-l">
+                        <li> <a class="text-size-s color-font-pine text-decoration-not-underline nav-link"
+                                href="#thing01">
+                                Temática 1</a>
+                        </li>
+                        <li><a class="text-size-s color-font-pine text-decoration-not-underline nav-link"
+                                href="#thing02">
+                                Temática 2</a>
+                        </li>
+                        <li><a class="text-size-s color-font-pine text-decoration-not-underline nav-link"
+                                href="#thing03">
+                                Temática 3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
     </section>
-    <h3>Temática 1</h3>
-    <h3>Temática 2</h3>
-    <h3>Temática 3</h3>
+    <main>
+        <div class="structure-section-normal">
+            <h3 id="thing01">Temática 1</h3>
+            <h3 id="thing02">Temática 2</h3>
+            <h3 id="thing03">Temática 3</h3>
+        </div>
+    </main>
 </body>
 
 </html>
