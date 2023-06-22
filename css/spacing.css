@@ -14,6 +14,8 @@
     --space-5xl: 128px;
     --space-6xl: 192px;
     --space-7xl: 256px;
+    --a: 24px;
+    --ps: 14px;
 }
 
 @media only screen and (max-width: 991px) {
