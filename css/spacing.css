@@ -14,7 +14,6 @@
     --space-5xl: 128px;
     --space-6xl: 192px;
     --space-7xl: 256px;
-    --a: 24px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -25,7 +24,6 @@
         --space-5xl: 88px;
         --space-6xl: 120px;
         --space-7xl: 152px;
-        --a: 14px;
     }
 }
 
@@ -36,8 +34,6 @@
         --space-5xl: 80px;
         --space-6xl: 96px;
         --space-7xl: 112px;
-        --b: 14px;
-        --c: 32px;
     }
 }
 
