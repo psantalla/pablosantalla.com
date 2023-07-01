@@ -18,6 +18,22 @@
     /* only mobile */
 }
 
+/* Ed. 1.1 */
+
+.st--row {
+    display: flex;
+}
+
+.st-ah--sb {
+    justify-content: space-between;
+}
+
+.st-av--mid {
+    align-items: center;
+}
+
+/* Ed. 1.0 */
+
 .structure-section-normal {
     max-width: 1400px;
     padding: 0 56px;

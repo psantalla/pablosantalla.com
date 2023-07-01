@@ -1,0 +1,33 @@
+@media only screen and (min-width: 992px) {
+    /* only desktop */
+}
+
+@media only screen and (min-width: 620px) {
+    /* tablet and desktop */
+}
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+    /* only tablet */
+}
+
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+}
+
+@media only screen and (max-width: 619px) {
+    /* only mobile */
+}
+
+/* Ed. 1.1 */
+
+.st--row {
+    display: flex;
+}
+
+.st-ah--sb {
+    justify-content: space-between;
+}
+
+.st-av--mid {
+    align-items: center;
+}
