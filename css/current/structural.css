@@ -1,27 +1,23 @@
-@media only screen and (min-width: 992px) {
-    /* only desktop */
-}
-
-@media only screen and (min-width: 620px) {
-    /* tablet and desktop */
-}
-
-@media only screen and (min-width: 620px) and (max-width: 991px) {
-    /* only tablet */
-}
-
-@media only screen and (max-width: 991px) {
-    /* tablet and mobile */
-}
-
-@media only screen and (max-width: 619px) {
-    /* only mobile */
-}
-
 /* Ed. 1.1 */
-
 .st--row {
     display: flex;
+}
+
+.st--col {
+    display: flex;
+    flex-direction: column;
+}
+
+.st-ah--start {
+    justify-content: flex-start;
+}
+
+.st-ah--center {
+    justify-content: center;
+}
+
+.st-ah--end {
+    justify-content: flex-end;
 }
 
 .st-ah--sb {
@@ -31,3 +27,5 @@
 .st-av--mid {
     align-items: center;
 }
+
+.st-btn--sp {}
