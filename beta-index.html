@@ -5,35 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Santalla's portfolio</title>
+    <meta name="description"
+        content="I'm a web developer with a design flair. Check out my latest projects and get a behind-the-scenes look at my work life.">
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="st--col"> <!-- page wrapper, following a column structure -->
-        <header class="st-h-fullheight st-w--fullwidth c-bg--alabaster">
+        <header class="st-ht--100dvh st--col st-apll--sb c-bg--alabaster">
             <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
-            <div class="st--row sp-py--l st-av--mid st-ah--sb sp-px--3xl sp-px--l--mobile">
-                <img class="logo" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
-                <!-- the logo has a class to control the size across different devices -->
-                <nav>
-                    <ul class="st--row sp-gc--l sp-gc--m--mobile ut-ul--reset">
-                        <li>
-                            <a class="t-s--m ut-link ut-link.ut-link--branch" href="#">About</a>
-                        </li>
-                        <li>
-                            <a class="t-s--m ut-link ut-link.ut-link--branch" href="#">Work</a>
-                        </li>
-                        <li>
-                            <a class="st-btn--sp" href="#">
-                                <img src="#" alt="Icon of an envelope.">
-                                <span class="t-s--m">Say hola</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <div id="navbar-js"></div>
+            <div class="st--col sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <h1 class="t-s--5xl">I'm a web developer based in long beach, CA</h1>
             </div>
+            
         </header>
     </div>
+    <script src="javascript/dynamic/header.js"></script>
 </body>
 
 </html>
