@@ -1,31 +1,29 @@
 /* Ed. 1.1 */
 .st--row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .st--col {
     display: flex;
     flex-direction: column;
 }
+.st-apll--start {justify-content: flex-start;}
+.st-apll--end {justify-content: flex-end;}
+.st-apll--sb {justify-content: space-between;}
 
-.st-ah--start {
-    justify-content: flex-start;
+.st-appdcl--start {align-items: flex-start;}
+.st-appdcl--mid {align-items: center;}
+.st-appdcl--end {align-items: flex-end;}
+
+
+
+.st-ht--100dvh {
+    height: 100dvh;
+
 }
 
-.st-ah--center {
-    justify-content: center;
+.st-expand--100 {
+ height: 100%;
 }
 
-.st-ah--end {
-    justify-content: flex-end;
-}
-
-.st-ah--sb {
-    justify-content: space-between;
-}
-
-.st-av--mid {
-    align-items: center;
-}
-
-.st-btn--sp {}

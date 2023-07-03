@@ -1,4 +1,14 @@
 .ut-link {
   color: inherit;
+}
+
+.ut-link._ut-link--branch {
   text-decoration: none;
+}
+
+.ut-link._ut-link--branch:hover {
+  text-decoration: underline;
+  text-underline-offset: var(--sp--2xs);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--c--pine);
 }

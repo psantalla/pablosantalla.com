@@ -1,6 +1,7 @@
 body {
     font-family: 'n27regular';
     text-transform: lowercase;
+
 }
 
 h1,
@@ -17,6 +18,7 @@ button {
     font-size: inherit;
     text-transform: inherit;
 }
+
 
 .text-weight-regular {
     font-family: 'n27regular';

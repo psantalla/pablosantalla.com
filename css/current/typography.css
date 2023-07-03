@@ -4,13 +4,15 @@
   --t-sc: 1.31;
   /* value for typography scale on desktop */
   --t-ln-ht--big-t: 110%;
-  /* for sizes of text: 3xl and above */
+  /* line height for sizes of text: 3xl and above */
   --t-ln-ht--medium-t: 128%;
-  /* for sizes of text: XL and 2xl */
+  /* line height for sizes of text: XL and 2xl */
   --t-ln-ht--small-t: 128%;
-  /* for sizes of text: l and below */
+  /* line height for sizes of text: l and below */
   --t-lt-sp--h: -0.015em;
+  /* letter spacing for headings */
   --t-lt-sp--p: normal;
+  /* letter spacing for paragraphs */
 }
 
 @media only screen and (min-width: 620px) and (max-width: 991px) {
@@ -36,6 +38,7 @@
 body {
   font-family: 'n27regular';
   text-transform: lowercase;
+  color: var(--c--pine);
 }
 
 h1,
@@ -49,38 +52,47 @@ h6 {
 
 .t-s--xs {
   font-size: calc(var(--t-b) / (var(--t-sc) * var(--t-sc)));
+  line-height: var(--t-ln-ht--small-t);
 }
 
 .t-s--s {
   font-size: calc(var(--t-b) / var(--t-sc));
+  line-height: var(--t-ln-ht--small-t);
 }
 
 .t-s--m {
   font-size: var(--t-b);
+  line-height: var(--t-ln-ht--small-t);
 }
 
 .t-s--l {
   font-size: calc(var(--t-b) * var(--t-sc));
+  line-height: var(--t-ln-ht--small-t);
 }
 
 .t-s--xl {
   font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc));
+  line-height: var(--t-ln-ht--medium-t);
 }
 
 .t-s--2xl {
   font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc));
+  line-height: var(--t-ln-ht--medium-t);
 }
 
 .t-s--3xl {
   font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
+  line-height: var(--t-ln-ht--big-t);
 }
 
 .t-s--4xl {
   font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
+  line-height: var(--t-ln-ht--big-t);
 }
 
 .t-s--5xl {
   font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
+  line-height: var(--t-ln-ht--big-t);
 }
 
 /* font-import */
