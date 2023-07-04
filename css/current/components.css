@@ -47,7 +47,6 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    
 }
 
 .com--cont-fern lottie-player {
@@ -56,5 +55,4 @@
     /* this value makes the lottie outline to sit at the bottom of the container */
     opacity: .9;
     transform: scale(.8);
-    
 }

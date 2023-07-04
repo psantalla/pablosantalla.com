@@ -16,10 +16,8 @@
 .ut--front {
   z-index: 1;
 }
+
 .ut--back {
   z-index: 1;
 }
 
-::selection {
-  color: var(--c--accent);
-}
