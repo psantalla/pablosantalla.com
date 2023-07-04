@@ -825,7 +825,8 @@
     padding: var(--sp--7xl);
 }
 
-.sp-gc--2xs {
+/* i don't think i need column-gap or row-gap; i can solve both with just gap */
+/* .sp-gc--2xs {
     column-gap: var(--sp--2xs);
 }
 
@@ -920,7 +921,7 @@
 .sp-gr--7xl {
     row-gap: var(--sp--7xl);
 }
-
+ */
 .sp-ga--2xs {
     gap: var(--sp--2xs);
 }

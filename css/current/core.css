@@ -1,3 +1,4 @@
 ::selection {
     color: var(--c--accent);
+    background-color: transparent;
 }

@@ -1,13 +1,13 @@
 
 var navbarHTML = `
-  <div class="st--row sp-ga--l sp-ga--m--mobile sp-py--l st-apll--sb st-appdcl--mid sp-px--3xl sp-px--l--mobile">
+  <div class="st--row st-wrap--flex sp-ga--l sp-ga--m--mobile sp-py--l st-apll--sb st-appdcl--mid sp-px--3xl sp-px--l--mobile">
   <a href="index.html">
   <img class="logo" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
 </a>
 
     <!-- the logo has a class to control the size across different devices -->
     <nav>
-      <ul class="st--row st-appdcl--mid sp-ga--l sp-ga--m--mobile ut-ul--reset">
+      <ul class="st--row st-wrap--flex st-appdcl--mid sp-ga--l sp-ga--m--mobile ut-ul--reset">
         <li>
           <a class="t-s--m ut-link _ut-link--branch" href="about.html">About</a>
         </li>

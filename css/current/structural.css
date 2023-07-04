@@ -1,12 +1,67 @@
 /* Ed. 1.1 */
 .st--row {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .st--col {
     display: flex;
     flex-direction: column;
+}
+
+.st--grid {
+    display: grid;
+}
+
+.st--grid._st--grid--1-1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.st--grid._st--grid--2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.st--grid._st--grid--1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.st--grid._st--grid--1-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 991px) {
+
+    /* tablet and mobile */
+    .st--col--tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* only mobile */
+    .st--col--mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.st-wrap--flex {
+    flex-wrap: wrap;
+}
+
+.st-break--y {
+    white-space: nowrap;
+}
+
+.st-break--n {
+    white-space: nowrap;
+}
+
+
+
+.st-wrap--flex--nowrap {
+    flex-wrap: nowrap;
 }
 
 .st-apll--start {

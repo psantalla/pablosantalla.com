@@ -19,6 +19,7 @@
     --c--accent--30: rgba(245, 93, 62, .3);
     --c--accent--20: rgba(245, 93, 62, .2);
     --c--accent--10: rgba(245, 93, 62, .1);
+    --c--accent--0: rgba(245, 93, 62, 0);
     /* ----- */
     --c--alabaster: rgb(245, 245, 245);
     --c--alabaster--90: rgba(245, 245, 245, .9);
@@ -43,15 +44,6 @@
     --c--white--10: rgba(255, 255, 255, .1);
 }
 
-::-moz-selection {
-    background: var(--accent-90);
-}
-
-::selection {
-    background: var(--accent-90);
-}
-
-/* ----- */
 .c-el--pine {
     color: var(--c--pine);
 }
