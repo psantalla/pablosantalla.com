@@ -9,21 +9,27 @@
         content="I'm a web developer with a design flair. Check out my latest projects and get a behind-the-scenes look at my work life.">
     <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="javascript/mailerlite.js"></script>
 </head>
 
 <body>
     <div class="st--col"> <!-- page wrapper, following a column structure -->
-        <header class="st-ht--100dvh st--col st-apll--sb c-bg--alabaster">
+        <header class="st--anchor st-ht--100dvh st--col st-apll--sb c-bg--alabaster">
             <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
-            <div id="navbar-js"></div>
-            <div class="st--col sp-ga--xl sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
-                <h1 class="t-s--5xl">I'm a web developer based in long beach, CA</h1>
+            <div class="ut--front" id="navbar-js"></div>
+            <div
+                class="ut--front st--col st-mw--compact sp-ga--xl sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <h1 class="t-s--5xl">I'm a web developer based in Los Angeles, CA</h1>
                 <p class="t-s--l">I started by helping small businesses increase their online sales. Now, I enjoy
                     helping companies showcase high-impact services through a powerful online presence.</p>
                 <a class="com-btn"
                     href="mailto:pablo@pablosantalla.com?subject=pablosantalla.com%20%E2%80%94%20design%20and%2For%20development%20inquiry">
                     Check out Pablo's work
                 </a>
+            </div>
+            <div class="st--hook com--cont-fern"> <lottie-player src="assets/fern.json" background="transparent"
+                    speed=".5" loop autoplay></lottie-player>
             </div>
         </header>
     </div>

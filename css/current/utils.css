@@ -12,3 +12,14 @@
   text-decoration-thickness: 2px;
   text-decoration-color: var(--c--pine);
 }
+
+.ut--front {
+  z-index: 1;
+}
+.ut--back {
+  z-index: 1;
+}
+
+::selection {
+  color: var(--c--accent);
+}

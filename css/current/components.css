@@ -3,10 +3,8 @@
     color: inherit;
     text-decoration: none;
     display: flex;
-
     height: var(--sp--2xl);
     width: fit-content;
-    
     border: 1px solid var(--c--pine);
     border-radius: var(--sp--7xl);
     align-items: center;
@@ -42,4 +40,21 @@
     .com-btn._com-btn--sp img {
         height: var(--sp--l);
     }
+}
+
+.com--cont-fern {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    
+}
+
+.com--cont-fern lottie-player {
+    margin-left: 40%;
+    margin-bottom: -24%;
+    /* this value makes the lottie outline to sit at the bottom of the container */
+    opacity: .9;
+    transform: scale(.8);
+    
 }

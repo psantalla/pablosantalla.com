@@ -34,6 +34,14 @@
     --sp--5xl: 8rem;
     --sp--6xl: 12rem;
     --sp--7xl: 16rem;
+    --sp--8xl: 20rem;
+    --sp--9xl: 24rem;
+    --sp--10xl: 28rem;
+    --sp--11xl: 32rem;
+    --sp--12xl: 36rem;
+    --sp--13xl: 40rem;
+    --sp--14xl: 44rem;
+    --sp--15xl: 48rem;
 }
 
 @media only screen and (max-width: 991px) {
@@ -44,6 +52,14 @@
         --sp--5xl: 5.5rem;
         --sp--6xl: 7.5rem;
         --sp--7xl: 9.5rem;
+        --sp--8xl: 11.5rem;
+        --sp--9xl: 13.5rem;
+        --sp--10xl: 15.5rem;
+        --sp--11xl: 17.5rem;
+        --sp--12xl: 19.5rem;
+        --sp--13xl: 21.5rem;
+        --sp--14xl: 23.5rem;
+        --sp--15xl: 25.5rem;
     }
 }
 
@@ -54,8 +70,18 @@
         --sp--5xl: 5rem;
         --sp--6xl: 6rem;
         --sp--7xl: 7rem;
+        --sp--8xl: 9rem;
+        --sp--9xl: 11rem;
+        --sp--10xl: 13rem;
+        --sp--11xl: 15rem;
+        --sp--12xl: 17rem;
+        --sp--13xl: 19rem;
+        --sp--14xl: 21rem;
+        --sp--15xl: 23rem;
     }
 }
+
+
 
 .sp-mt-nil {
     margin-top: var(--sp-nil);
