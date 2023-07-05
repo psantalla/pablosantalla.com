@@ -30,6 +30,10 @@
     height: var(--sp--xl);
 }
 
+.com-has--arrow::after {
+    content: " ↗";
+}
+
 @media only screen and (min-width: 620px) and (max-width: 991px) {
 
     /* only tablet */

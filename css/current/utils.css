@@ -3,7 +3,8 @@
 }
 
 .ut-link._ut-link--branch,
-.ut-link._ut-link--not-underline {
+.ut-link._ut-link--not-underline,
+.ut-link._ut-link--alt {
   text-decoration: none;
 }
 
@@ -12,6 +13,18 @@
   text-underline-offset: var(--sp--2xs);
   text-decoration-thickness: 2px;
   text-decoration-color: var(--c--pine);
+}
+
+.ut-link._ut-link--alt {
+  /* used in a dark background */
+  color: var(--c--white--80);
+}
+
+.ut-link._ut-link--alt:hover {
+  text-decoration: underline;
+  text-underline-offset: var(--sp--2xs);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--c--white--80);
 }
 
 .ut--front {
