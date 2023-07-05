@@ -90,6 +90,10 @@
     min-height: 100dvh;
 }
 
+.st-ht--100svh {
+    min-height: 100svh;
+}
+
 .st-expand--100 {
     height: 100%;
 }

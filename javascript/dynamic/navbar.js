@@ -2,7 +2,7 @@
 var navbarHTML = `
   <div class="st--row st-wrap--flex sp-ga--l sp-ga--m--mobile sp-py--l st-apll--sb st-appdcl--mid sp-px--3xl sp-px--l--mobile">
   <a href="index.html">
-  <img class="logo" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
+  <img class="com-logo" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
 </a>
 
     <!-- the logo has a class to control the size across different devices -->

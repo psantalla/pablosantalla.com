@@ -926,6 +926,10 @@
     gap: var(--sp--2xs);
 }
 
+.sp-ga--2_5xs {
+    gap: var(--sp--2_5xs);
+}
+
 .sp-ga--xs {
     gap: var(--sp--xs);
 }

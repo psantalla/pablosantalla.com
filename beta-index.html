@@ -9,18 +9,22 @@
         content="I'm a web developer with a design flair. Check out my latest projects and get a behind-the-scenes look at my work life.">
     <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript/clock.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="javascript/mailerlite.js"></script>
 </head>
 
 <body>
     <div class="st--col"> <!-- page wrapper, following a column structure -->
-        <header class="st--anchor st-ht--100dvh st--col st-apll--sb c-bg--alabaster">
+        <header class="st--anchor st-ht--100svh st--col st-apll--sb c-bg--alabaster">
             <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
             <div class="ut--front" id="navbar-js"></div>
             <div
                 class="ut--front st--col st-mw--compact sp-ga--xl sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
-                <h1 class="t-s--5xl">I'm a web <span class="t-var--i">designveloper</span> based in Los Angeles, CA</h1>
+                <div class="st--col sp-ga--m"> <!-- <div class="t-s--m c-el--pine--70 com-clock--la"></div> -->
+                    <!-- style classes need to be place before the component class in order to work -->
+                    <h1 class="t-s--5xl">I'm a web <span class="t-var--i">devsigner</span> based in Los Angeles, CA</h1>
+                </div>
                 <p class="t-s--l">I started by helping small businesses increase their online sales. Now, I enjoy
                     helping companies showcase high-impact services through a powerful online presence.</p>
                 <a class="com-btn"
@@ -71,16 +75,34 @@
                 </div>
             </section>
             <div class="st--row sp-ga--m st-appdcl--mid">
-                <a class="com-btn _com-btn--sp st-break--n"
-                    href="mailto:pablo@pablosantalla.com?subject=pablosantalla.com%20%E2%80%94%20design%20and%2For%20development%20inquiry">
+                <a class="com-btn _com-btn--sp st-break--n" href="call.html" target="_blank">
                     <img src="assets/pablo-icon.png" alt="Picture of Pablo Santalla on vacation in Cancun.">
-                    <span>Book a call</span></a>
-                <div class="st--row st-appdcl--mid sp-ga--xs"><span class="com--pulse"></span>
-                    <p class="t-s--s">Available for calls Wed-Thu 6pm-8pm PT.</p>
+                    <span>Book a call</span>
+                </a>
+                <div class="st--row st-appdcl--mid sp-ga--2_5xs"><span class="com--pulse"></span>
+                    <p class="t-s--s">Attending calls Wed-Thu 6-8p PT.</p>
                 </div>
             </div>
         </main>
     </div> <!-- page wrapper ends here -->
+    <footer class="st--col sp-ga--xl c-bg--pine sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+        <section class="st--grid _st--grid--2-1 st--col--mobile">
+            <div>
+                <div class="st--col sp-ga--s"> <a href="index.html">
+                        <img class="com-logo--alt ut-opacity--90" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
+                    </a>
+                    <div class="t-s--m c-el--white--80 com-clock--la"></div>
+                    <!-- style classes need to be place before the component class in order to work -->
+                </div>
+                <div class="st--col sp-ga--s">
+                    <p class="c-el--white--90 t-s--3xl t-w--b">Let's join forces</p>
+                    <p class="c-el--white--80 t-s--m">I'm available for exciting web development projects and long-term
+                        collaborations. If you have a project in mind or want to discuss ideas, feel free to reach out.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="javascript/dynamic/navbar.js"></script>
 </body>
 
