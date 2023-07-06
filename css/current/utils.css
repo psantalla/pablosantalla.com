@@ -1,14 +1,31 @@
+.hid {
+  display: none;
+}
+
 .ut-link {
   color: inherit;
 }
 
+.ut-obj-respond {
+  /* make objects (svg, img) to addapt to their containers */
+  width: 100%;
+}
+
+.ut-border--sc {
+  /* border used for showcase sreenshots or frames */
+  border: var(--sp--2xs) solid var(--c--pine);
+  border-radius: var(--sp--s);
+}
+
 .ut-link._ut-link--branch,
+.ut-link._ut-link--inner,
 .ut-link._ut-link--not-underline,
 .ut-link._ut-link--alt {
   text-decoration: none;
 }
 
-.ut-link._ut-link--branch:hover {
+.ut-link._ut-link--branch:hover,
+.ut-link._ut-link--inner:hover {
   text-decoration: underline;
   text-underline-offset: var(--sp--2xs);
   text-decoration-thickness: 2px;
