@@ -1,32 +1,14 @@
-
-var navbarHTML = `
-  <div class="st--row st-wrap--flex sp-ga--l sp-ga--m--mobile sp-py--l st-apll--sb st-appdcl--mid sp-px--3xl sp-px--l--mobile">
-  <a href="index.html">
-  <img class="com-logo" src="/assets/logo.svg" alt="Logo of Pablo Santalla.">
-</a>
-
-    <!-- the logo has a class to control the size across different devices -->
-    <nav>
-      <ul class="st--row st-wrap--flex st-appdcl--mid sp-ga--l sp-ga--m--mobile ut-ul--reset">
-        <li>
-          <a class="t-s--m ut-link _ut-link--branch" href="about.html">About</a>
-        </li>
-        <li>
-          <a class="t-s--m ut-link _ut-link--branch" href="work.html">Work</a>
-        </li>
-        <li>
-          <a class="com-btn _com-btn--sp" href="mailto:pablo@pablosantalla.com?subject=pablosantalla.com%20%E2%80%94%20design%20and%2For%20development%20inquiry">
-            <img src="assets/email.svg" alt="Icon of an envelope.">
-            <span>Say hola</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-`;
-
-
 var navbarContainer = document.getElementById('navbar-js');
 
-// Mostrar el contenido del navbar en el contenedor
-navbarContainer.innerHTML = navbarHTML;
+// Obtener el contenido del archivo HTML del navbar
+fetch('/html/dynamic/navbar.html')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(navbarHTML) {
+    // Mostrar el contenido del navbar en el contenedor
+    navbarContainer.innerHTML = navbarHTML;
+  })
+  .catch(function(error) {
+    console.log('Error al cargar el archivo HTML del navbar:', error);
+  });

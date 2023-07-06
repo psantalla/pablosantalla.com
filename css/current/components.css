@@ -26,6 +26,14 @@
     gap: var(--sp--xs);
 }
 
+.com-btn._com-btn--sp--alt { /* this class doesn't invert colors on the img, so it needs the img-alt in order to match the contrast */
+    gap: var(--sp--xs);
+    color: var(--c--white--90);
+    border: 1px solid var(--c--white--90);
+}
+
+
+
 .com-btn._com-btn--sp img {
     height: var(--sp--xl);
 }
