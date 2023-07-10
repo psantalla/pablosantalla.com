@@ -102,6 +102,10 @@
     max-width: calc(4 * var(--sp--6xl) + 2 * var(--sp--3xl));
 }
 
+.st-mw--icon {
+    max-width: var(--sp--m);
+}
+
 .st--anchor {
     position: relative;
 }

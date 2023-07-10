@@ -6,7 +6,9 @@ function updateClock() {
 
   // Remove space between hour and 'a' or 'p'
   var modifiedTimeString = timeString.replace(" AM", "a").replace(" PM", "p");
-  var message = "It's " + modifiedTimeString + " here, so I'm probably ";
+  
+  // Get abbreviated day name
+  var dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
 
   // Add icons based on time ranges
   var hour = date.getHours();
@@ -32,8 +34,27 @@ function updateClock() {
     icon = "🎮"; // Playing video games icon
   }
 
-  // Append the icon to the message
-  message += icon;
+  // Additional conditions for weekend activities
+  var day = date.getDay();
+  if (day === 0 || day === 6) {
+    if (hour >= 0 && hour < 9) {
+      icon = "🛌"; // Sleeping icon
+    } else if (hour >= 9 && hour < 11) {
+      icon = "🚲"; // Cycling icon
+    } else if (hour >= 11 && hour < 17) {
+      icon = "🏖️"; // Beach icon
+    } else if (hour >= 17 && hour < 18) {
+      icon = "🍳"; // Cooking icon
+    } else if (hour >= 18 && hour < 20) {
+      icon = "🍽️"; // Dinner icon
+    } else if (hour >= 20 && hour < 22) {
+      icon = "📚"; // Reading icon
+    } else if (hour >= 22 || hour < 0) {
+      icon = "🛌"; // Sleeping icon
+    }
+  }
+
+  var message = "It's " + dayName + " " + modifiedTimeString + " here, so I'm probably " + icon;
 
   for (var i = 0; i < clockElements.length; i++) {
     if (clockElements[i]) {
@@ -43,4 +64,3 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000);
-

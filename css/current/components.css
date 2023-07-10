@@ -1,6 +1,6 @@
 .com-logo--alt {
     filter: brightness(0) invert(1);
-  }
+}
 
 .com-btn {
     font-family: 'n27bold';
@@ -26,13 +26,12 @@
     gap: var(--sp--xs);
 }
 
-.com-btn._com-btn--sp--alt { /* this class doesn't invert colors on the img, so it needs the img-alt in order to match the contrast */
+.com-btn._com-btn--sp--alt {
+    /* this class doesn't invert colors on the img, so it needs the img-alt in order to match the contrast */
     gap: var(--sp--xs);
     color: var(--c--white--90);
     border: 1px solid var(--c--white--90);
 }
-
-
 
 .com-btn._com-btn--sp img {
     height: var(--sp--xl);
@@ -118,4 +117,14 @@
         -moz-box-shadow: 0 0 0 0 var(--c--accent--0);
         box-shadow: 0 0 0 0 var(--c--accent--0);
     }
+}
+
+.com--icon-rrss {
+    opacity: 90%;
+    
+}
+
+.com--icon-rrss:hover {
+    opacity: 100%;
+    transition: all 125ms;
 }
