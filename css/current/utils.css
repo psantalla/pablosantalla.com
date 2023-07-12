@@ -2,6 +2,10 @@
   display: none;
 }
 
+.ut-of--hid {
+  overflow: hidden;
+}
+
 .ut-link {
   color: inherit;
 }

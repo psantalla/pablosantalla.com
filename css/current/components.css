@@ -119,12 +119,70 @@
     }
 }
 
-.com--icon-rrss {
+.com--icon--rrss {
     opacity: 90%;
-    
 }
 
-.com--icon-rrss:hover {
+.com--icon--rrss:hover {
     opacity: 100%;
     transition: all 125ms;
+}
+
+.com-quote--modern::before {
+    position: absolute;
+    content: "“";
+    font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
+    top: calc(-1 * var(--sp--l));
+}
+
+.com--project-img_clone-it {
+    position: absolute;
+    width: clamp(var(--sp--l), 12.5%, var(--sp--2xl));
+    right: var(--sp--m);
+    bottom: calc(var(--sp--l) + var(--sp--l));
+    /* the first variable corrects the space that the parent image is generating with its margin-bottom */
+    border-radius: var(--sp--7xl);
+    box-shadow: 7px 10px 5px rgba(0, 0, 0, 0.01), 4px 6px 4px rgba(0, 0, 0, 0.04), 2px 3px 3px rgba(0, 0, 0, 0.07), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.09);
+    transition: all 125ms;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.com--project-img_clone-it:hover {
+    box-shadow: none;
+    transition: all 125ms;
+}
+
+.com--project-img_clone-it._com--project-img_clone-it--non {
+    position: absolute;
+    width: clamp(var(--sp--l), 12.5%, var(--sp--2xl));
+    right: var(--sp--m);
+    bottom: calc(var(--sp--l) + var(--sp--l));
+    border-radius: var(--sp--7xl);
+    box-shadow: 7px 10px 5px rgba(0, 0, 0, 0.01), 4px 6px 4px rgba(0, 0, 0, 0.04), 2px 3px 3px rgba(0, 0, 0, 0.07), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+    opacity: 0.4;
+    filter: grayscale(100%);
+}
+
+.com--project-img_clone-it._com--project-img_clone-it--non {
+    cursor: not-allowed;
+}
+
+.com--leaf {
+    position: absolute;
+    right: 0;
+    width: var(--sp--5xl);
+    top: calc(-1 * var(--sp--5xl) - var(--sp--2xs));
+    opacity: .9;
+    /* this positions the leaf right on the border of the section, as it avoids the top padding of the section — it also add a few negative pixels to deal with the border of the leaf */
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* only mobile */
+    .com--leaf {
+        top: calc(-1 * var(--sp--3xl) - var(--sp--2xs));
+        /* this positions the leaf right on the border of the section, as it avoids the top padding of the section — it also add a few negative pixels to deal with the border of the leaf */
+    }
 }
