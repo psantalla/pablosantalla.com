@@ -113,3 +113,12 @@
 .st--hook {
     position: absolute;
 }
+
+.st-ratio--1- {
+    aspect-ratio: 1/1;
+  }
+
+.st-ratio--10-8 {
+    aspect-ratio: 10/8;
+  }
+  
