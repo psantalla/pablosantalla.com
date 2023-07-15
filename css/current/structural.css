@@ -86,6 +86,10 @@
     align-items: flex-end;
 }
 
+.st-ht--100dvh, .st-ht--100svh {
+    max-height: calc(5 *  var(--sp--7xl));
+}
+
 .st-ht--100dvh {
     min-height: 100dvh;
 }
@@ -105,7 +109,6 @@
 .st-mw--icon {
     max-width: var(--sp--m);
 }
-
 .st--anchor {
     position: relative;
 }
