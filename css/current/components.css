@@ -186,3 +186,43 @@
         /* this positions the leaf right on the border of the section, as it avoids the top padding of the section — it also add a few negative pixels to deal with the border of the leaf */
     }
 }
+
+.com-colab--idg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(-1 * var(--sp--l));
+    min-height: var(--sp--2xl);
+    min-width: auto;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10),
+        10px 10px 31px 0px rgba(0, 0, 0, 0.10),
+        40px 40px 57px 0px rgba(0, 0, 0, 0.09),
+        91px 90px 77px 0px rgba(0, 0, 0, 0.05),
+        161px 160px 91px 0px rgba(0, 0, 0, 0.01),
+        252px 251px 100px 0px rgba(0, 0, 0, 0.00);
+    animation: levitate 2.725s ease-in-out infinite;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-4px);
+    }
+
+    60% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.com--idg-logo {
+    height: var(--sp--m);
+    margin-right: var(--sp--2xs);
+}

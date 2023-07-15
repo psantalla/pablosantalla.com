@@ -34,24 +34,9 @@ function updateClock() {
     icon = "🎮"; // Playing video games icon
   }
 
-  // Additional conditions for weekend activities
-  var day = date.getDay();
-  if (day === 0 || day === 6) {
-    if (hour >= 0 && hour < 9) {
-      icon = "🛌"; // Sleeping icon
-    } else if (hour >= 9 && hour < 11) {
-      icon = "🚲"; // Cycling icon
-    } else if (hour >= 11 && hour < 17) {
-      icon = "🏖️"; // Beach icon
-    } else if (hour >= 17 && hour < 18) {
-      icon = "🍳"; // Cooking icon
-    } else if (hour >= 18 && hour < 20) {
-      icon = "🍽️"; // Dinner icon
-    } else if (hour >= 20 && hour < 22) {
-      icon = "📚"; // Reading icon
-    } else if (hour >= 22 || hour < 0) {
-      icon = "🛌"; // Sleeping icon
-    }
+  // Additional condition for Friday and Saturday nights from 8pm to 11pm
+  if ((dayName === "Fri" || dayName === "Sat") && hour >= 20 && hour < 23) {
+    icon = "🍺"; // Beer icon
   }
 
   var message = "It's " + dayName + " " + modifiedTimeString + " here, so I'm probably " + icon;

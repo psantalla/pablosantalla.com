@@ -135,3 +135,7 @@
 .ut-opacity--0 {
   opacity: 0;
 }
+
+.ut-border-r--whole {
+  border-radius: var(--sp--7xl);
+}
