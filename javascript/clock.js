@@ -6,7 +6,9 @@ function updateClock() {
 
   // Remove space between hour and 'a' or 'p'
   var modifiedTimeString = timeString.replace(" AM", "a").replace(" PM", "p");
-  var message = "It's " + modifiedTimeString + " here, so I'm probably ";
+  
+  // Get abbreviated day name
+  var dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
 
   // Add icons based on time ranges
   var hour = date.getHours();
@@ -32,8 +34,12 @@ function updateClock() {
     icon = "🎮"; // Playing video games icon
   }
 
-  // Append the icon to the message
-  message += icon;
+  // Additional condition for Friday and Saturday nights from 8pm to 11pm
+  if ((dayName === "Fri" || dayName === "Sat") && hour >= 20 && hour < 23) {
+    icon = "🍺"; // Beer icon
+  }
+
+  var message = "It's " + dayName + " " + modifiedTimeString + " here, so I'm probably " + icon;
 
   for (var i = 0; i < clockElements.length; i++) {
     if (clockElements[i]) {
@@ -43,4 +49,3 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000);
-

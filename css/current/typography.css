@@ -107,6 +107,20 @@ h6 {
 .t-w--b {
   font-family: 'n27bold';
 }
+/* ----- */
+.t-a--l {
+  text-align: left;
+}
+.t-a--c {
+  text-align: center;
+}
+.t-a--r {
+  text-align: right;
+}
+/* ----- */
+.t-d--un {
+text-decoration: underline;
+}
 
 /* ----- */
 .t-var--i {
