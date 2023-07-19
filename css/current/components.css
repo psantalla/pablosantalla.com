@@ -22,6 +22,8 @@
     transition: all 250ms;
 }
 
+  
+
 .com-btn._com-btn--sp {
     gap: var(--sp--xs);
 }

@@ -6,7 +6,7 @@ function updateClock() {
 
   // Remove space between hour and 'a' or 'p'
   var modifiedTimeString = timeString.replace(" AM", "a").replace(" PM", "p");
-  
+
   // Get abbreviated day name
   var dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
 
@@ -24,19 +24,18 @@ function updateClock() {
     icon = "💼"; // Working icon
   } else if (hour >= 17 && hour < 18) {
     icon = "🚗"; // Driving home icon
-  } else if (hour >= 18 && hour < 20) {
+  } else if (hour >= 18 && hour < 19) {
     icon = "🎾"; // Tennis icon
-  } else if (hour >= 20 && hour < 20.30) {
+  } else if (hour >= 19 && hour < 20) {
     icon = "🍳"; // Cooking icon
-  } else if (hour >= 20.30 && hour < 21) {
-    icon = "📺"; // Dinner or watching TV icon
+  } else if (hour >= 20 && hour < 21) {
+    icon = "📺"; // Watching TV icon
   } else if (hour >= 21 && hour < 22) {
     icon = "🎮"; // Playing video games icon
-  }
-
-  // Additional condition for Friday and Saturday nights from 8pm to 11pm
-  if ((dayName === "Fri" || dayName === "Sat") && hour >= 20 && hour < 23) {
-    icon = "🍺"; // Beer icon
+  } else if ((dayName === "Sat" || dayName === "Sun") && hour >= 9 && hour < 11) {
+    icon = "🚶"; // Weekend walk icon
+  } else if (hour >= 13 && hour < 15) {
+    icon = "📚"; // Reading icon
   }
 
   var message = "It's " + dayName + " " + modifiedTimeString + " here, so I'm probably " + icon;

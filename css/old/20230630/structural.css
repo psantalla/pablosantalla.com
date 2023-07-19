@@ -19,7 +19,6 @@
 }
 
 /* Ed. 1.1 */
-
 .st--row {
     display: flex;
 }
@@ -33,7 +32,6 @@
 }
 
 /* Ed. 1.0 */
-
 .structure-section-normal {
     max-width: 1400px;
     padding: 0 56px;
@@ -246,17 +244,17 @@
 @media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
-    .structure-grid-1-mobile {
+    .structure-grid-1--mobile {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .structure-grid-2-mobile {
+    .structure-grid-2--mobile {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .structure-grid-3-mobile {
+    .structure-grid-3--mobile {
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-auto-flow: row;
@@ -326,7 +324,7 @@
 }
 
 @media only screen and (max-width: 619px) {
-    .structure-row-to-column-mobile {
+    .structure-row-to-column--mobile {
         flex-direction: column;
     }
 }
@@ -421,7 +419,7 @@
 @media only screen and (max-width: 619px) {
 
     /* styles to apply only on phones go here */
-    .structure-column-in-full-width-mobile {
+    .structure-column-in-full-width--mobile {
         padding: 0 24px !important;
     }
 }
@@ -447,36 +445,28 @@
 }
 
 .structure-blog-card-image {
-    border-radius: calc(.3*var(--space-l)) ;
+    border-radius: calc(.3*var(--space-l));
 }
-
 
 .structure-grid-blog-entries {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-  }
-  
- 
-
-
-
-  @media only screen and (min-width: 620px) and (max-width: 991px) {
-    /* only tablet */.structure-grid-blog-entries {
-      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
-    }
 }
-  
- 
 
+@media only screen and (min-width: 620px) and (max-width: 991px) {
 
-  @media only screen and (max-width: 619px) {
-    /* only mobile */ .structure-grid-blog-entries {
-      grid-template-columns: repeat(1, 1fr); /* 1 columna en mobile */
+    /* only tablet */
+    .structure-grid-blog-entries {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en tablet */
     }
 }
 
+@media only screen and (max-width: 619px) {
 
-
-
-
+    /* only mobile */
+    .structure-grid-blog-entries {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 columna en mobile */
+    }
+}

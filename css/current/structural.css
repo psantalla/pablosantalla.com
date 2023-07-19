@@ -86,8 +86,9 @@
     align-items: flex-end;
 }
 
-.st-ht--100dvh, .st-ht--100svh {
-    max-height: calc(5 *  var(--sp--7xl));
+.st-ht--100dvh,
+.st-ht--100svh {
+    max-height: calc(5 * var(--sp--7xl));
 }
 
 .st-ht--100dvh {
@@ -109,6 +110,7 @@
 .st-mw--icon {
     max-width: var(--sp--m);
 }
+
 .st--anchor {
     position: relative;
 }
@@ -119,9 +121,8 @@
 
 .st-ratio--1- {
     aspect-ratio: 1/1;
-  }
+}
 
 .st-ratio--10-8 {
     aspect-ratio: 10/8;
-  }
-  
+}

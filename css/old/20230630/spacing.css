@@ -330,7 +330,7 @@
         gap: var(--space-3xl);
     }
 
-    .space-gap-2xl-mobile {
+    .space-gap-2xl--mobile {
         gap: var(--space-2xl);
     }
 
@@ -360,51 +360,51 @@
 }
 
 @media only screen and (max-width: 619px) {
-    .space-gap-7xl-mobile {
+    .space-gap-7xl--mobile {
         gap: var(--space-7xl);
     }
 
-    .space-gap-6xl-mobile {
+    .space-gap-6xl--mobile {
         gap: var(--space-6xl);
     }
 
-    .space-gap-5xl-mobile {
+    .space-gap-5xl--mobile {
         gap: var(--space-5xl);
     }
 
-    .space-gap-4xl-mobile {
+    .space-gap-4xl--mobile {
         gap: var(--space-4xl);
     }
 
-    .space-gap-3xl-mobile {
+    .space-gap-3xl--mobile {
         gap: var(--space-3xl);
     }
 
-    .space-gap-2xl-mobile {
+    .space-gap-2xl--mobile {
         gap: var(--space-2xl);
     }
 
-    .space-gap-xl-mobile {
+    .space-gap-xl--mobile {
         gap: var(--space-xl);
     }
 
-    .space-gap-l-mobile {
+    .space-gap-l--mobile {
         gap: var(--space-l);
     }
 
-    .space-gap-m-mobile {
+    .space-gap-m--mobile {
         gap: var(--space-m);
     }
 
-    .space-gap-s-mobile {
+    .space-gap-s--mobile {
         gap: var(--space-s);
     }
 
-    .space-gap-xs-mobile {
+    .space-gap-xs--mobile {
         gap: var(--space-xs);
     }
 
-    .space-gap-2xs-mobile {
+    .space-gap-2xs--mobile {
         gap: var(--space-2xs);
     }
 }
@@ -632,4 +632,3 @@
 .space-padding-left-7xl {
     padding-left: var(--space-7xl);
 }
-
