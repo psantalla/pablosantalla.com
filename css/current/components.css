@@ -1,3 +1,12 @@
+/*.st--home .com-logo._com-logo--spins {
+    
+    transition: transform 0.75s ease;
+}
+
+.st--home .com-logo._com-logo--spins:hover {
+    transform: rotate3d(0, 1, 0, 360deg)
+}*/
+/* .st--home allows the logo to be weirdly animated just on the homepage */
 .com-logo--alt {
     filter: brightness(0) invert(1);
 }
@@ -21,8 +30,6 @@
     transform: rotate(-6deg);
     transition: all 250ms;
 }
-
-  
 
 .com-btn._com-btn--sp {
     gap: var(--sp--xs);
