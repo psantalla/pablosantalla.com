@@ -131,7 +131,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 991px) {
-    .width-100-tablet {
+    .width-100--tablet {
         max-width: 100%;
     }
 }
@@ -459,7 +459,7 @@ input:focus {
 @media only screen and (max-width: 991px) {
 
     /* tablet and mobile */
-    .hid-tablet {
+    .hid--tablet {
         display: none !important;
     }
 }

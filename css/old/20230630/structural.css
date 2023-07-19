@@ -229,13 +229,13 @@
 @media only screen and (min-width: 620px) and (max-width: 991px) {
 
     /* styles to apply only on tablets go here */
-    .structure-grid-2-tablet {
+    .structure-grid-2--tablet {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     /* styles to apply only on tablets go here */
-    .structure-grid-1-tablet {
+    .structure-grid-1--tablet {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -265,7 +265,7 @@
 @media only screen and (max-width: 991px) {
 
     /* tablet and mobile */
-    .structure-grid-1-tablet {
+    .structure-grid-1--tablet {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -285,7 +285,7 @@
 @media only screen and (min-width: 620px) {
 
     /* tablet and desktop */
-    .structure-row-desktop-tablet {
+    .structure-row-desktop--tablet {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -313,12 +313,12 @@
     flex-direction: column;
 }
 
-.structure-row-to-colum-tablet {
+.structure-row-to-colum--tablet {
     flex-direction: column;
 }
 
 @media only screen and (max-width: 991px) {
-    .structure-row-to-column-tablet {
+    .structure-row-to-column--tablet {
         flex-direction: column;
     }
 }
