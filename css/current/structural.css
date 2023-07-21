@@ -28,6 +28,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+
+    /* only tablet */
+    .st--grid._st--grid--1-1--tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media only screen and (max-width: 991px) {
 
     /* tablet and mobile */
