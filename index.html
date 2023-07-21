@@ -13,6 +13,16 @@
     <script src="javascript/animations.js"></script>
     <script src="javascript/clock.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script>
+        // Solo cargar en el entorno de producción (pablosantalla.com).
+        if (window.location.host === 'pablosantalla.com') {
+            window.goatcounter = { no_onload: true };
+        }
+    </script>
+    <script data-goatcounter="https://psantalla.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    
+
 </head>
 
 <body class="st--home">
