@@ -1,3 +1,153 @@
+/* Ed. 1.2 — homogeneus naming convention */
+.st-row {
+    display: flex;
+}
+
+.st-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.st-grid {
+    display: grid;
+}
+
+.st-grid._st-grid--1-1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.st-grid._st-grid--2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.st-grid._st-grid--1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.st-grid._st-grid--1-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+
+    /* only tablet */
+    .st-grid._st-grid--1-1--tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    /* tablet and mobile */
+    .st-col--tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* only mobile */
+    .st-col--mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.st-wrap--flex {
+    flex-wrap: wrap;
+}
+
+.st-break--y {
+    white-space: nowrap;
+}
+
+.st-break--n {
+    white-space: nowrap;
+}
+
+.st-wrap--flex--nowrap {
+    flex-wrap: nowrap;
+}
+
+.st-apll--start {
+    justify-content: flex-start;
+}
+
+.st-apll--end {
+    justify-content: flex-end;
+}
+
+.st-apll--sb {
+    justify-content: space-between;
+}
+
+.st-appdcl--start {
+    align-items: flex-start;
+}
+
+.st-appdcl--mid {
+    align-items: center;
+}
+
+.st-appdcl--end {
+    align-items: flex-end;
+}
+
+.st-ht--100dvh,
+.st-ht--100svh {
+    max-height: calc(5 * var(--sp--7xl));
+}
+
+.st-ht--100dvh {
+    min-height: 100dvh;
+}
+
+.st-ht--100svh {
+    min-height: 100svh;
+}
+
+.st-expand--100 {
+    height: 100%;
+}
+
+.st-mw--compact {
+    max-width: calc(4 * var(--sp--6xl) + 2 * var(--sp--3xl));
+}
+
+.st-mw--pleasant {
+    max-width: calc(3 * var(--sp--6xl) + var(--sp--3xl));
+}
+
+@media only screen and (max-width: 619px) {
+
+    /* only mobile */
+    .st-mw--pleasant {
+        /* purpose: facilitate reading — no need to reduce width on mobile */
+        max-width: 100%;
+    }
+}
+
+.st-mw--icon {
+    max-width: var(--sp--m);
+}
+
+.st-anchor {
+    position: relative;
+}
+
+.st-hook {
+    position: absolute;
+}
+
+.st-ratio--1- {
+    aspect-ratio: 1/1;
+}
+
+.st-ratio--10-8 {
+    aspect-ratio: 10/8;
+}
+
 /* Ed. 1.1 */
 .st--row {
     display: flex;

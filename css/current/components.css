@@ -66,20 +66,20 @@
     }
 }
 
-.com--cool-msg {
+.com-cool-msg {
     padding: var(--sp--m);
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23131117' stroke-width='2' stroke-dasharray='2%2c 4%2c 6%2c 8' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
     opacity: 70%;
 }
 
-.com--cont-fern {
+.com-cont-fern {
     position: absolute;
     right: 0;
     bottom: 0;
     overflow: hidden;
 }
 
-.com--cont-fern lottie-player {
+.com-cont-fern lottie-player {
     margin-left: 40%;
     margin-bottom: -24%;
     /* this value makes the lottie outline to sit at the bottom of the container */
@@ -87,7 +87,7 @@
     transform: scale(.8);
 }
 
-.com--pulse {
+.com-pulse {
     min-width: calc(1.15 * var(--sp--xs));
     width: calc(1.15 * var(--sp--xs));
     height: calc(1.15 * var(--sp--xs));
@@ -128,11 +128,11 @@
     }
 }
 
-.com--icon--rrss {
+.com-icon--rrss {
     opacity: 90%;
 }
 
-.com--icon--rrss:hover {
+.com-icon--rrss:hover {
     opacity: 100%;
     transition: all 125ms;
 }
@@ -144,7 +144,7 @@
     top: calc(-1 * var(--sp--l));
 }
 
-.com--project-img_clone-it {
+.com-project-img_clone-it {
     position: absolute;
     width: clamp(var(--sp--l), 12.5%, var(--sp--2xl));
     right: var(--sp--m);
@@ -157,12 +157,12 @@
     z-index: 999;
 }
 
-.com--project-img_clone-it:hover {
+.com-project-img_clone-it:hover {
     box-shadow: none;
     transition: all 125ms;
 }
 
-.com--project-img_clone-it._com--project-img_clone-it--non {
+.com-project-img_clone-it._com-project-img_clone-it--non {
     position: absolute;
     width: clamp(var(--sp--l), 12.5%, var(--sp--2xl));
     right: var(--sp--m);
@@ -174,11 +174,11 @@
     filter: grayscale(100%);
 }
 
-.com--project-img_clone-it._com--project-img_clone-it--non {
+.com-project-img_clone-it._com-project-img_clone-it--non {
     cursor: not-allowed;
 }
 
-.com--leaf {
+.com-leaf {
     position: absolute;
     right: 0;
     width: var(--sp--5xl);
@@ -190,7 +190,7 @@
 @media only screen and (max-width: 619px) {
 
     /* only mobile */
-    .com--leaf {
+    .com-leaf {
         top: calc(-1 * var(--sp--3xl) - var(--sp--2xs));
         /* this positions the leaf right on the border of the section, as it avoids the top padding of the section — it also add a few negative pixels to deal with the border of the leaf */
     }
@@ -231,7 +231,13 @@
     }
 }
 
-.com--idg-logo {
+.com-idg-logo {
     height: var(--sp--m);
     margin-right: var(--sp--2xs);
+}
+
+.com-avatar--blog {
+    width: var(--sp--2xl);
+    height: var(--sp--2xl);
+    border-radius: var(--sp--7xl);
 }
