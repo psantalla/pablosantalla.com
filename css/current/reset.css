@@ -107,7 +107,7 @@ section {
 }
 
 body {
-    line-height: 1;
+    line-height: 0; /* ps edit: allows to have text-free sections — ballpark: every text needs a class */
 }
 
 ol,

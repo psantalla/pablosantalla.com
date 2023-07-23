@@ -284,3 +284,7 @@
 .st-ratio--10-8 {
     aspect-ratio: 10/8;
 }
+
+.st-img--normalize {
+    width: 100%;
+}
