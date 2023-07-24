@@ -116,7 +116,7 @@
 }
 
 .st-mw--pleasant {
-    max-width: calc(3 * var(--sp--6xl) + var(--sp--3xl));
+    max-width: calc(3 * var(--sp--7xl));
 }
 
 @media only screen and (max-width: 619px) {
