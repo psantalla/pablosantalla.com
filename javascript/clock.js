@@ -32,6 +32,8 @@ function updateClock() {
     icon = "📺"; // Watching TV icon
   } else if (hour >= 21 && hour < 22) {
     icon = "🎮"; // Playing video games icon
+  } else if (hour >= 23 || hour < 0) { // 11 PM to 12 AM (midnight)
+    icon = "🛌"; // Sleeping icon
   } else if ((dayName === "Sat" || dayName === "Sun") && hour >= 9 && hour < 11) {
     icon = "🚶"; // Weekend walk icon
   } else if (hour >= 13 && hour < 15) {
