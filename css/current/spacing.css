@@ -1,4 +1,7 @@
 /* Ed. 1.1 */
+@media only screen and (min-width: 1513px) {
+    /* only over max site width */
+}
 @media only screen and (min-width: 992px) {
     /* only desktop */
 }
@@ -42,6 +45,8 @@
     --sp--13xl: 40rem;
     --sp--14xl: 44rem;
     --sp--15xl: 48rem;
+    /* ----- */
+    --sp--site-width: 1512px;
 }
 
 @media only screen and (max-width: 991px) {

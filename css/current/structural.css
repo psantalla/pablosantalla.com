@@ -1,4 +1,19 @@
 /* Ed. 1.2 — homogeneus naming convention */
+.st-home,
+.st-entry {
+    max-width: var(--sp--site-width);
+    margin-inline: auto;
+}
+
+@media only screen and (min-width: 1513px) {
+
+    /* only over max site width */
+    .st-home,
+    .st-entry {
+        border-inline: 1px dashed var(--c--pine--60);
+    }
+}
+
 .st-row {
     display: flex;
 }
@@ -116,7 +131,7 @@
 }
 
 .st-mw--pleasant {
-    max-width: calc(3 * var(--sp--7xl));
+    max-width: 720px;
 }
 
 @media only screen and (max-width: 619px) {
