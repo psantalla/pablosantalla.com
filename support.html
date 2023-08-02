@@ -3,182 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Pablo Santalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla's portfolio: web maintenance plans</title>
     <meta name="description"
-        content="I'm a web developer with a design flair. Check out my latest projects and get a behind-the-scenes look at my work life">
-    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/old/20230630/reset.css">
-    <link rel="stylesheet" href="css/old/20230630/normalize.css">
-    <link rel="stylesheet" href="css/old/20230630/spacing.css">
-    <link rel="stylesheet" href="css/old/20230630/structural.css">
-    <link rel="stylesheet" href="css/old/20230630/typography.css">
-    <link rel="stylesheet" href="css/old/20230630/color.css">
-    <link rel="stylesheet" href="css/old/20230630/modifiers.css">
-    <link rel="stylesheet" href="css/old/20230630/mailerlite.css">
+        content="Choose more than just a maintenance plan for your website. Focus on growing your business with the confidence that your website scales with it..">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/assets/web-maintenance.svg">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="javascript/mailerlite.js"></script>
-    <script src="javascript/faqs.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-H0G57Y360B');
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
     </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
-<body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
-    <div class="structure-section-normal space-margin-bottom-5xl">
-        <section class="structure-nav space-gap-l">
-            <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
-            <nav class="structure-row space-gap-l"><a
-                    class="text-size-m color-font-pine text-decoration-not-underline nav-link"
-                    href="about.html">About</a>
-                <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link" href="#work">Work</a>
-                <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
-                        class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
-                            class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
-            </nav>
-        </section>
-    </div>
-    <section class="structure-section-normal space-margin-bottom-5xl">
-        <div class="structure-section-900">
-            <h1 class="text-size-4xl text-align-center space-margin-bottom-2xl">Scale your business with the right web
-                mainteinance plan</h1>
-            <p class="text-size-l text-align-center">Not just one-click updates. Get the monthly-tech support that lets
-                you focus on the business.</p>
-        </div>
-    </section>
-    <main class="structure-section-900 space-margin-bottom-6xl">
-        <div class="structure-section-normal structure-grid-2-desktop structure-grid-1--tablet space-gap-2xl">
-            <div class="structure-card-pricing border">
-                <h2 class="text-size-l  space-margin-bottom-l">Pro</h2>
-                <p class="text-size-m  space-margin-bottom-2xl"><span
-                        class="text-size-3xl text-weight-bold">$270</span>/mo.</p>
-                <p class="text-size-m  space-margin-bottom-s">Automation checks</p>
-                <p class="text-size-m  space-margin-bottom-s">Weekly data backups</p>
-                <p class="text-size-m  space-margin-bottom-s">Email support</p>
-                <p class="text-size-m  space-margin-bottom-s">Up to 2 new sections</p>
-                <p class="text-size-m  space-margin-bottom-s">Up to 2 new blog entries</p>
-                <p class="opacity-25 text-size-m  space-margin-bottom-s">Google Analytics results</p>
-                <p class="opacity-25 text-size-m  space-margin-bottom-s">Strategy calls</p>
-                <p class="opacity-25 text-size-m space-margin-bottom-2xl">Email marketing assistance</p>
-                <a href="https://pablosantalla.lemonsqueezy.com/checkout/buy/f49f47d4-9c7f-49b2-bc6d-b17cdd7fa53b?media=0"
-                    target="_blank"><button
-                        class="structure-button text-size-m button-primary space-margin-bottom-m">Upgrade my
-                        website</button></a>
-                <p class="text-size-s">Fixed price. Cancel anytime</p>
-            </div>
-            <div class="structure-card-pricing color-background-pine-5 border">
-                <h2 class="text-size-l  space-margin-bottom-l">Enterprise</h2>
-                <p class="text-size-m  space-margin-bottom-2xl"><span
-                        class="text-size-3xl text-weight-bold">$890</span>/mo.</p>
-                <p class="text-size-m  space-margin-bottom-s">Automation checks</p>
-                <p class="text-size-m  space-margin-bottom-s">Weekly data backups</p>
-                <p class="text-size-m  space-margin-bottom-s">Email support</p>
-                <p class="text-size-m  space-margin-bottom-s">Up to 5 new sections</p>
-                <p class="text-size-m  space-margin-bottom-s">Up to 5 new blog entries</p>
-                <p class=" text-size-m  space-margin-bottom-s">Google Analytics results</p>
-                <p class=" text-size-m  space-margin-bottom-s">Up to 2h strategy calls</p>
-                <p class=" text-size-m space-margin-bottom-2xl">Email marketing assistance</p>
-                <a href="https://pablosantalla.lemonsqueezy.com/checkout/buy/11a741ae-2bc0-4381-afa7-9c4ec4476fa8?media=0"
-                    target="_blank"><button
-                        class="structure-button text-size-m button-primary button-premier space-margin-bottom-m">Upgrade
-                        my website</button></a>
-                <p class="text-size-s">Fixed price. Cancel anytime</p>
-            </div>
-        </div>
-    </main>
-    <section class="structure-section-normal space-margin-bottom-6xl">
-        <h2 class="text-size-3xl  space-margin-bottom-2xl">Frequently asked</h2>
-        <div class="structure-grid-2-desktop structure-grid-1--mobile space-gap-2xl">
-            <div>
-                <h3 class="text-size-xl space-margin-bottom-s ">How fast do you answer via email?</h3>
-                <p class="text-size-m space-margin-bottom-2xl">I will attend your question in less than 2 working days.
-                </p>
-                <h3 class="text-size-xl space-margin-bottom-s space-margin-bottom-s ">My website has been hacked. Can
-                    I pay for the web maintenance service to recover it?</h3>
-                <p class="text-size-m space-margin-bottom-2xl">I periodically check websites under a maintenance plan to
-                    ensure their security.
-                    As a result, I've never hosted a hacked website. Feel free to book a free call and I'll try to help
-                    you.</p>
-                <h3 class="text-size-xl space-margin-bottom-s">What does the email marketing
-                    assistance include?</h3>
-                <p class="text-size-m">Every month, I'll build up to 2 opt-in forms and launch the campaigns once you
-                    provide the content.</p>
-            </div>
-            <div>
-                <h3 class="text-size-xl space-margin-bottom-s ">What is your hourly rate? I only need to fix a couple of
-                    things on my website.</h3>
-                <p class="text-size-m space-margin-bottom-2xl">I don't work hourly </p>
-                <h3 class="text-size-xl space-margin-bottom-s ">How can I cancel? What are the conditions?</h3>
-                <p class="text-size-m">You can cancel the service at any time. There are no conditions — you'll get
-                    access to your customer portal, and you'll be able to leave it when you want.</p>
-                </p>
-            </div>
-        </div>
-        <div class="structure-row structure-justify-content-row-right space-gap-m space-margin-top-3xl">
-            <p class="text-size-s">Not sure which web maintenance plan to get?</p><a href="https://tally.so/r/wkb0J1"
-                target="_blank"><button class="structure-button text-size-m button-primary">Help me pick</button></a>
-        </div>
-    </section>
-    <footer class="space-margin-bottom-3xl">
-        <section class="structure-section-normal">
-            <img class="space-margin-bottom-2xl" src="assets/logo.svg" alt="Logo of Pablo Santalla">
-            <h2 class="text-size-3xl space-margin-bottom-xl">Join the newsletter</h2>
+<body class="st-support">
+    <div class="st-col">
+        <header class="c-bg--alabaster"> <!-- yes, this header intentionally shows prices. -->
+            <div id="navbar-js"></div>
             <div
-                class="structure-grid-2-67-desktop structure-grid-1--mobile align-items-top space-gap-5xl space-gap-xl--mobile">
-                <div>
-                    <p class="text-size-m space-margin-bottom-2xl">I only share useful stuff, no spam. If I don't
-                        think it'll add value to your day, I don't send it. And if you're ever not feeling it,
-                        unsubscribing is just one click away.</p>
-                    <div class="ml-form-embed" data-account="3893351:w5m1v6s9d4" data-form="5642190:c3v4a3">
-                    </div>
+                class="st-col ut-center-inline sp-ga--5xl st-mw--support sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--xl">
+                    <h1 class="t-s--4xl t-a--c">Scale your business with the right web mainteinance plan
+                    </h1>
+                    <p class="t-s--l t-a--c">Not just one-click updates. Get the monthly-tech support that lets you
+                        focus on the business.
+                    </p>
                 </div>
-                <div>
-                    <div
-                        class="structure-grid-2-desktop structure-grid-1--mobile align-items-top space-gap-4xl space-gap-2xl--mobile">
-                        <div>
-                            <p class="space-margin-bottom-xs"> <a
-                                    class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                    href="blog.html">Articles</a> </p>
-                            <p class="space-margin-bottom-xs"> <a
-                                    class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                    href="support.html">Web support</a> </p>
-                            <p class="space-margin-bottom-xs"> <a
-                                    class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                    href="https://hashnode.pablosantalla.com/" target="_blank">Hashnode</a> </p>
-                            <p class="space-margin-bottom-xs"> <a
-                                    class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                    href="https://codepen.io/psantalla/pens/public" target="_blank">Codepen</a> </p>
+                <section class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl">
+                    <div class="st-col sp-ga--3xl ut-border--sc sp-pa--3xl">
+                        <div class="st-col sp-ga--m">
+                            <p class="t-s--l t-a--c t-w--b">Pro</p>
+                            <p class="t-s--4xl t-w--b t-a--c">$2100<span class="t-s--m t-w--r">/mo.</span></p>
                         </div>
-                        <div>
-                            <p class="space-margin-bottom-xs"> <a
-                                    class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                    href="https://billing.stripe.com/p/login/28odUO3WEdjM7Oo6oo"
-                                    target="_blank">Customer portal</a> </p>
-                            <div class="structure-row structure-justify-content-row-left space-gap-xs">
-                                <a href="https://twitter.com/psantalla" target="_blank"><img class="icon-rrss"
-                                        src="assets/twitter.svg" alt="Logomark of Twitter." /></a>
-                                <a href="https://linkedin.com/in/psantalla" target="_blank">
-                                    <img class="icon-rrss" src="assets/linkedin.svg" alt="Logomark of LinkedIn." /></a>
+                        <ul class="st-col sp-ga--m sp-mt--m">
+                            <li class="t-s--m t-a--c">Automation checks</li>
+                            <li class="t-s--m t-a--c">Weekly data backups</li>
+                            <li class="t-s--m t-a--c">Email support</li>
+                            <li class="t-s--m t-a--c">Up to 3h of design</li>
+                            <li class="t-s--m t-a--c">Up to 10h of development</li>
+                            <li class="t-s--m t-a--c ut-opacity--30" aria-disabled="true">Analytics results</li>
+                            <li class="t-s--m t-a--c ut-opacity--30" aria-disabled="true">Strategy calls</li>
+                            <li class="t-s--m t-a--c ut-opacity--30" aria-disabled="true">Email marketing assistance
+                            </li>
+                        </ul>
+                        <div class="st-col sp-ga--l">
+                            <a class="com-btn ut-center-inline"
+                                href="https://pablosantalla.lemonsqueezy.com/checkout/buy/f49f47d4-9c7f-49b2-bc6d-b17cdd7fa53b?media=0"
+                                target="_blank">
+                                Upgrade my
+                                website
+                            </a>
+                            <p class="t-s--s t-a--c">Fixed price; cancel anytime.</p>
+                        </div>
+                    </div>
+                    <div class="st-col sp-ga--3xl ut-border--sc sp-pa--3xl c-bg--pine--10">
+                        <div class="st-col sp-ga--m">
+                            <p class="t-s--l t-a--c t-w--b">Pro</p>
+                            <p class="t-s--4xl t-w--b t-a--c">$5400<span class="t-s--m t-w--r">/mo.</span></p>
+                        </div>
+                        <ul class="st-col sp-ga--m sp-mt--m">
+                            <li class="t-s--m t-a--c">Automation checks</li>
+                            <li class="t-s--m t-a--c">Weekly data backups</li>
+                            <li class="t-s--m t-a--c">Email support</li>
+                            <li class="t-s--m t-a--c">Up to 7h of design</li>
+                            <li class="t-s--m t-a--c">Up to 25h of development</li>
+                            <li class="t-s--m t-a--c">Analytics results</li>
+                            <li class="t-s--m t-a--c">Strategy calls</li>
+                            <li class="t-s--m t-a--c">Email marketing assistance
+                            </li>
+                        </ul>
+                        <div class="st-col sp-ga--l"><a class="com-btn _com-btn--alt ut-center-inline"
+                                href="https://pablosantalla.lemonsqueezy.com/checkout/buy/11a741ae-2bc0-4381-afa7-9c4ec4476fa8?media=0"
+                                target="_blank">
+                                Upgrade my
+                                website
+                            </a>
+                            <p class="t-s--s t-a--c">Fixed price; cancel anytime.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="st-col sp-ga--xl">
+                    <h2 class="t-s--2xl">Frecuently asked</h2>
+                    <dl class="st-grid _st-grid--1-1 st-col--mobile sp-ga--xl">
+                        <div class="st-col sp-ga--xl">
+                            <div class="st-col sp-ga--s">
+                                <dt class="t-s--m t-w--b">How fast do you answer via email?</dt>
+                                <dd class="t-s--m">I will attend to your question in less than 2 working days.</dd>
+                            </div>
+                            <div class="st-col sp-ga--s">
+                                <dt class="t-s--m t-w--b">My website has been hacked. Can I pay for the web maintenance
+                                    service to recover it?</dt>
+                                <dd class="t-s--m">I periodically check websites under a maintenance plan to ensure
+                                    their security. As a result, I've never hosted a hacked website. Feel free to book a
+                                    free call, and I'll try to help you.</dd>
+                            </div>
+                            <div class="st-col sp-ga--s">
+                                <dt class="t-s--m t-w--b">What does the email marketing assistance include?</dt>
+                                <dd class="t-s--m">Every month, I'll build up to 2 opt-in forms and launch the campaigns
+                                    once you provide the content.</dd>
                             </div>
                         </div>
+                        <div class="st-col sp-ga--xl">
+                            <div class="st-col sp-ga--s">
+                                <dt class="t-s--m t-w--b">What is your hourly rate? I only need to fix a couple of
+                                    things on
+                                    my website.</dt>
+                                <dd class="t-s--m">I don't work strictly by hours.</dd>
+                            </div>
+                            <div class="st-col sp-ga--s">
+                                <dt class="t-s--m t-w--b">How can I cancel? What are the conditions?</dt>
+                                <dd class="t-s--m">You can cancel the service at any time. There are no conditions —
+                                    you'll
+                                    get access to your customer portal, and you'll be able to leave it when you want.
+                                </dd>
+                            </div>
+                        </div>
+                    </dl>
+                    <div class="st-row sp-ga--s st-appdcl--mid st-apll--end">
+                        <p class="t-s--s">not sure which web maintenance plan to get?</p><a
+                            class="com-btn st-break--n"
+                            href="https://tally.so/r/wkb0J1"
+                            target="_blank">
+                            Help me pick
+                        </a>
                     </div>
-                </div>
             </div>
-            <div class="structure-row structure-justify-content-row-left space-margin-top-2xl">
-                </p>
-                <p class="text-size-m">&copy;
-                    <script>document.write(new Date().getFullYear())</script> Pablo santalla
-                </p>
-            </div>
-        </section>
+            </section>
+    </div>
+    </header>
+    <footer>
+        <div id="footer-js"></div>
     </footer>
+    </div> <!-- page wrapper ends here -->
+    <script src="javascript/dynamic/navbar.js"></script>
+    <script src="javascript/dynamic/footer.js"></script>
 </body>
 
 </html>

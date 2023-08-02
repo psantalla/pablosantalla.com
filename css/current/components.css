@@ -23,7 +23,14 @@
     align-items: center;
     padding-inline: var(--sp--s);
     font-size: var(--t-s--m);
+    line-height: var(--t-ln-ht--small-t);
     transition: all 125ms;
+}
+
+.com-btn._com-btn--alt {
+
+    color: white;
+    background-color: var(--c--pine);
 }
 
 .com-btn:hover {

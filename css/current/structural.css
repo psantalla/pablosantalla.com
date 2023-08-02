@@ -9,7 +9,8 @@
 
     /* only over max site width */
     .st-home,
-    .st-entry {
+    .st-entry,
+    .st-support {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }
@@ -128,6 +129,10 @@
 
 .st-mw--compact {
     max-width: calc(4 * var(--sp--6xl) + 2 * var(--sp--3xl));
+}
+
+.st-mw--support {
+    max-width: calc(4 * var(--sp--6xl) + 3 * var(--sp--3xl));
 }
 
 .st-mw--pleasant {

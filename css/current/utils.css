@@ -12,6 +12,10 @@
   color: inherit;
 }
 
+.ut-center-inline {
+  margin-inline: auto;
+}
+
 .ut-obj-respond {
   /* make objects (svg, img) to addapt to their containers */
   width: 100%;
