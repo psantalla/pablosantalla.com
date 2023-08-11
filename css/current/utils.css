@@ -108,12 +108,12 @@ transition: all .25s;
   }
 }
 
-.ut--front {
+.ut-front {
   z-index: 1;
 }
 
-.ut--back {
-  z-index: 1;
+.ut-back {
+  z-index: -1;
 }
 
 .ut-highlight {
