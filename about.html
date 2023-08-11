@@ -3,230 +3,163 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>About — Pablo Santalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla's portfolio: about me</title>
     <meta name="description"
-        content="Learner. Discoverer. Technology geek. Skier, and beach lover. I'm enjoying cruising my skateboard along Long Beach's paseo.">
-    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/old/20230630/reset.css">
-    <link rel="stylesheet" href="css/old/20230630/spacing.css">
-    <link rel="stylesheet" href="css/old/20230630/structural.css">
-    <link rel="stylesheet" href="css/old/20230630/typography.css">
-    <link rel="stylesheet" href="css/old/20230630/color.css">
-    <link rel="stylesheet" href="css/old/20230630/modifiers.css">
-    <link rel="stylesheet" href="css/old/20230630/mailerlite.css">
+        content="The place where we'll uncover if I'm more of a sweet or salty enthusiast. Check out my latest projects and get a sneak peek into my work life.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/assets/about-og.png">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="javascript/mailerlite.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-H0G57Y360B');
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
     </script>
-    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
-<body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
-    <div class="strcture-viewport-100 ">
-        <div class="structure-section-normal ">
-            <section class="structure-nav space-gap-l">
-                <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
-                <nav class="structure-row space-gap-l"><a
-                        class="text-size-m color-font-pine text-decoration-not-underline nav-link"
-                        href="about.html">About</a>
-                    <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
-                        href="index.html#work">Work</a>
-                    <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
-                            class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
-                                class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
-                </nav>
-            </section>
-        </div>
-        <div class="structure-section-normal">
-            <div class="container-cover-hero">
-                <img src="assets/pablo-santalla-about.png" alt="Photo of Pablo Santalla at Long Beach, CA">
+<body class="st-about"> <!-- classes to horizontally align the page wrapper -->
+    <div class="st-col"> <!-- page wrapper, following a column structure -->
+        <header class="st-ht--100svh st-col st-apll--sb ut-bg--about">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="st-col st-mw--compact sp-ga--xl sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--m"> <!-- <div class="t-s--m c-el--pine--70 com-clock--la"></div> -->
+                    <!-- style classes need to be place before the component class in order to work -->
+                    <h1 class="t-s--5xl">Get to know me
+                    </h1>
+                </div>
+                <p class="t-s--l">Twenty-five years have passed since I first touched a computer. I remember playing
+                    Aladdin with a ball mouse. Shortly afterward, in the early 2000s, my friend and neighbor could play
+                    FIFA 99 on his PC—not on mine—and since then, I have been constantly searching for the screw to
+                    tighten to be able to play on my old Windows 98.
+                </p>
             </div>
-            <div class="structure-box-width-630 structure-about-hero-content">
-                <h1 class="text-size-5xl space-margin-bottom-2xl">Get to know me</h1>
-                <p class="text-size-l">Twenty-five years have passed since I first touched a computer. I remember
-                    playing Aladdin with a ball mouse. Shortly afterwards, in the early 2000s, my friend and neighbor
-                    could play FIFA 99 on his PC—not on mine—and since then I have been constantly searching for the
-                    screw to tighten in order to be able to play on my old Windows 98. </p>
+        </header>
+        <div class="c-gb--white sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div class="st-col st-mw--compact">
+                <p class="t-s--l">As a tech enthusiast, it's hard not to get excited when talking about automations,
+                    websites, and code. So let's cover those quickly, and then I can show you some of the more
+                    interesting and fun things about me. <span class="t-var--i--r" lang="es">¿Trato?</span>
+                </p>
             </div>
         </div>
-    </div>
-    <div style="position: relative; top: 100vh;">
-        <div class="structure-section-normal  ">
-            <div class="structure-grid-2-desktop structure-grid-1--tablet space-gap-3xl  ">
-                <div>
-                    <p style="margin-top: -32px" class=" text-size-l space-margin-bottom-6xl">As a tech enthusiast, it's
-                        hard
-                        to talk about myself without getting excited about
-                        automations, websites, and
-                        code. So let's cover those quickly, and then I can show you some of the more interesting and fun
-                        things
-                        about me. Trato? </p>
-                    <h2 class=" text-size-3xl space-margin-bottom-2xl">The content I provide is based on my
-                        non-negotiables</h2>
-                    <p class="text-size-l space-margin-bottom-4xl">There are not many ways to create an excellent
-                        website. I
-                        know one of them. I'll
-                        make sure your
-                        website exceeds the limits of your product.</p>
-                </div>
-                <div><lottie-player class="world hid--tablet" src="assets/world.json" background="transparent"
-                        speed=".5" loop autoplay></lottie-player>
-                </div>
-            </div>
-            <div>
-                <div style="max-width: 630px;">
-                </div>
-                <div class="structure-grid-2-desktop structure-grid-1--tablet space-gap-3xl space-margin-bottom-4xl">
-                    <div class="structure-row-to-column">
-                        <div class="structure-row structure-justify-content-row-left space-gap-m space-margin-bottom-l">
-                            <img src="assets/figma-icon.svg" alt="Icon with the logo of Figma"><img
-                                src="assets/webflow-icon.svg" alt="Icon with the logo of Webflow"><img
-                                src="assets/vscode-icon.svg" alt="Icon with the logo of Visual Studio Code"><img
-                                src="assets/notion-icon.svg" alt="Icon with the logo of Notion">
+        <main class="st-col sp-ga--5xl c-bg--alabaster sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div class="st-col sp-ga--3xl">
+                <section class="st-grid _st-grid--1-1 st-col--tablet st-col--mobile sp-ga--xl sp-ga--xl--mobile">
+                    <div class="st-col sp-ga--l">
+                        <h2 class="t-s--2xl">I create thoughtful and curated digital products</h2>
+                        <div class="st-col sp-ga--s">
+                            <p class="t-s--l">There aren't many ways to create an excellent website, and I know one of
+                                them.
+                            </p>
+                            <p class="t-s--l">Paying attention to details is not just a cliché for me. It's a
+                                methodology and, at the same time, a skill to cultivate. It's like playing to uncover
+                                all the rules of the game.
+                            </p>
                         </div>
-                        <p style="padding-left: 24px;" class="text-size-xl text-weight-bold  space-margin-bottom-xs">A
-                            trusted
-                            set
-                            of top tier tools</p>
-                        <p style="padding-left: 24px;" class="text-size-m   space-margin-bottom-3xl">I strive to ensure
+                    </div>
+                    <lottie-player src="/assets/world.json" background="transparent" speed=".5" loop
+                        autoplay></lottie-player>
+                </section>
+                <div class="hid st-row sp-ga--m st-appdcl--mid">
+                    <a class="com-btn _com-btn--sp st-break--n" href="call.html" target="_blank">
+                        <img src="/assets/pablo-icon.png" alt="Picture of Pablo Santalla on vacation in Cancun."
+                            loading="lazy">
+                        <span>Book a call</span>
+                    </a>
+                    <div class="st-row st-appdcl--mid sp-ga--2_5xs"><span class="com-pulse"></span>
+                        <p class="t-s--s">Attending calls Wed-Thu 6-8p PT.</p>
+                    </div>
+                </div>
+                <div class="st-grid _st-grid--1-1 sp-ga--3xl st-col--mobile sp-ga--2xl--mobile">
+                    <div class="st-col sp-ga--m">
+                        <div class="st-row sp-ga--s">
+                            <img class="com-icon--tool" src="assets/figma-icon.svg"
+                                alt="Icon with the logo of Figma."><img class="com-icon--tool"
+                                src="assets/webflow-icon.svg" alt="Icon with the logo of Webflow."><img
+                                class="com-icon--tool" src="assets/vscode-icon.svg"
+                                alt="Icon with the logo of Visual Studio Code."><img class="com-icon--tool"
+                                src="assets/notion-icon.svg" alt="Icon with the logo of Notion.">
+                        </div>
+                        <h3 class="t-s--2xl">A trusted set of top-tier tools</h3>
+                        <p class="t-s--m">I strive to ensure
                             that all information is clear and easy to understand. I believe that my work tools can be
                             seamlessly integrated into a workflow to maximize efficiency. I have a great deal of faith
                             in my processes as I have been continuously refining them to optimize and integrate all of
-                            my client projects.s
-                        </p>
+                            my client projects.</p>
                     </div>
-                    <div class="structure-row-to-column">
-                        <div class="structure-row structure-justify-content-row-left space-gap-m space-margin-bottom-l">
-                            <img src="assets/detail-icon.svg" alt="Icon with the logo of Figma"><img
-                                src="assets/scalability-icon.svg" alt="Icon with the logo of Webflow">
+                    <div class="st-col sp-ga--m">
+                        <div class="st-row sp-ga--s">
+                            <img class="com-icon--tool" src="assets/detail-icon.svg" alt="Icon to represent att"><img
+                                class="com-icon--tool" src="assets/scalability-icon.svg"
+                                alt="Icon with the logo of Webflow.">
                         </div>
-                        <p style="padding-left: 24px;" class="text-size-xl text-weight-bold  space-margin-bottom-xs">
-                            Detail
+                        <h3 class="t-s--2xl">Detail
                             and
-                            scalability</p>
-                        <p style="padding-left: 24px;" class="text-size-m   space-margin-bottom-3xl">I prioritize
+                            scalability</h3>
+                        <p class="t-s--m">I prioritize
                             quality over quantity when creating a superior product. I focus on laying the groundwork for
                             success. We will have a rationale for every decision, measure outcomes, deliver, and measure
-                            again.
-                        </p>
+                            again.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="structure-section-full-width color-background-white space-padding-top-4xl">
-            <div
-                class="structure-section-normal structure-grid-2-desktop structure-grid-1--tablet space-gap-3xl space-gap-xs--mobile ">
-                <div><img width="100%" class=" space-margin-top-3xl" src="/assets/pablo-santalla-about-main.png"
-                        alt="Photo of Pablo Santalla at Long Beach, CA" loading="lazy"></div>
-                <div>
-                    <h2 class="text-size-4xl space-margin-top-3xl">Embracing imperfection</h2>
-                    <div class="structure-grid-2-desktop structure-grid-1--mobile space-gap-2xl space-gap-xs--mobile">
-                        <p class="text-size-m space-margin-top-2xl">You might've noticed a few glitches on this
-                            website—some broken links and unfinished lines. Honestly, I tend to procrastinate and
-                            obsess over perfection when it comes to my own projects. But I'm trying to find a balance
-                            between showcasing my best work and embracing vulnerability and imperfection.
-                            I'm particularly proud though of my commitment to giving more than I receive. I believe in
-                            the power
-                            of thoughtful processes and taking the time to consider that my actions can positively
-                            impact
-                            others.
-                        </p>
-                        <p class="text-size-m space-margin-top-2xl">I also enjoy immersing myself in new cultures and
+        </main>
+        <div class="st-col sp-ga--5xl c-gb--white sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+            <section class="st-col sp-ga--4xl">
+                <div class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-ga--xl--mobile">
+                    <img class="st-img--normalize" src="/assets/pablo-santalla-about-main.png"
+                        alt="Picture of Pablo Santalla in Long Beach, CA, after the engagement photo sesion.">
+                    <div class="st-col sp-ga--l">
+                        <h2 class="t-s--3xl">Embracing <span class="ut-glitch"
+                                data-text="imperfection">imperfection</span></h2>
+                        <div class="st-col sp-ga--s">
+                            <p class="t-s--m">You might've noticed a few glitches on this
+                                website—some broken links and unfinished lines. Honestly, I tend to procrastinate and
+                                obsess over perfection when it comes to my own projects. But I'm trying to find a
+                                balance
+                                between showcasing my best work and embracing vulnerability and imperfection.
+                                I'm particularly proud though of my commitment to giving more than I receive. I believe
+                                in
+                                the power
+                                of thoughtful processes and taking the time to consider that my actions can positively
+                                impact
+                                others.</p>
+                        </div>
+                        <p class="t-s--m"> I also enjoy immersing myself in new cultures and
                             communities. I like to stay in one place for a while and really get to know the people,
                             traditions, and nuances that make a place unique. It's amazing how much you can learn and
                             appreciate by taking the time to observe and engage with your surroundings.</p>
-                    </div>
-                    <div class="space-margin-bottom-xs">
-                        <p class="text-size-m space-margin-top-2xl">
-                            So here I am, improvising every character I'm typing with the hope that you get a
+                        <p class="t-s--m">So here I am, improvising every character I'm typing with the hope that you
+                            get a
                             better idea of who I am, what I struggle with the most, and what I'm ahead of. I remembered
-                            some Ali Abdaal ideas where he said that <a class="text-link-inline"
+                            some Ali Abdaal ideas where he said that <a class="ut-link _ut-link--inner--notice"
                                 href="https://aliabdaal.com/what-its-really-like-to-write-a-book/" target="_blank"
                                 rel="noopener noreferrer">the best way to write your book is just sitting
                                 down to write the book</a>, like no matter your lack of ideas, you just have to do it.
                             Well, I
                             guess that's what I told myself before starting this text, in case it was super shoddy. The
-                            key here is: it'll improve with time, I'll improve too.
+                            key here is: it'll improve with time, I'll improve too.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="structure-section-full-width color-background-white space-padding-top-6xl">
-            <div class="structure-section-normal ">
-                <div class="structure-padding-left-7vw space-padding-bottom-6xl">
-                    <p class="text-size-2xl text-weight-bold">Let's chat about your web project. <span
-                            class="highlight"><a class="color-font-pine text-decoration-not-underline "
-                                href="https://tally.so/r/mOQqDa" target="_blank" rel="noopener noreferrer">Fill out the
-                                form</a></span> or <span class="highlight"><a
-                                class="color-font-pine text-decoration-not-underline "
-                                href="https://pablosantalla.com/call" target="_blank" rel="noopener noreferrer">book a
-                                call</a></span>.</p>
-                    <p class="text-size-l space-margin-top-s">*Kick off your website from $4,000.</p>
-                </div>
-            </div>
-        </section>
-        <footer class="space-margin-bottom-3xl">
-            <section class="structure-section-normal space-margin-top-3xl">
-                <img class="space-margin-bottom-2xl" src="assets/logo.svg" alt="Logo of Pablo Santalla">
-                <h2 class="text-size-3xl space-margin-bottom-xl">Join the newsletter</h2>
-                <div
-                    class="structure-grid-2-67-desktop structure-grid-1--mobile align-items-top space-gap-5xl space-gap-xl--mobile">
-                    <div>
-                        <p class="text-size-m space-margin-bottom-2xl">I only share useful stuff, no spam. If I don't
-                            think it'll add value to your day, I don't send it. And if you're ever not feeling it,
-                            unsubscribing is just one click away.</p>
-                        <div class="ml-form-embed" data-account="3893351:w5m1v6s9d4" data-form="5642190:c3v4a3">
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            class="structure-grid-2-desktop structure-grid-1--mobile align-items-top space-gap-4xl space-gap-2xl--mobile">
-                            <div>
-                                <p class="space-margin-bottom-xs"> <a
-                                        class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                        href="blog.html">Articles</a> </p>
-                                <p class="space-margin-bottom-xs"> <a
-                                        class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                        href="support.html">Web support</a> </p>
-                                <p class="space-margin-bottom-xs"> <a
-                                        class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                        href="https://hashnode.pablosantalla.com/" target="_blank">Hashnode</a> </p>
-                                <p class="space-margin-bottom-xs"> <a
-                                        class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                        href="https://codepen.io/psantalla/pens/public" target="_blank">Codepen</a> </p>
-                            </div>
-                            <div>
-                                <p class="space-margin-bottom-xs"> <a
-                                        class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                        href="https://billing.stripe.com/p/login/28odUO3WEdjM7Oo6oo"
-                                        target="_blank">Customer portal</a> </p>
-                                <div class="structure-row structure-justify-content-row-left space-gap-xs">
-                                    <a href="https://twitter.com/psantalla" target="_blank"><img class="icon-rrss"
-                                            src="assets/twitter.svg" alt="Logomark of Twitter." /></a>
-                                    <a href="https://linkedin.com/in/psantalla" target="_blank">
-                                        <img class="icon-rrss" src="assets/linkedin.svg"
-                                            alt="Logomark of LinkedIn." /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="structure-row structure-justify-content-row-left space-margin-top-2xl">
-                    </p>
-                    <p class="text-size-m space-margin-bottom-2xl">&copy;
-                        <script>document.write(new Date().getFullYear())</script> Pablo santalla
-                    </p>
+                <div class="st-col sp-ga--xs">
+                    <p class="t-s--xl t-w--b">Do you want to start with that redesign? Let's <a
+                            class="ut-link _ut-link--not-underline ut-highlight" href="https://tally.so/r/mOQqDa"
+                            target="_blank" rel="noopener noreferrer">make it happen</a>.</p>
+                    <p class="t-s--m ut-opacity--80">Kick off your site from $8,000.</p>
                 </div>
             </section>
+        </div>
+        <footer>
+            <div id="footer-js"></div>
         </footer>
-    </div>
+    </div> <!-- page wrapper ends here -->
+    <script src="javascript/dynamic/navbar.js"></script>
+    <script src="javascript/dynamic/footer.js"></script>
 </body>
+
+</html>

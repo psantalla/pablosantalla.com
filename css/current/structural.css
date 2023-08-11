@@ -1,6 +1,6 @@
 /* Ed. 1.2 — homogeneus naming convention */
 .st-home,
-.st-entry {
+.st-entry, .st-about {
     max-width: var(--sp--site-width);
     margin-inline: auto;
 }

@@ -7,6 +7,10 @@
     transform: rotate3d(0, 1, 0, 360deg)
 }*/
 /* .st--home allows the logo to be weirdly animated just on the homepage */
+.com-icon--tool {
+    width: var(--sp--2xl);
+}
+
 .com-logo--alt {
     filter: brightness(0) invert(1);
 }
@@ -28,7 +32,6 @@
 }
 
 .com-btn._com-btn--alt {
-
     color: white;
     background-color: var(--c--pine);
 }

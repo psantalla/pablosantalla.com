@@ -1,9 +1,14 @@
+
+
 .hid {
   display: none;
 }
 
-
-
+.ut-bg--about {
+  background-image: url("/assets/pablo-santalla-about.png");
+  background-size: cover; /* Ajusta la imagen de fondo al ancho completo */
+  background-position: right; /* Alinea la imagen de fondo a la izquierda */
+}
 .ut-of--hid {
   overflow: hidden;
 }
@@ -32,6 +37,23 @@
 .ut-link._ut-link--not-underline,
 .ut-link._ut-link--alt {
   text-decoration: none;
+}
+
+.ut-link._ut-link--inner--notice {
+  text-decoration: underline;
+  text-underline-offset: var(--sp--2xs);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--c--pine);
+
+}
+
+.ut-link._ut-link--inner--notice:hover {
+color: var(--c--accent--80);
+  text-underline-offset: calc(var(--sp--2xs) / 1.75);
+  text-decoration-color: var(--c--accent--80);
+transition: all .25s;
+
+
 }
 
 .ut-link._ut-link--branch:hover,
@@ -68,22 +90,23 @@
   0% {
     content: "";
   }
+
   25% {
     content: ".";
   }
+
   50% {
     content: "..";
   }
+
   75% {
     content: "...";
   }
+
   100% {
     content: "";
   }
 }
-
-
-
 
 .ut--front {
   z-index: 1;
@@ -146,14 +169,52 @@
   border-radius: var(--sp--7xl);
 }
 
+.ut-glitch {
+  position: relative;
+  display: inline-block;
+}
 
+.ut-glitch::before,
+.ut-glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  color: var(--c--pine); /* Utiliza la variable --c--pine para el color */
+  opacity: 0.6; /* Opacidad reducida para un efecto más sutil */
+}
 
+.ut-glitch::before {
+  animation: glitchTop 2s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
 
+.ut-glitch::after {
+  animation: glitchBottom 3s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
 
+@keyframes glitchTop {
+  2%, 64% {
+    transform: translate(1px, -1px);
+  }
+  4%, 60% {
+    transform: translate(-1px, 1px);
+  }
+  62% {
+    transform: translate(3px, -1px) skew(-8deg);
+  }
+}
 
-
-
-
-
-
-
+@keyframes glitchBottom {
+  2%, 64% {
+    transform: translate(-1px, 0);
+  }
+  4%, 60% {
+    transform: translate(-1px, 0);
+  }
+  62% {
+    transform: translate(-3px, 2px) skew(12deg);
+  }
+}
