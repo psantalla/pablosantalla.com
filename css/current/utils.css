@@ -4,6 +4,8 @@
   display: none;
 }
 
+
+
 .ut-bg--about {
   background-image: url("/assets/pablo-santalla-about.png");
   background-size: cover; /* Ajusta la imagen de fondo al ancho completo */

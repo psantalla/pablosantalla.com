@@ -1,9 +1,7 @@
 html {
     scroll-behavior: smooth;
-overflow: visible;
+    overflow: visible;
 }
-
-
 
 ::selection {
     color: var(--c--accent);

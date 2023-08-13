@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex"> <!-- delete to index -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla — How to better organise your CSS</title>
+    <meta name="description" content="[title-meta]">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <meta property="/assets/entries/02/og.svg" content="Screenshot of the directory of Catalyst in Github.">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
+    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="st-col st-appdcl--mid">
+    <div class="st-page--cartoon st-col ut-of--hid ut-border--sc"> <!-- page wrapper, following a column structure -->
+        <header class="st-col c-bg--alabastrr">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--2xl sp-ga--xl--mobile">
+                    <h1 class="t-s--3xl st-mw--pleasant">Writing CSS Without Compromising Your Project's Scalability
+                    </h1>
+                    <div class="st-row st-appdcl--mid sp-ga--s">
+                        <img class="com-avatar--blog" src="/assets/Pablo Santalla - Cuadrado.jpg"
+                            alt="Picture of Pablo Santalla.">
+                        <p class="t-s--m"><span class="t-w--b">Pablo Santalla</span><br>Web designer and developer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="st-col sp-ga--s">
+            <img class="st-img--normalize" src="/assets/entries/02/02.svg" alt="[image-full-width-alt]">
+        </section>
+        <main class="st-col sp-ga--nil">
+            <section class="c-bg--white st-col sp-ga--s sp-py--4xl sp-py--xl--mobile sp-px--3xl sp-px--l--mobile">
+                <!-- block 01 -->
+                <p class="st-mw--pleasant t-s--m">There's a difference between knowing CSS and knowing how to write CSS.
+                    When I started applying styles to my early websites, I remember creating classes haphazardly,
+                    without paying much attention to how those lines would impact the scalability of the project. I
+                    wanted to style a button, so I created .button; I wanted a bordered text block, so I created
+                    .text-block.
+                </p>
+                <p class="st-mw--pleasant t-s--m">It's normal to work this way, and in small projects, it might even be
+                    the most efficient option. However, you should be aware that the way you structure your classes,
+                    even how you name them, can be crucial in limiting whether your project continues to grow or reaches
+                    a point where making changes becomes more complicated than it should be.
+            </section>
+            <article
+                class="st-col sp-ga--2xl c-bg--alabaster sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+                <!-- block 02 -->
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">What to Consider Before Writing Your First Line of CSS</h2>
+                    <div class="st-col sp-ga--s">
+                        <div class="st-col--mobile sp-ga--2xl sp-ga--s--mobile">
+                            <p class="st-mw--pleasant t-s--m">There are different aspects to consider when writing code
+                                in general, but to simplify things, let's focus on two very important ones:
+                            </p>
+                        </div>
+                        <ul class="st-mw--pleasant com-ul sp-my--2xs t-s--m">
+                            <li>Classification</li>
+                            <li>Naming</li>
+                        </ul>
+                        <p class="st-mw--pleasant t-s--m">The truth is, browsers don't care about how you name your
+                            classes or where you place them. As long as they're valid, the outcome won't change. Keep
+                            this in mind so you don't obsess over it too much, because we're not talking about
+                            performance optimization here; we're talking about how we and our colleagues will be able to
+                            reinterpret and understand what that CSS does and how changes affect the overall web.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">A premise I always consider when writing CSS is that the
+                            purpose of creating a class should fulfill one of the following two objectives: either we
+                            create a class because we anticipate making changes to an element in the future, or we
+                            create a class because we want to apply styles more than once to different elements.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h3 class="t-s--l">Classification</h3>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">How we group our classes is crucial for future locating and
+                            making changes to them. For me, classification or grouping has two properties: localization
+                            and segmentation.
+                        </p>
+                        <ul class="com-ul sp-my--2xs st-mw--pleasant t-s--m">
+                            <li>Localization: it's the path where this style guide exist.</li>
+                            <li>Segmentation: it's how we group classes. For example, we put classes that affect
+                                structures like grid, flex, or block together, and others that affect font size or
+                                typographic styles in another place.</li>
+                        </ul>
+                        <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                            We can even localize further and say that a certain class should be at a certain point in
+                            our document, but personally, this feature varies a lot depending on each project, and
+                            establishing rules is complicated. Still, I think it's normal to follow certain criteria,
+                            such as using font styles higher up in the document and importing font families at the
+                            beginning, or leaving classes that apply embellishment styles like shadows for the end. But
+                            this is subjective and also depends on the project.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Localization is easy to understand. We need to determine where we put our styles; perhaps in
+                            /styles/css or in /styles/css/buttons. It's important to be aware of where these styles are
+                            routed and know which parts of our HTML they link to.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Segmentation, however, deserves a slightly more extensive explanation.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h4 class="t-s--l">CSS segmentation</h4>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">By segmentation, I mean how we isolate classes — and as we'll
+                            see, properties too — that share similar functions. Over time, I've realized that I can
+                            group CSS classes in different documents to keep everything more organized:
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">reset.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Also sometimes named normalize.css, depending on its function,
+                            this is usually a document that resets properties browsers set by default. Without going
+                            into too much detail, browsers add predefined styles to make our HTML produce minimally
+                            readable, responsive pages with spacing between elements, even without writing a single line
+                            of CSS.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Personally, I use a modified version of the reset by <a
+                                class="ut-link" href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"
+                                rel="noopener noreferrer">Meryweb</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">structural.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Also sometimes named normalize.css, depending on its function,
+                            this is usually a document that resets properties browsers set by default. Without going
+                            into too much detail, browsers add predefined styles to make our HTML produce minimally
+                            readable, responsive pages with spacing between elements, even without writing a single line
+                            of CSS.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Here are the classes that affect the structure of elements,
+                            and by element, I mean any HTML tag, such as &lt;body&gt; or &lt;p&gt;. Structural classes
+                            allow us to
+                            modify the layout of sub-elements. Examples of this include using flex or grid properties.
+                        </p>
+                        <code class="st-mw--pleasant sp-my--s">
+                            <pre class="com-code t-s--s c-el--white--60 c-bg--pine--90 sp-pa--l">
+/* examples of structural classes */
+.st-row {
+    display: flex;
+}
+
+.st-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.st-inline {
+    display: inline;
+}
+
+.st-grid {
+    display: grid;
+}    
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">typography.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">This is where all the classes and CSS related to fonts go.
+                            From importing the font family to the weight and size of each text block, it should all go
+                            here. To make it clearer, while there are properties like margin that affect any element,
+                            others like text-transform will only affect typographic style. Here, only those that
+                            exclusively modify text go.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">color.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">You can probably guess what goes here. I'll always put classes
+                            that affect color in this document, whether it's a border, background, or directly an
+                            element's color. Here's an excerpt:
+                        </p>
+                        <code class="st-mw--pleasant sp-my--s">
+                            <pre class="com-code t-s--s c-el--white--60 c-bg--pine--90 sp-pa--l">
+.c-el--pine {
+color: var(--c--pine);
+}
+                                
+.c-bg--pine {
+background-color: var(--c--pine);
+}
+</pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">spacing.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Margins, paddings, and gaps essentially. I like combining
+                            structural classes with spacing. For example, look at this consistent way of spacing text
+                            blocks in an article.
+                        </p>
+                        <code class="st-mw--pleasant sp-my--s">
+                            <pre class="com-code t-s--s c-el--white--60 c-bg--pine--90 sp-pa--l">
+&lt;style&gt;
+    .st-col {
+    display: flex;
+    flex-direction: column;
+    }
+                            
+    .sp-ga--m {
+    gap: var(--sp--m);
+    }
+&lt;/style&gt;
+
+&lt;div class="st-col sp-ga--m"&gt;
+    &lt;h1&gt;This is an H1&lt;/h1&gt;
+    &lt;p&gt;This is the first paragraph&lt;/p&gt;
+    &lt;p&gt;This is the second paragraph&lt;/p&gt;
+&lt;/div&gt;       
+</pre>
+                        </code>
+                        <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                            The .st-col class creates a flex with a column direction and enables the use of the gap
+                            property, used in the following class. This way, we consistently space elements without
+                            repeatedly applying bottom margins.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">utils.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Here go classes containing specific properties that
+                            intuitively don't fit into the previous groups. These properties include opacity, which
+                            affects color and we could place it in color, but we use it without considering color and
+                            for purposes other than "coloring" structures; also borders, corner radii, or even classes
+                            that hide or reveal elements. As you can see, some classes arguably fit into other groups:
+                            display: none is itself a type of structure, just like display: flex, but intuitively we
+                            struggle to place it here. My recommendation is to explore the type of properties you
+                            usually use in your projects, find it hard to locate or assign dependencies to other
+                            properties, and put them here.
+                        </p>
+                       
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h5 class="t-s--m">components.css</h5>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Honesty above all: I hate this document. Here go styles that use unrelated properties. A clear example is a card or .card, which we use to style padding, border, or background color. We could apply classes from previous groups to this element to style it without using the .card class, but we'd need too many classes. My rule is: if I need to apply more than 4 classes to an element, I consolidate all the properties of these classes into a component-type class.
+                        </p>
+                        <code class="st-mw--pleasant sp-my--s">
+                            <pre class="com-code t-s--s c-el--white--60 c-bg--pine--90 sp-pa--l">
+&lt;div class="st-col c-bg--alabaster sp-pa--m ut-border--sc"&gt;&lt;/div&gt;
+&lt;div class="com-card"&gt;&lt;/div&gt;
+</pre>
+                        </code>
+                        <p class="st-mw--pleasant t-s--m">And that's all about how I group CSS classes!
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h3 class="t-s--xl">Naming of classes</h3>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">If you end up naming your classes with names that are hard to remember or difficult for others to interpret, I recommend looking into established naming conventions; an example of this is BEM, but you can also explore how some frameworks like Tailwind or Bootstrap do it.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">As a general rule, we should use naming to explain what properties the class contains. And in my particular case, I like the class name to point to its group. I do this because when I see an applied class on an element, I can go directly to its group and make changes faster. It's also useful for organizing classes that affect an element and working on order; as we saw in a previous example, if I find a gap spacing class applied without a preceding flex structure, I'll know I'm making an inconsistency.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div id="footer-js"></div>
+        </footer>
+    </div> <!-- page wrapper ends here -->
+    <script src="/javascript/dynamic/navbar.js"></script>
+    <script src="/javascript/dynamic/footer.js"></script>
+</body>
+
+</html>

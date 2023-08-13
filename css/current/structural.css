@@ -10,7 +10,7 @@
     /* only over max site width */
     .st-home,
     .st-entry,
-    .st-support {
+    .st-support, .st-blog {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }
@@ -22,6 +22,10 @@
 .st-col {
     display: flex;
     flex-direction: column;
+}
+
+.st-inline {
+    display: inline;
 }
 
 .st-grid {

@@ -3,123 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Pablo Santalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla's portfolio: about me</title>
     <meta name="description"
-        content="I'm a web developer with a design flair. Check out my latest projects and get a behind-the-scenes look at my work life">
-    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/old/20230630/reset.css">
-    <link rel="stylesheet" href="css/old/20230630/normalize.css">
-    <link rel="stylesheet" href="css/old/20230630/spacing.css">
-    <link rel="stylesheet" href="css/old/20230630/structural.css">
-    <link rel="stylesheet" href="css/old/20230630/typography.css">
-    <link rel="stylesheet" href="css/old/20230630/color.css">
-    <link rel="stylesheet" href="css/old/20230630/modifiers.css">
-    <link rel="stylesheet" href="css/old/20230630/mailerlite.css">
+        content="The place where we'll uncover if I'm more of a sweet or salty enthusiast. Check out my latest projects and get a sneak peek into my work life.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/assets/about-og.png">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="javascript/mailerlite.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-H0G57Y360B');
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
     </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
-<body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
-    <div class="structure-section-height-100">
-        <section class="structure-section-normal">
-            <section class="structure-nav space-gap-l">
-                <a href="index.html"><img src="assets/logo.svg" alt="Logo of Pablo Santalla"></a>
-                <nav class="structure-row space-gap-l"><a
-                        class="text-size-m color-font-pine text-decoration-not-underline nav-link"
-                        href="about.html">About</a>
-                    <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
-                        href="index.html#work">Work</a>
-                    <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com"><button
-                            class="structure-button structure-row space-gap-xs text-size-m button-primary"> <img
-                                class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola</button></a>
-                </nav>
-            </section>
-            <div class="structure-sink">
-                <div style="max-width: 960px;">
-                    <h1 class="text-size-5xl space-margin-top-2xl space-margin-bottom-xl">Get the best of my content
+<body class="st-blog"> <!-- classes to horizontally align the page wrapper -->
+    <div class="st-col"> <!-- page wrapper, following a column structure -->
+        <header class="c-bg--white">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="st-col st-mw--compact sp-ga--xl sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--m"> <!-- <div class="t-s--m c-el--pine--70 com-clock--la"></div> -->
+                    <!-- style classes need to be place before the component class in order to work -->
+                    <h1 class="t-s--5xl">Tech articles and discoveries
                     </h1>
-                    <p class="text-size-l space-margin-bottom-5xl">I post stuff every now and then on Twitter or
-                        LinkedIn,
-                        but
-                        if
-                        you want the good stuff, here's where I really put in the effort to curate my content.</p>
                 </div>
-                <h2 class="text-size-l space-margin-bottom-l">Topics</h2>
-                <nav class="space-margin-bottom-2xl">
-                    <ul
-                        class="structure-row-desktop--tablet structure-grid-3--mobile structure-justify-content-row-left space-gap-s">
-                        <a class="tag-border text-size-s color-font-pine-90 text-weight-bold text-decoration-not-underline"
-                            href="#design">
-                            <li class="tag-link">
-                                Design
-                            </li>
-                        </a>
-                        <a class="text-size-s color-font-pine-90 text-weight-bold text-decoration-not-underline"
-                            href="#code">
-                            <li class="tag-link">
-                                Code
-                            </li>
-                        </a>
-                        <a class="text-size-s color-font-pine-90 text-weight-bold text-decoration-not-underline"
-                            href="#productivity">
-                            <li class="tag-link">
-                                Order
-                            </li>
-                        </a>
-                        <a class="text-size-s color-font-pine-90 text-weight-bold text-decoration-not-underline"
-                            href="#personal">
-                            <li class="tag-link">
-                                Personal
-                            </li>
-                        </a>
-                    </ul>
-                </nav>
+                <p class="hid t-s--l">I talk about all things tech. I share what inspires me, what I'm learning, and the
+                    things I'm proud of.
+                </p>
             </div>
-    </div>
-    </section>
-    <main>
-        <div class="structure-section-normal space-margin-top-3xl">
-            <section class="space-margin-bottom-4xl">
-                <h3 id="design" class="text-size-xl">Web design</h3>
-                <p class="text-size-m space-margin-top-s space-margin-bottom-2xl">This is a paragraph.</p>
-                <div class="structure-grid-blog-entries space-gap-xl">
-                    <div class="structure-blog-card">
-                        <h4 class="text-size-2xl">Starting a design system</h4>
-                        <img class="structure-blog-card-image space-margin-bottom-xl space-margin-top-xl" width="100%"
-                            src="assets/blog-card-image.svg" alt="">
-                        <p class="text-size-l space-margin-bottom-l">Check out my detailed guide on creating a
-                            comprehensive design system for web development, including planning and implementation tips.
-                        </p>
-                        <a class="text-size-l text-weight-bold color-font-pine text-decoration-not-underline body-link text-link-showcase color-font-pine-100    "
-                            href="#">Read this article</a>
-                    </div>
-                </div>
-            </section>
-            <section class="space-margin-bottom-4xl">
-                <h3 id="code" class="text-size-xl">Web development</h3>
-                <p class="text-size-m space-margin-top-s">This is a paragraph.</p>
-            </section>
-            <section class="space-margin-bottom-4xl">
-                <h3 id="order" class="text-size-xl">Productivity</h3>
-                <p class="text-size-m space-margin-top-s">This is a paragraph.</p>
-            </section>
-            <section class="space-margin-bottom-4xl">
-                <h3 id="personal" class="text-size-xl">Personal</h3>
-                <p class="text-size-m space-margin-top-s">This is a paragraph.</p>
-            </section>
-        </div>
-    </main>
+        </header>
+        <main class="c-bg--alabaster sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div class="st-col sp-ga--3xl sp-ga--xl--mobile st-mw--compact">
+                <a class="ut-link _ut-link--inner" href="/blog/gap-design-development.html">
+                    <h2 class="st-inline t-s--l t-w--s c-el--pine--90">The gap between web design and development that
+                        shouldn't exist</h2><span class="t-s--l t-w--s c-el--pine--50">—an overview of how improving
+                        certain skills drastically reduces miscommunication in multidisciplinary teams.</span>
+                </a>
+                <a class="ut-link _ut-link--inner" href="#">
+                    <h2 class="st-inline t-s--l t-w--s c-el--pine--90">The gap between web design and development that
+                        shouldn't exist</h2><span class="t-s--l t-w--s c-el--pine--50"> — An overview of how improving
+                        certain skills drastically reduce miscomunication in multidisciplinary teams.</span>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-js"></div>
+        </footer>
+    </div> <!-- page wrapper ends here -->
+    <script src="javascript/dynamic/navbar.js"></script>
+    <script src="javascript/dynamic/footer.js"></script>
 </body>
 
 </html>
