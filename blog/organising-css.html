@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Santalla — How to better organise your CSS</title>
-    <meta name="description" content="[title-meta]">
+    <meta name="description"
+        content="Learn CSS best practices for scalability in web projects. Explore class grouping, naming, and organization tips for efficient stylesheets.">
     <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
     <meta property="/assets/entries/02/og.svg" content="Screenshot of the directory of Catalyst in Github.">
@@ -254,13 +255,17 @@ background-color: var(--c--pine);
                             usually use in your projects, find it hard to locate or assign dependencies to other
                             properties, and put them here.
                         </p>
-                       
                     </div>
                 </div>
                 <div class="st-col sp-ga--l">
                     <h5 class="t-s--m">components.css</h5>
                     <div class="st-col sp-ga--s">
-                        <p class="st-mw--pleasant t-s--m">Honesty above all: I hate this document. Here go styles that use unrelated properties. A clear example is a card or .card, which we use to style padding, border, or background color. We could apply classes from previous groups to this element to style it without using the .card class, but we'd need too many classes. My rule is: if I need to apply more than 4 classes to an element, I consolidate all the properties of these classes into a component-type class.
+                        <p class="st-mw--pleasant t-s--m">Honesty above all: I hate this document. Here go styles that
+                            use unrelated properties. A clear example is a card or .card, which we use to style padding,
+                            border, or background color. We could apply classes from previous groups to this element to
+                            style it without using the .card class, but we'd need too many classes. My rule is: if I
+                            need to apply more than 4 classes to an element, I consolidate all the properties of these
+                            classes into a component-type class.
                         </p>
                         <code class="st-mw--pleasant sp-my--s">
                             <pre class="com-code t-s--s c-el--white--60 c-bg--pine--90 sp-pa--l">
@@ -275,9 +280,38 @@ background-color: var(--c--pine);
                 <div class="st-col sp-ga--l">
                     <h3 class="t-s--xl">Naming of classes</h3>
                     <div class="st-col sp-ga--s">
-                        <p class="st-mw--pleasant t-s--m">If you end up naming your classes with names that are hard to remember or difficult for others to interpret, I recommend looking into established naming conventions; an example of this is BEM, but you can also explore how some frameworks like Tailwind or Bootstrap do it.
+                        <p class="st-mw--pleasant t-s--m">If you end up naming your classes with names that are hard to
+                            remember or difficult for others to interpret, I recommend looking into established naming
+                            conventions; an example of this is <a class="ut-link"
+                                href="https://getbem.com/introduction/" target="_blank"
+                                rel="noopener noreferrer">BEM</a>, but you can also explore how some frameworks like <a
+                                class="ut-link" href="https://tailwindcss.com/" target="_blank"
+                                rel="noopener noreferrer">Tailwind</a> or <a class="ut-link"
+                                href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>
+                            do it.
                         </p>
-                        <p class="st-mw--pleasant t-s--m">As a general rule, we should use naming to explain what properties the class contains. And in my particular case, I like the class name to point to its group. I do this because when I see an applied class on an element, I can go directly to its group and make changes faster. It's also useful for organizing classes that affect an element and working on order; as we saw in a previous example, if I find a gap spacing class applied without a preceding flex structure, I'll know I'm making an inconsistency.
+                        <p class="st-mw--pleasant t-s--m">As a general rule, we should use naming to explain what
+                            properties the class contains. And in my particular case, I like the class name to point to
+                            its group. I do this because when I see an applied class on an element, I can go directly to
+                            its group and make changes faster. It's also useful for organizing classes that affect an
+                            element and working on order; as we saw in a previous example, if I find a gap spacing class
+                            applied without a preceding flex structure, I'll know I'm making an inconsistency.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">This starting naming convention is as follows:
+                        </p>
+                        <ul class="st-mw--pleasant com-ul sp-my--2xs t-s--m">
+                            <li>structural.css (.st-)</li>
+                            <li>color.css (.c-)</li>
+                            <li>utils.css (.ut-)</li>
+                            <li>components.css (.com-)</li>
+                            <li>typography.css (.t-)</li>
+                            <li>spacing.css (.sp-)</li>
+                        </ul>
+                        <p class="st-mw--pleasant t-s--m">I hope this guide provides a starting point for better
+                            organization and semantic meaning in your CSS. If you want to take a look at the complete
+                            code or reuse structures, check out this class system I named <a class="ut-link"
+                                href="https://github.com/psantalla/catalyst" target="_blank"
+                                rel="noopener noreferrer">Catalyst</a>.
                         </p>
                     </div>
                 </div>
