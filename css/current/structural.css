@@ -1,6 +1,8 @@
 /* Ed. 1.2 — homogeneus naming convention */
 .st-home,
-.st-entry, .st-about {
+.st-entry,
+.st-support,
+.st-blog {
     max-width: var(--sp--site-width);
     margin-inline: auto;
 }
@@ -10,7 +12,8 @@
     /* only over max site width */
     .st-home,
     .st-entry,
-    .st-support, .st-blog {
+    .st-support,
+    .st-blog {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }

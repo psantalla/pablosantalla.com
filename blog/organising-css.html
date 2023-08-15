@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta name="robots" content="noindex"> <!-- delete to index -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Santalla — How to better organise your CSS</title>
@@ -22,7 +21,7 @@
     <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
-<body class="st-col st-appdcl--mid">
+<body class="st-entry st-col st-appdcl--mid">
     <div class="st-col ut-of--hid"> <!-- page wrapper, following a column structure -->
         <header class="st-col c-bg--alabastrr">
             <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
@@ -317,11 +316,15 @@ background-color: var(--c--pine);
                 </div>
             </article>
         </main>
+        <div class="sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div id="posts-recap-js"></div>
+        </div>
         <footer>
             <div id="footer-js"></div>
         </footer>
     </div> <!-- page wrapper ends here -->
     <script src="/javascript/dynamic/navbar.js"></script>
+    <script src="/javascript/dynamic/posts-recap.js"></script>
     <script src="/javascript/dynamic/footer.js"></script>
 </body>
 
