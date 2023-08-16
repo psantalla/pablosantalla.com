@@ -32,4 +32,8 @@ Thanks for dropping by my portfolio website!
 
 ---
 
-Note: This README.md file gives you a quick overview of what's in this repository. If you need specific instructions on setting up or deploying the website, check out the relevant documentation or project files within the repository.
+Note: This README.md file provides a concise overview of the contents within this repository. For detailed instructions on setting up, deploying the website, or to gain more information about specific sections or projects, please feel free to reach out.
+
+For inquiries, additional details, or the use of templates, please don't hesitate to contact me:
+
+Email: [me@pablosantalla.com](mailto:me@pablosantalla.com)
