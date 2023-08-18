@@ -1,41 +1,39 @@
-
-
 .hid {
   display: none;
 }
 
-
 @media only screen and (min-width: 992px) {
+
   /* only desktop */
   .hid-desktop {
     display: none;
   }
 }
 
-
-
 @media only screen and (min-width: 620px) and (max-width: 991px) {
+
   /* only tablet */
   .hid-tablet {
     display: none;
   }
 }
 
-
-
 @media only screen and (max-width: 619px) {
+
   /* only mobile */
   .hid-mobile {
     display: none;
   }
 }
 
-
 .ut-bg--about {
   background-image: url("/assets/pablo-santalla-about.png");
-  background-size: cover; /* Ajusta la imagen de fondo al ancho completo */
-  background-position: right; /* Alinea la imagen de fondo a la izquierda */
+  background-size: cover;
+  /* Ajusta la imagen de fondo al ancho completo */
+  background-position: right;
+  /* Alinea la imagen de fondo a la izquierda */
 }
+
 .ut-of--hid {
   overflow: hidden;
 }
@@ -71,16 +69,13 @@
   text-underline-offset: var(--sp--2xs);
   text-decoration-thickness: 2px;
   text-decoration-color: var(--c--pine);
-
 }
 
 .ut-link._ut-link--inner--notice:hover {
-color: var(--c--accent--80);
+  color: var(--c--accent--80);
   text-underline-offset: calc(var(--sp--2xs) / 1.75);
   text-decoration-color: var(--c--accent--80);
-transition: all .25s;
-
-
+  transition: all .25s;
 }
 
 .ut-link._ut-link--branch:hover,
@@ -206,8 +201,10 @@ transition: all .25s;
   content: attr(data-text);
   position: absolute;
   left: 0;
-  color: var(--c--pine); /* Utiliza la variable --c--pine para el color */
-  opacity: 0.6; /* Opacidad reducida para un efecto más sutil */
+  color: var(--c--pine);
+  /* Utiliza la variable --c--pine para el color */
+  opacity: 0.6;
+  /* Opacidad reducida para un efecto más sutil */
 }
 
 .ut-glitch::before {
@@ -223,24 +220,34 @@ transition: all .25s;
 }
 
 @keyframes glitchTop {
-  2%, 64% {
+
+  2%,
+  64% {
     transform: translate(1px, -1px);
   }
-  4%, 60% {
+
+  4%,
+  60% {
     transform: translate(-1px, 1px);
   }
+
   62% {
     transform: translate(3px, -1px) skew(-8deg);
   }
 }
 
 @keyframes glitchBottom {
-  2%, 64% {
+
+  2%,
+  64% {
     transform: translate(-1px, 0);
   }
-  4%, 60% {
+
+  4%,
+  60% {
     transform: translate(-1px, 0);
   }
+
   62% {
     transform: translate(-3px, 2px) skew(12deg);
   }

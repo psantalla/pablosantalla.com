@@ -277,62 +277,55 @@
     overflow-wrap: break-word;
 }
 
-/* burger menu */
-.com-burger-container {
-    display: flex;
-    margin-inline: calc(-1 * var(--sp--xs)) ;
-    justify-content: right;
-    max-width: var(--sp--xl);
-    overflow: hidden;
-}
-
-.com-ham {
-    width: 100%;
+/* burger menu: by ainalem: https://codepen.io/ainalem/pen/LJYRxz */
+/* modifications: color, dimensions */
+.ham {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    transition: transform 250ms;
+    transition: transform 400ms;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
+  }
 
-.com-ham—rotated—active {
+  .hamRotate.active {
     transform: rotate(45deg);
-}
+  }
 
-.com-ham_line {
+  .line {
     fill: none;
-    transition: stroke-dasharray 250ms, stroke-dashoffset 250ms;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke: var(--c--pine);
-    stroke-width: var(--sp--2xs);
+    stroke-width: 5;
     stroke-linecap: round;
-}
+  }
 
-.com-ham—var .com-ham_top {
-    stroke-dasharray: var(--sp--m) calc(14 * var(--sp--m));
-}
+  .ham8 .top {
+    stroke-dasharray: 40 160;
+  }
 
-.com-ham—var .com-ham_mid {
-    stroke-dasharray: var(--sp--7xl) calc(14 * var(--sp--m));
+  .ham8 .middle {
+    stroke-dasharray: 40 142;
     transform-origin: 50%;
-    transition: transform 250ms;
-}
+    transition: transform 400ms;
+  }
 
-.com-ham—var .com-ham_butt {
-    stroke-dasharray: var(--sp--2xl) calc(14 * var(--sp--m));
+  .ham8 .bottom {
+    stroke-dasharray: 40 85;
     transform-origin: 50%;
-    transition: transform 250ms, stroke-dashoffset 250ms;
-}
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
 
-.com-ham—var.com-ham—rotated—active .com-ham_top {
-    stroke-dashoffset: calc(-1 * var(--sp--4xl));
-}
+  .ham8.active .top {
+    stroke-dashoffset: -64px;
+  }
 
-.com-ham—var.com-ham—rotated—active .com-ham_mid {
+  .ham8.active .middle {
     transform: rotate(90deg);
-}
+  }
 
-.com-ham—var.com-ham—rotated—active .com-ham_butt {
-    stroke-dashoffset: calc(-1 * var(--sp--4xl));
-}
+  .ham8.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+  
