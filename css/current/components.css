@@ -7,7 +7,6 @@
     transform: rotate3d(0, 1, 0, 360deg)
 }*/
 /* .st--home allows the logo to be weirdly animated just on the homepage */
-
 .com-ul {
     display: flex;
     flex-direction: column;
@@ -15,15 +14,16 @@
 }
 
 .com-ul li {
-    position: relative; 
+    position: relative;
     padding-left: var(--sp--l);
 }
 
 .com-ul li::before {
     position: absolute;
     left: 0;
-    content: "— "; 
+    content: "— ";
 }
+
 .com-icon--tool {
     width: var(--sp--2xl);
 }
@@ -272,6 +272,67 @@
 .com-code {
     font-family: Andale Mono;
     border-radius: var(--sp--s);
-    white-space: pre-wrap; /* Hace que el texto haga wrap y respete los espacios en blanco */
+    white-space: pre-wrap;
+    /* Hace que el texto haga wrap y respete los espacios en blanco */
     overflow-wrap: break-word;
+}
+
+/* burger menu */
+.com-burger-container {
+    display: flex;
+    margin-inline: calc(-1 * var(--sp--xs)) ;
+    justify-content: right;
+    max-width: var(--sp--xl);
+    overflow: hidden;
+}
+
+.com-ham {
+    width: 100%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 250ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.com-ham—rotated—active {
+    transform: rotate(45deg);
+}
+
+.com-ham_line {
+    fill: none;
+    transition: stroke-dasharray 250ms, stroke-dashoffset 250ms;
+    stroke: var(--c--pine);
+    stroke-width: var(--sp--2xs);
+    stroke-linecap: round;
+}
+
+.com-ham—var .com-ham_top {
+    stroke-dasharray: var(--sp--m) calc(14 * var(--sp--m));
+}
+
+.com-ham—var .com-ham_mid {
+    stroke-dasharray: var(--sp--7xl) calc(14 * var(--sp--m));
+    transform-origin: 50%;
+    transition: transform 250ms;
+}
+
+.com-ham—var .com-ham_butt {
+    stroke-dasharray: var(--sp--2xl) calc(14 * var(--sp--m));
+    transform-origin: 50%;
+    transition: transform 250ms, stroke-dashoffset 250ms;
+}
+
+.com-ham—var.com-ham—rotated—active .com-ham_top {
+    stroke-dashoffset: calc(-1 * var(--sp--4xl));
+}
+
+.com-ham—var.com-ham—rotated—active .com-ham_mid {
+    transform: rotate(90deg);
+}
+
+.com-ham—var.com-ham—rotated—active .com-ham_butt {
+    stroke-dashoffset: calc(-1 * var(--sp--4xl));
 }

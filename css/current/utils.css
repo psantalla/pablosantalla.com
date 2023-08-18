@@ -5,6 +5,31 @@
 }
 
 
+@media only screen and (min-width: 992px) {
+  /* only desktop */
+  .hid-desktop {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+  /* only tablet */
+  .hid-tablet {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 619px) {
+  /* only mobile */
+  .hid-mobile {
+    display: none;
+  }
+}
+
 
 .ut-bg--about {
   background-image: url("/assets/pablo-santalla-about.png");
