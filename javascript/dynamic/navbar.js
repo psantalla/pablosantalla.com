@@ -12,3 +12,6 @@ fetch('/html/dynamic/navbar.html')
   .catch(function(error) {
     console.log('Error al cargar el archivo HTML del navbar:', error);
   });
+
+
+
