@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla: Ginevida's case study</title>
+    <meta name="description"
+        content="Discover how Ginevida, an obstetrics clinic, transformed patient appointments with seamless online reservations.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/assets/og-ginevida.png">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
+    <script>
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
+    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="st-cs">
+    <div class="st-col">
+        <header class="st-col c-bg--alabaster">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="st-col sp-ga--4xl sp-ga--2xl--mobile sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--3xl">
+                    <div class="st-col sp-ga--s">
+                        <div class="st-row sp-ga--xs">
+                            <img class="com-icon--sc" src="assets/figma-icon.svg"
+                                alt="Icon to represent attention to detail."><img class="com-icon--sc"
+                                src="assets/wordpress-icon.svg" alt="Icon with the logo of WordPress."> <img
+                                class="com-icon--sc" src="assets/plug-icon.svg" alt="Icon with the logo of WordPress.">
+                        </div>
+                        <span class="t-s--m t-w--s c-el--pine--80">Deploying a 360° web solution</span>
+                    </div>
+                    <div class="st-bal--1-1 st-col--mobile sp-ga--3xl sp-ga--m--mobile">
+                        <div class="st-col sp-ga--m">
+                            <h1 class="t-s--4xl">Case study: Ginevida</h1>
+                            <p class="hid t-s--l">Custom design and development, calendar API integration,
+                                and a ton of knowledge about creating a comprehensive website that meets the needs of
+                                the owner and
+                                their patients.</p>
+                            <p class="t-s--l">Ginevida is all about growth. The team has this incredible knack for
+                                staying
+                                super
+                                connected to their patients by diving headfirst into the latest digital solutions.
+                                They're
+                                always on the lookout for fresh ways to use technology, like telemedicine
+                                and user-friendly web integrations that provide personalized support.
+                            </p>
+                            <p class="hid t-s--m">Short on time? Download <a
+                                    href="https://github.com/psantalla/pablosantalla.com/raw/master/files/cs-summary-ginevida.pdf"
+                                    target="_blank" rel="noopener noreferrer"> <img class="com-icon--action"
+                                        src="assets/download.svg" alt="Icon to download a file."></a> a 2-minute PDF
+                                summary instead.</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="st-img--normalize" src="/assets/cs-hero-ginevida.png"
+                    alt="Introducing the case study of Ginevida with a laptop mockup on a table. The hero section of the homepage is shown in the laptop's screen.">
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="st-col sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--white">
+            <h2 class="t-s--3xl">Overview of the project</h2>
+            <ul class="st-grid _st-grid--1-1-1 _st-grid--1-1-1--tablet st-col--mobile sp-ga--2xl sp-ga--l--mobile">
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">500+</span><br>registrations</div>
+                    <span class="t-s--m c-el--pine--60">Due to an accesible interface, patiens can register and use
+                        the
+                        site to establish more efitient communications and book an appointment.</span>
+                </li>
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">2-way-sync</span><br>doctor's agendas
+                    </div>
+                    <span class="t-s--m c-el--pine--60">Doctor schedules sync seamlessly with Google Calendar, allowing
+                        bidirectional updates; changes made on the web app reflect in Google Calendar, and vice
+                        versa.</span>
+                </li>
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">19</span><br>services</div>
+                    <span class="t-s--m c-el--pine--60">In addition to online services, the booking system is dynamic,
+                        guiding potential patients to select a service tailored to their needs. Responses are stored
+                        privately and monitored by healthcare staff daily.</span>
+                </li>
+            </ul>
+        </div>
+        <div
+            class="ut-darken st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--alabaster">
+            <div class="st-col sp-ga--m ">
+                <h2 class="t-s--2xl c-el--pine">The challenge</h2>
+                <p class="t-s--l c-el--pine">Although the client presented it as a redesign of the current website, I
+                    quickly realized that the real challenge was to lead patients of diverse ages and backgrounds
+                    through a seemingly complicated booking process. The website must provide multiple services to
+                    patients, delivered by various doctors on different calendars, creating an even greater challenge.
+                </p>
+            </div>
+            <div class="st-anchor st-col st-appdcl--mid"><img
+                    class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" src="/assets/ginevida-before.png"
+                    alt="Showcase of the hero section of the landing page made for a crowdfounding participation for Regemat 3D."
+                    loading="lazy">
+                <div class="com-colab--idg c-bg--white sp-px--m ut-border-r--whole">
+                    <div class="t-s--s t-w--b t-a--c c-el--pine--90">Screenshot prior to the redesign</div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--alabaster">
+            <div class="st-anchor st-col st-appdcl--mid"><img
+                    class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" src="/assets/ginevida-after.png"
+                    alt="Showcase of the hero section of the landing page made for a crowdfounding participation for Regemat 3D."
+                    loading="lazy">
+                <div class="com-colab--idg c-bg--white sp-px--m ut-border-r--whole">
+                    <div class="t-s--s t-w--b t-a--c c-el--pine--90">Screenshot after to the redesign</div>
+                </div>
+            </div>
+            <div class="st-col sp-ga--m ">
+                <h2 class="t-s--2xl c-el--pine">The approach</h2>
+                <p class="t-s--l c-el--pine">Dividing the redesign into various stages, with a primary focus on
+                    delivering a viable product launch that serves as the new brand design. Additionally, this product
+                    should have the capability to facilitate scalability and the integration of features that, over
+                    time, would distinguish the clinic for its ability to offer and manage online services effectively.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-js"></div>
+    </footer>
+    </div> <!-- page wrapper ends here -->
+    <script src="javascript/dynamic/navbar.js"></script>
+    <script src="javascript/dynamic/footer.js"></script>
+</body>
+
+</html>

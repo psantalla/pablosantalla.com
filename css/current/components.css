@@ -28,6 +28,10 @@
     width: var(--sp--2xl);
 }
 
+.com-icon--sc {
+    width: var(--sp--xl);
+}
+
 .com-logo--alt {
     filter: brightness(0) invert(1);
 }
@@ -276,6 +280,18 @@
     /* Hace que el texto haga wrap y respete los espacios en blanco */
     overflow-wrap: break-word;
 }
-.com-burger {
-    cursor: pointer;
+
+.com-icon--action {
+display: inline;
+height: calc( var(--t-b) * var(--t-sc));
+margin-inline: var(--sp--2xs);
+margin-bottom: calc(-.25 * var(--t-b));
+    border-radius: 50%;
+    box-shadow: 7px 10px 5px rgba(0, 0, 0, 0.01), 4px 6px 4px rgba(0, 0, 0, 0.04), 2px 3px 3px rgba(0, 0, 0, 0.07), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.09);
+    transition: all .125s;
+
+}
+
+.com-icon--action:hover {
+    box-shadow: none;
 }

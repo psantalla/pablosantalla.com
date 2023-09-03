@@ -53,7 +53,7 @@
 
 .ut-border--sc {
   /* border used for showcase sreenshots or frames */
-  border: var(--sp--2xs) solid var(--c--pine);
+  border: var(--sp--2xs) solid;
   border-radius: var(--sp--s);
 }
 
@@ -256,6 +256,3 @@
     transform: translate(-3px, 2px) skew(12deg);
   }
 }
-
-
-

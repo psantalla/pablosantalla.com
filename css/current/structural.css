@@ -2,7 +2,8 @@
 .st-home,
 .st-entry,
 .st-support,
-.st-blog {
+.st-blog,
+.st-cs {
     max-width: var(--sp--site-width);
     margin-inline: auto;
 }
@@ -13,7 +14,8 @@
     .st-home,
     .st-entry,
     .st-support,
-    .st-blog {
+    .st-blog,
+    .st-cs {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }
@@ -25,6 +27,11 @@
 .st-col {
     display: flex;
     flex-direction: column;
+}
+
+.st-bal--1-1 {
+    column-count: 2;
+    column-fill: balance;
 }
 
 .st-inline {
@@ -41,6 +48,10 @@
 
 .st-grid._st-grid--2-1 {
     grid-template-columns: 2fr 1fr;
+}
+
+.st-grid._st-grid--1-2 {
+    grid-template-columns: 1fr 2fr;
 }
 
 .st-grid._st-grid--1-1-1 {
@@ -332,4 +343,8 @@
 
 .st-img--normalize {
     width: 100%;
+}
+
+.st-img--stretch {
+    height: 100%;
 }
