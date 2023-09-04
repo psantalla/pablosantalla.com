@@ -1,0 +1,102 @@
+Site  Country
+0  Parthenon  Athens
+1  Hohensalzburg Fortress  Austria
+2  Schonbrunn Palace  Austria
+3  Tiger's Nest  Bhutan
+4  Angkor Wat  Cambodia
+5  Great Wall of China  China
+6  Temple of Heaven  China
+7  Summer Palace  China
+8  Forbidden City  China
+9  Potala Palace  China
+10  Prague Castle  Czech Republic
+11  Bouzov Castle  Czech Republic
+12  Frederiksborg Castle  Denmark
+13  Rosenborg Castle  Denmark
+14  Great Pyramid of Giza  Egypt
+15  Karnak Temple  Egypt
+16  Abu Simbel  Egypt
+17  Temple of Isis  Egypt
+18  Church of St. George  Ethiopia
+19  Chateau de Chambord  France
+20  Notre-Dame de Fourviere Basilica  France
+21  Palace of Versailles  France
+22  Palace of the Popes  France
+23  Amphitheatre of Arles  France
+24  Sainte-Chapelle  France
+25  Mont Saint-Michel  France
+26  Eltz Castle  Germany
+27  Neuschwanstein Castle  Germany
+28  Monasteries of Meteora  Greece
+29  Tikal  Guatemala
+30  Buda Castle  Hungary
+31  City Palace  India
+32  Amber Fort  India
+33  Akshardham Temple  India
+34  Mehrangarh Fort  India
+35  Lake Palace  India
+36  Kailasa Temple  India
+37  Taj Mahal  India
+38  Mysore Palace  India
+39  Golden Temple  India
+40  Borobudur  Indonesia
+41  Church of Holy Sepulchre  Israel
+42  Duomo  Italy
+43  Doge's Palace  Italy
+44  The Pantheon  Italy
+45  St Mark’s Basilica  Italy
+46  St Peter’s Basilica  Italy
+47  Colosseum  Italy
+48  Duomo  Italy
+49  Pitti Palace  Italy
+50  Osaka Castle  Japan
+51  Himeji Castle  Japan
+52  Kinkaku-ji Temple  Japan
+53  The Treasury  Jordan
+54  Pharoah’s Treasury  Jordan
+55  Temple of Bacchus  Lebanon
+56  Temple of Kukulcan  Mexico
+57  Temples of Bagan  Myanmar
+58  Shwedagon Pagoda  Myanmar
+59  De Haar Castle  Netherlands
+60  Borgund Stave Church  Norway
+61  Qorikancha  Peru
+62  Pena Palace  Portugal
+63  Bran Castle  Romania
+64  St. Basil's Cathedral  Russia
+65  Smolny Cathedral  Russia
+66  Peterhof Palace  Russia
+67  Winter Palace  Russia
+68  Catherine Palace  Russia
+69  Church of the Transfiguration  Russia
+70  Cathedral of Christ the Saviour on the Spilled...  Russia
+71  St Catherine's Monastery  Sharm el-Sheik
+72  Alcazar of Seville  Spain
+73  La Sagrada Familia  Spain
+74  Alhambra  Spain
+75  Cathedral of Santiago de Compostela  Spain
+76  Seville Cathedral  Spain
+77  Royal Palace of Madrid  Spain
+78  Mezquita of Cordoba  Spain
+79  Sigiriya  Sri Lanka
+80  Jetavanaramaya  Sri Lanka
+81  Drottningholm Palace  Sweden
+82  Citadel of Aleppo  Syria
+83  Wat Phra Kaew  Thailand
+84  Grand Palace  Thailand
+85  Dolhmabace Palace  Turkey
+86  Hagia Sophia  Turkey
+87  Blue Mosque  Turkey
+88  Topkapi Palace  Turkey
+89  Palace of Westminster  UK
+90  Hampton Court  UK
+91  Kensington Palace  UK
+92  Conwy Castle  UK
+93  Canterbury Cathedral  UK
+94  Blenheim Palace  UK
+95  Buckingham Palace  UK
+96  Tower of London  UK
+97  Windsor Castle  UK
+98  Westminster Abbey  UK
+99  St Paul’s Cathedral  UK
+100  York Minster  UK
