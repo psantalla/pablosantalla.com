@@ -3,275 +3,223 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Case study: Ginevida — Pablo Santalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla: Ginevida's case study</title>
     <meta name="description"
-        content="Learner. Discoverer. Technology geek. Skier, and beach lover. I'm enjoying cruising my skateboard along Long Beach's paseo.">
-    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/old/20230630/reset.css">
-    <link rel="stylesheet" href="css/old/20230630/spacing.css">
-    <link rel="stylesheet" href="css/old/20230630/structural.css">
-    <link rel="stylesheet" href="css/old/20230630/typography.css">
-    <link rel="stylesheet" href="css/old/20230630/color.css">
-    <link rel="stylesheet" href="css/old/20230630/modifiers.css">
-    <link rel="stylesheet" href="css/old/20230630/mailerlite.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="javascript/mailerlite.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0G57Y360B"></script>
+        content="Learn how Ginevida, an obstetrics clinic, improved patient appointments with easy online reservations.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/assets/og-ginevida.png">
+    <script src="/javascript/animations.js"></script>
+    <script src="/javascript/clock.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-H0G57Y360B');
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
     </script>
-    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
-<body class="color-background-alabaster overflow-x-hidden scrollbar-hidden">
-    <div class="structure-section-full-width structure-section-normal">
-        <section class="structure-nav space-gap-l">
-            <a href="index.html">
-                <img src="assets/logo.svg" alt="Logo of Pablo Santalla">
-            </a>
-            <nav class="structure-row space-gap-l">
-                <a class="text-size-m color-font-pine text-decoration-not-underline nav-link"
-                    href="about.html">About</a>
-                <a class="text-size-m color-font-pine  text-decoration-not-underline nav-link"
-                    href="index.html#work">Work</a>
-                <a class="text-decoration-not-underline" href="mailto: pablo@pablosantalla.com">
-                    <button class="structure-button structure-row space-gap-xs text-size-m button-primary">
-                        <img class="icon-button" src="assets/email.svg" alt="Email icon"> Say hola </button>
-                </a>
-            </nav>
-        </section>
+<body class="st-cs">
+    <div class="st-col">
+        <header class="st-col c-bg--alabaster">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="st-col sp-ga--4xl sp-ga--2xl--mobile sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--3xl">
+                    <div class="st-col sp-ga--s">
+                        <div class="st-row sp-ga--xs">
+                            <img class="com-icon--sc" src="assets/figma-icon.svg"
+                                alt="Icon to represent attention to detail."><img class="com-icon--sc"
+                                src="assets/wordpress-icon.svg" alt="Icon with the logo of WordPress."> <img
+                                class="com-icon--sc" src="assets/plug-icon.svg" alt="Icon with the logo of WordPress.">
+                        </div>
+                        <span class="t-s--m t-w--s c-el--pine--80">Deploying a 360° web solution</span>
+                    </div>
+                    <div class="st-bal--1-1 st-col--mobile sp-ga--3xl sp-ga--m--mobile">
+                        <div class="st-col sp-ga--m">
+                            <h1 class="t-s--4xl">Case study: Ginevida</h1>
+                            <p class="hid t-s--l">Custom design and development, calendar API integration,
+                                and a ton of knowledge about creating a comprehensive website that meets the needs of
+                                the owner and
+                                their patients.</p>
+                            <p class="t-s--l">Ginevida is dedicated to growth and has a remarkable ability to stay
+                                connected with their patients by embracing the latest digital solutions. They constantly
+                                explore new ways to use technology, such as telemedicine and user-friendly web
+                                integrations, to provide personalized support
+                            </p>
+                            <p class="hid t-s--m">Short on time? Download <a
+                                    href="https://github.com/psantalla/pablosantalla.com/raw/master/files/cs-summary-ginevida.pdf"
+                                    target="_blank" rel="noopener noreferrer"> <img class="com-icon--action"
+                                        src="assets/download.svg" alt="Icon to download a file."></a> a 2-minute PDF
+                                summary instead.</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="st-img--normalize" src="/assets/cs-hero-ginevida.png"
+                    alt="Introducing the case study of Ginevida with a laptop mockup on a table. The hero section of the homepage is shown in the laptop's screen.">
+            </div>
+        </header>
     </div>
-    <div
-        class="position-absolute-desktop structure-section-full-width structure-grid-2-60-desktop structure-grid-1--tablet space-gap-5xl">
-        <div class="container-cs-image">
-            <img src="/assets/cs-hero-ginevida.png"
-                alt="Macbook Pro showing the hero section of the website ginevidagranada.com">
+    <main>
+        <div class="st-col sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--white">
+            <h2 class="t-s--3xl">Overview of the project</h2>
+            <ul class="st-grid _st-grid--1-1-1 _st-grid--1-1-1--tablet st-col--mobile sp-ga--2xl sp-ga--l--mobile">
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">500+</span><br>registrations</div>
+                    <span class="t-s--m c-el--pine--60">Due to an accesible interface, patiens can register and use
+                        the
+                        site to establish more efitient communications and book an appointment.</span>
+                </li>
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">2-way-sync</span><br>doctor's agendas
+                    </div>
+                    <span class="t-s--m c-el--pine--60">Doctor schedules sync seamlessly with Google Calendar, allowing
+                        bidirectional updates; changes made on the web app reflect in Google Calendar, and vice
+                        versa.</span>
+                </li>
+                <li class="t-s--m ut-border--sc c-bor--pine--60 sp-pa--l">
+                    <div class="sp-mb--m t-w--b"><span class="t-s--xl t-w--b">19</span><br>services</div>
+                    <span class="t-s--m c-el--pine--60">In addition to online services, the booking system is dynamic,
+                        guiding potential patients to select a service tailored to their needs. Responses are stored
+                        privately and monitored by healthcare staff daily.</span>
+                </li>
+            </ul>
         </div>
-        <div class="hid--tablet">
-        </div>
-    </div>
-    <div class="showcase-fix-position">
         <div
-            class="structure-section-normal structure-grid-2-60-desktop structure-grid-1--tablet space-gap-3xl  space-margin-bottom-6xl">
-            <div class="hid--tablet"></div>
-            <div class="structure-cs-hero-right-column">
-                <h1 class="  text-size-5xl space-margin-bottom-l">Ginevida</h1>
-                <p class="  text-size-l space-margin-bottom-3xl">A company I collaborate closely with that is still
-                    growing. It reflects my values of ethics and good practices on its website.</p>
-                <div class="structure-row structure-justify-content-row-left space-gap-xs space-margin-bottom-m">
-                    <img class="icon-minify" src="assets/figma-icon.svg" alt="Icon with the logo of Figma"><img
-                        class="icon-minify" src="assets/wordpress-icon.svg" alt="Icon with the logo of Webflow"> <img
-                        class="icon-minify" src="assets/plug-icon.svg" alt="Icon with the logo of Webflow">
+            class="ut-darken st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--alabaster">
+            <div class="st-col sp-ga--m ">
+                <h2 class="t-s--2xl c-el--pine">The challenge</h2>
+                <p class="t-s--l c-el--pine">Although the client presented it as a redesign of the current website, I
+                    quickly realized that the real challenge was to lead patients of diverse ages and backgrounds
+                    through a seemingly complicated booking process. The website must provide multiple services to
+                    patients, delivered by various doctors on different calendars, creating an even greater challenge.
+                </p>
+            </div>
+            <div class="st-anchor st-col st-appdcl--mid"><img
+                    class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" src="/assets/ginevida-before.png"
+                    alt="Showcase of the hero section of the landing page made for a crowdfounding participation for Regemat 3D."
+                    loading="lazy">
+                <div class="com-colab--idg c-bg--white sp-px--m ut-border-r--whole">
+                    <div class="t-s--s t-w--b t-a--c c-el--pine--90">Screenshot prior to the redesign</div>
                 </div>
-                <p class="text-size-m space-margin-bottom-xl">Custom design and development, calendar API integration,
-                    and a ton of knowledge about creating a comprehensive website that meets the needs of the owner and
-                    their patients.</p>
-                <h2 class="text-size-m space-margin-bottom-m">Overview</h2>
-                <div class="structure-grid-2-desktop space-gap-m">
-                    <p> <span class="text-size-2xl text-weight-bold">400+</span> <br> <span
-                            class="text-size-m">registrations</span> </p>
-                    <p> <span class="text-size-2xl text-weight-bold">2</span> <br> <span class="text-size-m">new online
-                            services</span> </p>
-                </div>
-                <p class="text-size-m space-margin-bottom-m space-margin-top-3xl">Short on time? Download a 2-minute PDF
-                    summary instead. <a
-                        href="https://github.com/psantalla/pablosantalla.com/raw/master/files/cs-summary-ginevida.pdf"
-                        target="_blank" rel="noopener noreferrer"> <img class="image-action" src="assets/download.svg"
-                            alt="Icon to download a file."></a></p>
             </div>
         </div>
-        <div class="page-content-fix-cs">
-            <section class="structure-section full-width structure-section-normal structure-max-width-2_3">
-                <h2 class="text-size-3xl space-margin-bottom-l">The challenge</h2>
-                <p class="text-size-m space-padding-bottom-5xl">Although the client presented it as a redesign of the
-                    current website, I quickly realized that the real challenge was to lead patients of diverse ages and
-                    backgrounds through a seemingly complicated booking process. The website must provide multiple
-                    services
-                    to patients, delivered by various doctors on different calendars, creating an even greater
-                    challenge.
-                </p>
-            </section>
-            <div
-                class="structure-section-full-width color-background-white space-padding-top-5xl space-padding-bottom-5xl">
-                <section class="structure-section full-width structure-section-normal   ">
-                    <div class="structure-grid-2-desktop structure-grid-1--mobile space-gap-2xl ">
-                        <div>
-                            <p class="text-size-l text-weight-bold space-margin-bottom-xs">Before</p> <img
-                                class="image-showcase" src="assets/ginevida-before.png"
-                                alt="Screenshot of the hero section in the legacy website of Ginevida">
-                        </div>
-                        <div>
-                            <p class="text-size-l text-weight-bold space-margin-bottom-xs">After</p> <img
-                                class="image-showcase" src="assets/ginevida-after.png"
-                                alt="Screenshot of the hero section in the new website of Ginevida">
-                        </div>
-                    </div>
-                </section>
-                <section
-                    class="structure-section-normal structure-max-width-2_3 space-margin-top-4xl structure-grid-2-33-desktop structure-grid-1--tablet space-gap-3xl space-gap-l--tablet">
-                    <p><span class="cool-message-alt">tone of voice</span><span class="cool-message-alt">complexity
-                            grade</span><span class="cool-message-alt">directness</span><span
-                            class="cool-message-alt">content segmentation</span><span class="cool-message-alt">target
-                            audience</span><span class="cool-message-alt">visual cues</span><span
-                            class="cool-message-alt">engagement balance</span><span
-                            class="cool-message-alt">scalability</span>
-                    </p>
-                    <div>
-                        <p class="text-size-m space-margin-bottom-l">It was key to establish and make the client reflect
-                            on
-                            the clues to ensure a
-                            successful product. In the future, we will examine analytics, but my role at the beginning
-                            was
-                            to listen to their expertise, identify their strongest points, and ensure they were ready to
-                            work with me to improve their online presence and follow my guidance. </p>
-                        <p class="text-size-m">I envisioned a complex
-                            backend for the client, while introducing something new to <span
-                                class="text-decoration-strikethrough">customers</span> the patients. I had to provide
-                            instructions
-                            to both parties without overwhelming them throughout the project.
-                    </div>
-                    </p>
-                </section>
+        <div
+            class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--alabaster">
+            <div class="st-anchor st-col st-appdcl--mid"><img
+                    class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" src="/assets/ginevida-after.png"
+                    alt="Showcase of the hero section of the landing page made for a crowdfounding participation for Regemat 3D."
+                    loading="lazy">
+                <div class="com-colab--idg c-bg--white sp-px--m ut-border-r--whole">
+                    <div class="t-s--s t-w--b t-a--c c-el--pine--90">Screenshot after to the redesign</div>
+                </div>
             </div>
-            <section class="structure-section-full-width structure-section-normal">
-                <div
-                    class=" space-padding-top-5xl space-padding-bottom-4xl structure-grid-2-60-desktop structure-grid-1--mobile space-gap-xs  space-gap-4xl--mobile">
-                    <video width="100%" height="100%" autoplay loop>
-                        <source src="assets/videocase-ginevida.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div style="align-self: center;">
-                        <h3 class="text-size-2xl space-margin-bottom-l">A
-                            streamlined, efficient way to book from any device.
-                        </h3>
-                        <p class="text-size-m space-margin-bottom-l">Genevida's
-                            team
-                            and I worked together to create a booking system that was complex to build but simple and
-                            accessible
-                            for
-                            both patients and doctors. It integrates 18 services, always prioritizing a hassle-free
-                            booking
-                            process
-                            that benefits the patient.</p>
-                    </div>
-                </div>
-                <div
-                    class=" space-padding-top-4xl space-padding-bottom-6xl structure-grid-2-40-desktop structure-grid-1--mobile space-gap-4xl space-gap-2xl--mobile">
-                    <div>
-                        <h3 class="text-size-2xl space-margin-bottom-l">Just a reflection of a highly qualified service.
-                        </h3>
-                        <p class="text-size-m space-margin-bottom-l">The basis for creating a 360° website was an
-                            excellent
-                            service. It was simple
-                            and enjoyable all at once. As someone who loves to learn, I truly enjoyed hearing from
-                            professionals about their businesses. The process involved listening, pausing, and
-                            reflecting on
-                            how the content can be made as meaningful as possible for the patients.</p>
-                        <p class="text-size-m">The basis for creating a 360° website was an excellent service. It was
-                            simple
-                            and enjoyable all at once. As someone who loves to learn, I truly enjoyed hearing from
-                            professionals about their businesses. The process involved listening, pausing, and
-                            reflecting on
-                            how the content can be made as meaningful as possible for the patients.</p>
-                    </div>
-                    <img width="100%" src="assets/cs-body-ginevida.png" alt="">
-                </div>
-                <p
-                    class="structure-padding-left-7vw text-size-xl space-margin-bottom-m structure-margin-top-2xl structure-reader-p">
-                    When this approach is implemented well, it's incredibly powerful.</p>
-                <p class="structure-padding-left-7vw text-size-m space-margin-bottom-2xl structure-reader-p">It's all
-                    about the user experience here in this website, and that's why we've taken a real mobile-first
-                    approach.
+            <div class="st-col sp-ga--m ">
+                <h2 class="t-s--2xl c-el--pine">The approach</h2>
+                <p class="t-s--l c-el--pine">Dividing the redesign into various stages, with a primary focus on
+                    delivering a viable product launch that serves as the new brand design. Additionally, this product
+                    should have the capability to facilitate scalability and the integration of features that, over
+                    time, would distinguish the clinic for its ability to offer and manage online services effectively.
                 </p>
-                <div><img class="effect-gray-to-color" width="100%" src="assets/cs-responsive-ginevida.png" alt="">
-                </div>
-                <p
-                    class="structure-padding-left-7vw text-size-m space-margin-bottom-l structure-reader-p space-margin-top-2xl">
-                    We've thought about how potential patients might book appointments—whether they're chilling on the
-                    couch after a long day at work, riding the bus, or just browsing on the weekends.
-                    We've tested and refined our approach over time, taking all that context into account to create a
-                    simple, user-friendly interface that provides just the right amount of information. And we haven't
-                    left anything to chance—every part of the website has been carefully designed, from the color
-                    choices to the content placement.
+                <p class="t-s--l c-el--pine">I envisioned a complex
+                    backend for the client, while introducing something new to <span
+                        class="text-decoration-strikethrough">customers</span> the patients. I had to provide
+                    instructions
+                    to both parties without overwhelming them throughout the project.
                 </p>
-                <p class="structure-padding-left-7vw text-size-m space-margin-bottom-2xl structure-reader-p ">
-                    The team at Ginevida knew they didn't want to go down the aggressive marketing route. No crazy
-                    offers or pushy "buy now, get your free" calls-to-action. Instead, we just wanted to make it easy
-                    for users to find the information they need, when they need it.
+            </div>
+            <div class="st-col sp-ga--m ">
+                <div class="t-s--s"><span class="cool-message-alt">tone of voice</span><span
+                        class="cool-message-alt">complexity
+                        grade</span><span class="cool-message-alt">directness</span><span
+                        class="cool-message-alt">content segmentation</span><span class="cool-message-alt">target
+                        audience</span><span class="cool-message-alt">visual cues</span><span
+                        class="cool-message-alt">engagement balance</span><span
+                        class="cool-message-alt">scalability</span> </div>
+            </div>
+            <div class="st-col sp-ga--m ">
+                <p class="t-s--l c-el--pine">It was key to establish and make the client reflect
+                    on
+                    the clues to ensure a
+                    successful product. In the future, we will examine analytics, but my role at the beginning
+                    was
+                    to listen to their expertise, identify their strongest points, and ensure they were ready to
+                    work with me to improve their online presence and follow my guidance.
                 </p>
-                <div class="structure-padding-left-7vw space-padding-top-2xl space-margin-bottom-6xl">
-                    <p class="text-size-2xl text-weight-bold">Do you have a web project in mind? Let's <span
-                            class="highlight"><a class="color-font-pine text-decoration-not-underline "
-                                href="https://tally.so/r/mOQqDa" target="_blank" rel="noopener noreferrer"> make it
-                                happen</a></span>.</p>
-                    <p class="text-size-l space-margin-top-s">*Kick off your website from $4,000.</p>
+            </div>
+        </div>
+        <div
+            class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--white">
+            <div class="st-anchor st-col st-appdcl--mid"><video style="background-color: #F7F6F7;"
+                    class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" autoplay loop>
+                    <source src="/assets/videocase-ginevida.mp4" type="video/mp4">
+                    <!-- inline styles applyid due to specific cirmunstances with a unic element -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="com-colab--idg c-bg--white sp-px--m ut-border-r--whole">
+                    <div class="t-s--s t-w--b t-a--c c-el--pine--90">A glimpse into the booking process</div>
                 </div>
-            </section>
-            <footer class="space-margin-bottom-3xl">
-                <section class="structure-section-normal space-margin-top-3xl">
-                    <img class="space-margin-bottom-2xl" src="assets/logo.svg" alt="Logo of Pablo Santalla">
-                    <h2 class="text-size-3xl space-margin-bottom-xl">Join the newsletter</h2>
-                    <div
-                        class="structure-grid-2-67-desktop structure-grid-1--mobile align-items-top space-gap-5xl space-gap-xl--mobile">
-                        <div>
-                            <p class="text-size-m space-margin-bottom-2xl">I only share useful stuff, no spam. If I
-                                don't
-                                think it'll add value to your day, I don't send it. And if you're ever not feeling it,
-                                unsubscribing is just one click away.</p>
-                            <div class="ml-form-embed" data-account="3893351:w5m1v6s9d4" data-form="5642190:c3v4a3">
-                            </div>
-                        </div>
-                        <div>
-                            <div
-                                class="structure-grid-2-desktop structure-grid-1--mobile align-items-top space-gap-4xl space-gap-2xl--mobile">
-                                <div>
-                                    <p class="space-margin-bottom-xs"> <a
-                                            class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                            href="blog.html">Articles</a> </p>
-                                    <p class="space-margin-bottom-xs"> <a
-                                            class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                            href="support.html">Web support</a> </p>
-                                    <p class="space-margin-bottom-xs"> <a
-                                            class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                            href="https://hashnode.pablosantalla.com/" target="_blank">Hashnode</a> </p>
-                                    <p class="space-margin-bottom-xs"> <a
-                                            class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                            href="https://codepen.io/psantalla/pens/public" target="_blank">Codepen</a>
-                                    </p>
-                                </div>
-                                <div>
-                                    <p class="space-margin-bottom-xs"> <a
-                                            class="text-size-m color-font-pine text-weight-bold text-decoration-not-underline body-link text-link-showcase"
-                                            href="https://billing.stripe.com/p/login/28odUO3WEdjM7Oo6oo"
-                                            target="_blank">Customer portal</a> </p>
-                                    <div class="structure-row structure-justify-content-row-left space-gap-xs">
-                                        <a href="https://twitter.com/psantalla" target="_blank"><img class="icon-rrss"
-                                                src="assets/twitter.svg" alt="Logomark of Twitter." /></a>
-                                        <a href="https://linkedin.com/in/psantalla" target="_blank">
-                                            <img class="icon-rrss" src="assets/linkedin.svg"
-                                                alt="Logomark of LinkedIn." /></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="structure-row structure-justify-content-row-left space-margin-top-2xl">
-                        </p>
-                        <p class="text-size-m space-margin-bottom-2xl">&copy;
-                            <script>document.write(new Date().getFullYear())</script> Pablo santalla
-                        </p>
-                    </div>
-                </section>
-            </footer>
+            </div>
+            <div class="st-col sp-ga--m ">
+                <h3 class="t-s--2xl c-el--pine">A streamlined, efficient way to book from any device</h3>
+                <p class="t-s--l c-el--pine">Genevida's team and I worked together to create a booking system that was
+                    complex to build but simple and accessible for both patients and doctors. It integrates 18 services,
+                    always prioritizing a hassle-free booking process that benefits the patient.
+                </p>
+            </div>
+        </div>
+        <div
+            class="st-grid _st-grid--1-1 st-col--mobile sp-ga--3xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--alabaster">
+            <img class="ut-obj-respond ut-border--sc c-bor--pine st-ratio--10-8" src="/assets/cs-body-ginevida.png"
+                alt="Screenshot of the about us page of Ginevida.">
+            <div class="st-col sp-ga--m ">
+                <h3 class="t-s--2xl c-el--pine">Just a reflection of a highly qualified service</h3>
+                <p class="t-s--l c-el--pine">The foundation for creating a 360° website for this obstetric clinic was
+                    rooted in their service. The site aims to be both user-friendly and enjoyable. As someone with a
+                    passion for learning, I found genuine pleasure in hearing from healthcare professionals about their
+                    practices. The process involved attentive listening, days of reflection, and a dedication to shaping
+                    content that would be truly meaningful for their patients.
+                </p>
+            </div>
+        </div>
+        <div
+            class="st-bal--1-1 st-col--mobile sp-ga--3xl sp-ga--m--mobile sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--white">
+            <div class="st-col sp-ga--m ">
+                <p class="t-s--l">The Genevida team consciously avoided aggressive marketing tactics. Instead, their
+                    focus was on making it easy for users to find the information they need, when they need it.</p>
+                <h4 class="t-s--l c-el--pine">To create a more favorable website experience for both the clinic's
+                    medical professionals and staff, we aimed to anticipate patient behavior based on age group, level
+                    of urgency, and specific expectations.</h4>
+                <p class="t-s--l c-el--pine">It's all about the user experience here in this website, and that's why
+                    we've taken a real mobile-first approach.
+                </p>
+                <p class="t-s--l c-el--pine">We've thought about how potential patients might book appointments—whether
+                    they're chilling on the couch after a long day at work, riding the bus, or just browsing on the
+                    weekends. We've tested and refined our approach over time, taking all that context into account to
+                    create a simple, user-friendly interface that provides just the right amount of information. And we
+                    haven't left anything to chance—every part of the website has been carefully designed, from the
+                    color choices to the content placement.
+                </p>
+            </div>
+        </div>
+    </main>
+    <div class="st-col sp-ga--xl sp-py--4xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile c-bg--pine">
+        <img class="st-img--normalize" src="/assets/cs-responsive-ginevida.png"
+            alt="Screenshot of the homepage of Ginevida where a mobile view and a desktop view are shown one next to another.">
+        <div class="st-col sp-ga--xs">
+            <p class="c-el--white t-s--xl t-w--b">Do you want to start working on a project like this? Let's <a
+                    class="ut-link _ut-link--not-underline ut-highlight" href="https://tally.so/r/mOQqDa"
+                    target="_blank" rel="noopener noreferrer">make it happen</a>.</p>
+            <p class="c-el--white t-s--m ut-opacity--80">Kick off your site from $8,000.</p>
         </div>
     </div>
+    <footer>
+        <div id="footer-js"></div>
+    </footer>
+    </div> <!-- page wrapper ends here -->
+    <script src="javascript/dynamic/navbar.js"></script>
+    <script src="javascript/dynamic/footer.js"></script>
 </body>
+
+</html>
