@@ -2,6 +2,10 @@
   display: none;
 }
 
+.ut-beautiful-shadow {
+  box-shadow: 3px 6px 14px 0px rgba(19, 17, 23, 0.10), 11px 23px 25px 0px rgba(19, 17, 23, 0.09), 24px 52px 34px 0px rgba(19, 17, 23, 0.05), 44px 92px 41px 0px rgba(19, 17, 23, 0.01), 68px 143px 44px 0px rgba(19, 17, 23, 0.00);
+}
+
 @media only screen and (min-width: 992px) {
 
   /* only desktop */

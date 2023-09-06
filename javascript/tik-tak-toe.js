@@ -55,11 +55,11 @@ function webPlay() {
     const cells = document.querySelectorAll(".com-cell");
     for (let i = 0; i < cells.length; i++) {
         if (!cells[i].textContent) {
-            // Simular el movimiento de la computadora (jugador "🐢")
+            // Simulate the computer's move (player "🐢")
             cells[i].textContent = "🐢";
             currentPlayer = "🐔";
             
-            // Verificar si la computadora ganó con este movimiento
+            // Check if the computer won with this move
             if (checkWinningMove(cells[i])) {
                 mostrarResultado("¡La computadora ha ganado!");
             }
@@ -70,17 +70,17 @@ function webPlay() {
 }
 
 function checkWinningMove(cell) {
-    // Copiar el tablero actual
+    // Copy the current board
     const cells = document.querySelectorAll(".com-cell");
     const boardCopy = [...cells].map((cell) => cell.textContent);
     
-    // Obtener el índice de la celda clicada
+    // Get the index of the clicked cell
     const index = Array.from(cells).indexOf(cell);
     
-    // Marcar la celda en el tablero copiado
+    // Mark the cell on the copied board
     boardCopy[index] = "🐢";
     
-    // Verificar si este movimiento es ganador para la computadora
+    // Check if this move is a winning move for the computer
     const winningCombos = [
         [0, 1, 2],
         [3, 4, 5],
@@ -105,15 +105,15 @@ function checkWinningMove(cell) {
 function mostrarResultado(mensaje) {
     const resultadoDiv = document.getElementById("resultado");
     resultadoDiv.textContent = mensaje;
-    resultadoDiv.style.color = "white"; // Color de texto blanco
+    resultadoDiv.style.color = "white"; // White text color
     document.getElementById("reiniciar").disabled = false;
 }
 
-// Crear las celdas del tablero
+// Create the cells of the board
 for (let i = 0; i < 9; i++) {
     const cell = createCell();
     board.appendChild(cell);
 }
 
-// Comienza el juego con el movimiento de la web (computadora)
+// Start the game with the web's move (computer)
 webPlay();
