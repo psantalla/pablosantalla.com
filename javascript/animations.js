@@ -48,8 +48,9 @@ class RingDot {
     move(event) {
         const isInteractiveElement = ['svg', 'a'].includes(event.target.localName) || event.target.onclick !== null;
         const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isTouch = 'ontouchstart' in window || (navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
 
-        if (isInteractiveElement || isMobileDevice || Array.from(event.target.classList).includes('ut:cursor-cool')) {
+        if (isInteractiveElement || isMobileDevice || isTouch || Array.from(event.target.classList).includes('ut:cursor-cool')) {
             this.hover(40);
         } else {
             this.hoverout();
@@ -79,6 +80,7 @@ class RingDot {
         }, 500);
     }
 }
+
 const cursor = new RingDot();
 document.addEventListener('pointermove', (event) => {
     cursor.move(event);
@@ -86,11 +88,6 @@ document.addEventListener('pointermove', (event) => {
 document.addEventListener('click', () => {
     cursor.click();
 });
-
-// Ocultar el cursor personalizado en dispositivos móviles
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    cursor.hidden();
-}
 // /* building tik-tak-toe */
 
 // document.addEventListener('DOMContentLoaded', function () {
