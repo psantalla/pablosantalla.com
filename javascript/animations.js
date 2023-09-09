@@ -86,6 +86,11 @@ document.addEventListener('pointermove', (event) => {
 document.addEventListener('click', () => {
     cursor.click();
 });
+
+// Ocultar el cursor personalizado en dispositivos móviles
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    cursor.hidden();
+}
 // /* building tik-tak-toe */
 
 // document.addEventListener('DOMContentLoaded', function () {
