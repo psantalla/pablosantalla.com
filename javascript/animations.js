@@ -47,9 +47,9 @@ class RingDot {
     }
     move(event) {
         const isInteractiveElement = ['svg', 'a'].includes(event.target.localName) || event.target.onclick !== null;
-        const isPointerDevice = navigator.maxTouchPoints === 0 || navigator.maxTouchPoints === undefined;
+        const isTablet = navigator.maxTouchPoints > 0;
 
-        if (isInteractiveElement || !isPointerDevice || Array.from(event.target.classList).includes('ut:cursor-cool')) {
+        if (isInteractiveElement || isTablet || Array.from(event.target.classList).includes('ut:cursor-cool')) {
             this.hover(40);
         } else {
             this.hoverout();
@@ -80,7 +80,7 @@ class RingDot {
     }
 }
 const cursor = new RingDot();
-document.addEventListener('mousemove', (event) => {
+document.addEventListener('pointermove', (event) => {
     cursor.move(event);
 });
 document.addEventListener('click', () => {
