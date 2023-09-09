@@ -47,9 +47,9 @@ class RingDot {
     }
     move(event) {
         const isInteractiveElement = ['svg', 'a'].includes(event.target.localName) || event.target.onclick !== null;
-        const isTablet = navigator.maxTouchPoints > 0;
+        const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-        if (isInteractiveElement || isTablet || Array.from(event.target.classList).includes('ut:cursor-cool')) {
+        if (isInteractiveElement || isMobileDevice || Array.from(event.target.classList).includes('ut:cursor-cool')) {
             this.hover(40);
         } else {
             this.hoverout();
