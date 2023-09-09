@@ -47,8 +47,8 @@ class RingDot {
     }
     move(event) {
         const isInteractiveElement = ['svg', 'a'].includes(event.target.localName) || event.target.onclick !== null;
-        const isPointerDevice = !event.sourceCapabilities || !event.sourceCapabilities.firesTouchEvents;
-        
+        const isPointerDevice = navigator.maxTouchPoints === 0 || navigator.maxTouchPoints === undefined;
+
         if (isInteractiveElement || !isPointerDevice || Array.from(event.target.classList).includes('ut:cursor-cool')) {
             this.hover(40);
         } else {
@@ -86,7 +86,6 @@ document.addEventListener('mousemove', (event) => {
 document.addEventListener('click', () => {
     cursor.click();
 });
-
 // /* building tik-tak-toe */
 
 // document.addEventListener('DOMContentLoaded', function () {
