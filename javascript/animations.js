@@ -3,11 +3,40 @@ class RingDot {
     constructor() {
         this.root = document.body;
         this.cursor = document.querySelector(".curzr-ring-dot");
+        this.dot = document.querySelector(".curzr-ring-dot .curzr-dot");
         this.cursorSize = 25;
         this.cursorStyle = {
-            /* Estilos del cursor */
+            boxSizing: 'border-box',
+            position: 'fixed',
+            display: 'flex',
+            top: `${this.cursorSize / -2}px`,
+            left: `${this.cursorSize / -2}px`,
+            zIndex: '2147483647',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: `${this.cursorSize}px`,
+            height: `${this.cursorSize}px`,
+            backgroundColor: 'var(--c--alabaster--10)',
+            boxShadow: '0 0 0 1px var(--c--pine--80)',
+            borderRadius: '50%',
+            transition: '200ms, transform 100ms',
+            userSelect: 'none',
+            pointerEvents: 'none'
+        };
+        this.dotStyle = {
+            boxSizing: 'border-box',
+            position: 'fixed',
+            zIndex: '2147483647',
+            width: 'calc(1.2 * var(--sp--2xs))',
+            height: 'calc(1.2 * var(--sp--2xs))',
+            backgroundColor: 'var(--c--pine--80)',
+            boxShadow: '0 0 0 .5px var(--c--accent--80)',
+            borderRadius: '50%',
+            userSelect: 'none',
+            pointerEvents: 'none',
         };
         this.init(this.cursor, this.cursorStyle);
+        this.init(this.dot, this.dotStyle);
     }
 
     init(el, style) {
@@ -19,9 +48,28 @@ class RingDot {
     }
 
     move(event) {
+        const isInteractiveElement = ['svg', 'a'].includes(event.target.localName) || event.target.onclick !== null;
+        const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isTouch = 'ontouchstart' in window || (navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
+
+        if (isInteractiveElement || isMobileDevice || isTouch || Array.from(event.target.classList).includes('ut:cursor-cool')) {
+            this.hover(40);
+        } else {
+            this.hoverout();
+        }
         this.pointerX = event.pageX + this.root.getBoundingClientRect().x;
         this.pointerY = event.pageY + this.root.getBoundingClientRect().y;
         this.cursor.style.transform = `translate3d(${this.pointerX}px, ${this.pointerY}px, 0)`;
+    }
+
+    hover(radius) {
+        this.cursor.style.width = this.cursor.style.height = `${radius}px`;
+        this.cursor.style.top = this.cursor.style.left = `${radius / -2}px`;
+    }
+
+    hoverout() {
+        this.cursor.style.width = this.cursor.style.height = `${this.cursorSize}px`;
+        this.cursor.style.top = this.cursor.style.left = `${this.cursorSize / -2}px`;
     }
 
     click() {
@@ -39,13 +87,15 @@ class RingDot {
     }
 }
 
-const cursor = new RingDot();
-document.addEventListener('pointermove', (event) => {
-    cursor.move(event);
-});
-document.addEventListener('click', () => {
-    cursor.click();
-});
+if (window.innerWidth >= 992) { /* i'm deactivating this functionality below desktop viewport - keeping it simple */
+    const cursor = new RingDot();
+    document.addEventListener('pointermove', (event) => {
+        cursor.move(event);
+    });
+    document.addEventListener('click', () => {
+        cursor.click();
+    });
+}
 
 // /* building tik-tak-toe */
 

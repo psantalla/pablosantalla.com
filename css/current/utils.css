@@ -2,8 +2,12 @@
   display: none;
 }
 
-* {
-  cursor: none;
+@media only screen and (min-width: 992px) {
+
+  /* only desktop */
+  * {
+    cursor: none;
+  }
 }
 
 .ut-beautiful-shadow {
