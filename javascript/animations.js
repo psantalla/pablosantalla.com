@@ -150,3 +150,26 @@ if (window.innerWidth >= 992) { /* i'm deactivating this functionality below des
 //         updateDarkMode(progress);
 //     });
 // });
+
+
+
+
+// Función para obtener el valor de gap definido en CSS
+function getCssGapValue(element) {
+    var style = getComputedStyle(element);
+    return style.gap;
+}
+
+// Obtiene todos los elementos con el valor de gap definido en su estilo
+var elementsWithGap = document.querySelectorAll('*[style*="gap"]');
+
+// Itera sobre cada elemento y aplica el valor de gap a los elementos internos
+elementsWithGap.forEach(function(element) {
+    var gapValue = getCssGapValue(element);
+    var children = element.children;
+    for (var i = 0; i < children.length; i++) {
+        if (i % 2 === 0) {
+            children[i].style.marginRight = gapValue;
+        }
+    }
+});

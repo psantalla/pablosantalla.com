@@ -7,9 +7,9 @@
     transform: rotate3d(0, 1, 0, 360deg)
 }*/
 /* .st--home allows the logo to be weirdly animated just on the homepage */
-button {
+/* button {
     cursor: pointer;
-}
+} */
 
 .com-ul {
     display: flex;
