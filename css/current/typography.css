@@ -1,5 +1,10 @@
+html {
+  font-size: 16px;
+  /* = 1rem */
+}
+
 :root {
-  --t-b: 16px;
+  --t-b: 1rem;
   /* value for typography base size on desktop */
   --t-sc: 1.31;
   /* value for typography scale on desktop */
@@ -28,7 +33,7 @@
 
   /* only mobile */
   :root {
-    --t-b: 15px;
+    --t-b: 0.938rem;
     /* value for typography base size on mobile */
     --t-sc: 1.19;
     /* value for typography scale on mobile */
@@ -137,6 +142,7 @@ h6 {
   font-family: 'n27bold_italic';
 }
 
+/* typography.css 3.0 */
 /* font-import */
 @font-face {
   font-family: 'n27regular';
