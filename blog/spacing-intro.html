@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla — Spacing in Web Design and How to Implement It</title>
+    <meta name="description"
+        content="Discover the significance of spacing in web design and its influence on user experience. Explore two-dimensional and depth spacing, vertical and horizontal spacing, and their role in creating user-friendly web layouts.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <meta property="/assets/entries/03/og-space.svg" content="Screenshot of a responsive space system made in Figma.">
+    <script src="/javascript/clock.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
+    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="st-entry st-col st-appdcl--mid">
+    <div class="st-col ut-of--hid"> <!-- page wrapper, following a column structure -->
+        <header class="st-col c-bg--alabastrr">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--2xl sp-ga--xl--mobile">
+                    <h1 class="t-s--3xl st-mw--pleasant">Spacing in Web Design and How to Implement It
+                    </h1>
+                    <div class="st-row st-appdcl--mid sp-ga--s">
+                        <img class="com-avatar--blog" src="/assets/Pablo Santalla - Cuadrado.jpg"
+                            alt="Picture of Pablo Santalla.">
+                        <p class="t-s--m"><span class="t-w--b">Pablo Santalla</span><br>Web designer and developer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="st-col sp-ga--s">
+            <img class="st-img--normalize" src="/assets/entries/03/sub-hero.svg"
+                alt="Space system that is used to space elements, ideally, vertically.">
+        </section>
+        <main class="st-col sp-ga--nil">
+            <section class="c-bg--white st-col sp-ga--s sp-py--4xl sp-py--xl--mobile sp-px--3xl sp-px--l--mobile">
+                <!-- block 01 -->
+                <p class="st-mw--pleasant t-s--m">When discussing spacing in web design, it's essential to distinguish
+                    between two types:
+                </p>
+                <ul class="st-mw--pleasant com-ul sp-my--2xs t-s--m">
+                    <li>Two-dimensional spacing</li>
+                    <li>Depth</li>
+                </ul>
+            </section>
+            <article
+                class="st-col sp-ga--2xl c-bg--alabaster sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+                <!-- block 02 -->
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">Why Spacing Matters</h2>
+                    <div class="st-col sp-ga--s">
+                        <div class="st-col--mobile sp-ga--2xl sp-ga--s--mobile">
+                            <p class="st-mw--pleasant t-s--m">Even though website visitors may not pinpoint visual
+                                inconsistencies precisely, they do notice them.
+                        </div>
+                        <p class="st-mw--pleasant t-s--m">As web designers, we use terminology to identify visual
+                            patterns, hierarchies, and consistencies.
+                        </p>
+                        <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                            A web designer's role is to guide the user's natural gaze to their desired content.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">The most frequently visited websites, not necessarily the
+                            flashiest ones, establish visual patterns that make users feel comfortable. The repetition
+                            of navigation flows, similar to walking or driving along familiar routes, creates a sense of
+                            security. It's not just the flows; what users encounter along the way greatly influences
+                            their experience. We navigate more comfortably when we understand how streets and highways
+                            connect, the width of lanes, or the locations of intersections. Visual references like
+                            traffic signs or lane markings also contribute to our comfort. Most importantly, we
+                            appreciate knowing that for different routes, we'll have a similar experience if our
+                            references follow these learned patterns. You've probably noticed the close relationship
+                            between "experience" and "user."
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Spacing is another element of this experience. It's crucial
+                            because it's intrinsic to our understanding of the world. We bring related objects closer
+                            together, sometimes grouping them tightly or placing them at specific distances, making room
+                            for other objects or ourselves.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">If I give you four chairs and a square table, you'll arrange
+                            them similarly to how I would. If I add another chair, you'll face the same challenge. If I
+                            provide a sixth chair and a second table with two more chairs, we'll rearrange them
+                            similarly. Following familiar patterns allows us to navigate the world with confidence.
+                            These behaviors also apply to the digital realm.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">Spacing Direction</h2>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">In our two-dimensional web world, we can break down spacing
+                            into two main categories:
+                        </p>
+                        <ul class="com-ul sp-my--2xs st-mw--pleasant t-s--m">
+                            <li>Vertical spacing</li>
+                            <li>Horizontal spacing</li>
+                        </ul>
+                        <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                            Some designers work with both types equally. Personally, I don't consider it a major
+                            mistake, but it can significantly impact the final user experience.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            I distinguish between vertical and horizontal spacing for a straightforward reason: space
+                            serves functionality, not aesthetics. Vertical and horizontal spacing serve different
+                            functions.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Reading or analyzing elements horizontally is continuous. We read sentences without stopping
+                            as we move from one letter to the next, one symbol to the next, or one element to the next.
+                            Line breaks are the most disruptive, as they interrupt the flow of information. A double
+                            space between lines can separate two paragraphs, a slightly larger space separates different
+                            statements, and so on. Websites follow the same principle. Greater vertical spacing disrupts
+                            continuity, isolating sections and preventing interaction when the space between them is
+                            significant.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Vertical spacing is not a new concept in interface design; magazines and newspapers use it.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h3 class="t-s--l">Vertical Spacing</h3>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Few websites limit themselves to vertical scrolling. Webpages
+                            have virtually infinite space to display content, with no specific limit on how much can be
+                            added above or below.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Vertical spacing allows us to categorize elements and suggest
+                            relationships based on their proximity. This infinite nature of vertical spacing allows for
+                            flexibility along the y-axis.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h4 class="t-s--m">Vertical Spacing Uses Fixed Units</h4>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Vertical spacing maintains a constant number of pixels, REMs,
+                            or other units of measurement, regardless of the viewport's height. It's not advisable to
+                            use percentage units (%) or VH for vertical spacing. If the spacing between two paragraphs
+                            is 12px, it remains the same regardless of the browser window's height.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Many highly visited websites employ an 8-pixel vertical
+                            spacing system.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h3 class="t-s--l">Horizontal Spacing</h3>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">In web design, horizontal spacing serves convenience and
+                            facilitation. Navigation menu links are horizontally spaced for user convenience, displaying
+                            essential information while offering the option to navigate to another page. Horizontal
+                            spacing is also used to separate two columns of text, making reading easier by preventing
+                            long strings of words that can be challenging to follow when transitioning to a new line.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Various factors lead to horizontal spacing, including
+                            inherited practices from print formats and common design patterns. However, the primary goal
+                            is to enhance the user's browsing experience.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">Horizontal spacing presents challenges in design, which is why
+                            new guidelines have emerged to ensure consistency across different environments. For
+                            instance, the twelve-column system for interface design adapts well to narrower screens.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h4 class="t-s--m">Horizontal Spacing Uses Relative Units</h4>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Unlike vertical spacing, horizontal space is constrained by
+                            the width of the browser window, determined by the screen size. While horizontal scrolling
+                            is an option, it should not become the norm.
+                        </p>
+                    </div>
+                    <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                        Mixing two types of scrolling confuses users. Reserve it for specific situations, clearly
+                        indicating the possibility of horizontal scrolling. Additionally, remember that not all screens
+                        support touch input, and not all mice have horizontal scrolling capabilities.
+                    </p>
+                    <p class="st-mw--pleasant t-s--m">
+                        To address this constraint, we need an adaptive horizontal spacing system that scales
+                        proportionally with the screen width. Horizontal spacing rules determine the number of columns
+                        that fit on a smaller screen, stacking those that don't fit.
+                    </p>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">The Element Of Surprise</h2>
+                    <div class="st-col sp-ga--s">
+                        <div class="st-col--mobile sp-ga--2xl sp-ga--s--mobile">
+                            <p class="st-mw--pleasant t-s--m">Maintaining design homogeneity can sometimes dilute a
+                                website's distinctiveness. However, these rules prioritize the user experience, making
+                                navigation flows intuitive and predictable.
+                        </div>
+                        <p class="st-mw--pleasant t-s--m">Nevertheless, there's room for surprise and novelty. Just as
+                            we might discover a new arrangement of furniture in a new house that improves functionality,
+                            adhering to known design rules allows for unique variations. Knowing the rules well enables
+                            designers to decide when to break them for a surprising twist.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">How Learning This Methodology Benefits You</h2>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">As you read this article, you may have identified areas where
+                            you'd like to delve deeper. If not, you might have contemplated questions such as how close
+                            two elements should be to indicate their relationship or how far apart they should be to
+                            avoid appearing related. Our system of vertical and horizontal spacing provides clear
+                            answers, eliminating doubts and streamlining the creative process.
+                        </p>
+                        <ul class="com-ul sp-my--2xs st-mw--pleasant t-s--m">
+                            <li>Vertical spacing</li>
+                            <li>Horizontal spacing</li>
+                        </ul>
+                        <p class="st-mw--pleasant t-s--s ut-opacity--60">
+                            Some designers work with both types equally. Personally, I don't consider it a major
+                            mistake, but it can significantly impact the final user experience.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            I distinguish between vertical and horizontal spacing for a straightforward reason: space
+                            serves functionality, not aesthetics. Vertical and horizontal spacing serve different
+                            functions.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Reading or analyzing elements horizontally is continuous. We read sentences without stopping
+                            as we move from one letter to the next, one symbol to the next, or one element to the next.
+                            Line breaks are the most disruptive, as they interrupt the flow of information. A double
+                            space between lines can separate two paragraphs, a slightly larger space separates different
+                            statements, and so on. Websites follow the same principle. Greater vertical spacing disrupts
+                            continuity, isolating sections and preventing interaction when the space between them is
+                            significant.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">
+                            Vertical spacing is not a new concept in interface design; magazines and newspapers use it.
+                        </p>
+                    </div>
+                </div>
+                <div class="st-col sp-ga--l">
+                    <h2 class="t-s--2xl">References</h2>
+                    <div class="st-col sp-ga--s">
+                        <p class="st-mw--pleasant t-s--m">Much of this article draws from personal experience. It's
+                            challenging to list the extensive body of work in design systems, guidelines, website
+                            analyses, and videos on web scalability.
+                        </p>
+                        <p class="st-mw--pleasant t-s--m">For those interested in exploring these topics further, here
+                            are some references that have personally enriched my understanding:
+                        </p>
+                        <ul class="com-ul sp-my--2xs st-mw--pleasant t-s--m">
+                            <li><a class="ut-link"
+                                    href="https://m2.material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins"
+                                    target="_blank" rel="noopener noreferrer">Responsive layout grid</a> by Material
+                                Design, Google</li>
+                            <li><a class="ut-link" href="https://atlassian.design/foundations/spacing/" target="_blank"
+                                    rel="noopener noreferrer">Spacing</a> by Atlassian</li>
+                            <li><a class="ut-link" href="https://www.masterflowmaker.com/blog/a-vertical-spacing-system-for-scalable-and-maintainable-webflow-sites" target="_blank"
+                                rel="noopener noreferrer">A Vertical Spacing System for scalable and maintainable Webflow sites</a> by Matías Pitters
+                            </li>
+                        </ul>
+            </article>
+        </main>
+        <div class="sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div id="posts-recap-js"></div>
+        </div>
+        <footer>
+            <div id="footer-js"></div>
+        </footer>
+    </div> <!-- page wrapper ends here -->
+    <!-- cursor -->
+    <div class="curzr-ring-dot" hidden>
+        <div class="curzr-dot"></div>
+    </div>
+    <script src="/javascript/dynamic/navbar.js"></script>
+    <script src="/javascript/dynamic/posts-recap.js"></script>
+    <script src="/javascript/dynamic/footer.js"></script>
+    <script src="/javascript/animations.js"></script>
+</body>
+
+</html>

@@ -287,6 +287,12 @@
     border-radius: var(--sp--7xl);
 }
 
+.com-brand {
+    width: var(--sp--3xl);
+    height: var(--sp--3xl);
+    border-radius: var(--sp--7xl);
+}
+
 .com-code {
     font-family: Andale Mono;
     border-radius: var(--sp--s);

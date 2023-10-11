@@ -129,6 +129,18 @@
     align-items: flex-end;
 }
 
+.st-as--start {
+align-self: start;
+}
+
+.st-as--mid {
+    align-self: center;
+}
+
+.st-as--end {
+    align-self: end;
+}
+
 .st-ht--100dvh,
 .st-ht--100svh {
     max-height: calc(5 * var(--sp--7xl));

@@ -12,13 +12,18 @@ fetch('/html/dynamic/posts-recap.html')
     const containerDiv = postsFragment.querySelector('.com-container--entries-intros');
     const postLinks = containerDiv.querySelectorAll('a.com-entry-intro');
 
-    const maxVisiblePosts = isStEntry ? 2 : postLinks.length;
+    const currentArticleLink = window.location.pathname; // Obtener la URL actual del artículo
+
+    // Filtrar los enlaces para excluir el enlace actual
+    const filteredLinks = Array.from(postLinks).filter(link => link.getAttribute('href') !== currentArticleLink);
+
+    const maxVisiblePosts = isStEntry ? 2 : filteredLinks.length;
 
     const clonedMasterContainer = masterContainer.cloneNode(false);
     const clonedContainerDiv = containerDiv.cloneNode(false);
 
     for (let i = 0; i < maxVisiblePosts; i++) {
-      const clonedLink = postLinks[i].cloneNode(true);
+      const clonedLink = filteredLinks[i].cloneNode(true);
       clonedContainerDiv.appendChild(clonedLink);
     }
 
