@@ -3,7 +3,8 @@
 .st-entry,
 .st-support,
 .st-blog,
-.st-cs {
+.st-cs,
+.st-about {
     max-width: var(--sp--site-width);
     margin-inline: auto;
 }
@@ -15,7 +16,8 @@
     .st-entry,
     .st-support,
     .st-blog,
-    .st-cs {
+    .st-cs,
+    .st-about {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }
@@ -32,7 +34,6 @@
 .st-bal--1-1 {
     column-count: 2;
     column-fill: balance;
-
 }
 
 .st-inline {
@@ -130,7 +131,7 @@
 }
 
 .st-as--start {
-align-self: start;
+    align-self: start;
 }
 
 .st-as--mid {
