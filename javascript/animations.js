@@ -1,3 +1,21 @@
+const testimonials = document.querySelectorAll('.com-testimonial');
+let currentIndex = 0;
+
+const showTestimonial = (index) => {
+  testimonials[currentIndex].classList.add('hid');
+  currentIndex = (index + testimonials.length) % testimonials.length;
+  testimonials[currentIndex].classList.remove('hid');
+};
+
+const arrowLeft = document.getElementById('testimonials_arrow-left');
+const arrowRight = document.getElementById('testimonials_arrow-right');
+
+arrowLeft.addEventListener('click', () => showTestimonial(currentIndex - 1));
+arrowRight.addEventListener('click', () => showTestimonial(currentIndex + 1));
+
+// Muestra el primer testimonio al cargar la página
+showTestimonial(0);
+
 
 
 // /* building tik-tak-toe */

@@ -10,6 +10,30 @@
 /* button {
     cursor: pointer;
 } */
+.com-testimonial-wrapper {
+    padding: var(--sp--4xl) var(--sp--xl) var(--sp--xl) var(--sp--xl);
+    background-color: var(--c--alabaster);
+    border-radius: var(--sp--s);
+}
+
+.com-slider_arrow-left,
+.com-slider_arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--sp--3xl);
+    height: var(--sp--xl);
+    font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc));
+    border: 2px solid var(--c--pine--50);
+    border-radius: var(--sp--7xl);
+    cursor: pointer;
+    user-select: none;
+}
+
+.com-slider_arrow-left:hover,
+.com-slider_arrow-right:hover {
+    background-color: var(--c--pine--05);
+}
 
 .com-ul {
     display: flex;
