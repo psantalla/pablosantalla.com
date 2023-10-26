@@ -1,13 +1,4 @@
-html {
-  font-size: 16px;
-  /* = 1rem */
-}
-
 :root {
-  --t-b: 1rem;
-  /* value for typography base size on desktop */
-  --t-sc: 1.31;
-  /* value for typography scale on desktop */
   --t-ln-ht--big-t: 110%;
   /* line height for sizes of text: 3xl and above */
   --t-ln-ht--medium-t: 128%;
@@ -20,23 +11,47 @@ html {
   /* letter spacing for paragraphs */
 }
 
-@media only screen and (min-width: 620px) and (max-width: 991px) {
-
-  /* only tablet */
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
-    --t-sc: 1.26;
-    /* value for typography scale on tablet */
+    --t-s--xs: clamp(0.66203rem, -0.14211vw + 0.71701rem, 0.58272rem);
+    --t-s--s: clamp(0.78782rem, -0.04382vw + 0.80477rem, 0.76336rem);
+    --t-s--m: clamp(0.9375rem, 0.11198vw + 0.89418rem, 1rem);
+    --t-s--l: clamp(1.11562rem, 0.34826vw + 0.98089rem, 1.31rem);
+    --t-s--xl: clamp(1.32759rem, 0.69609vw + 1.05829rem, 1.7161rem);
+    --t-s--2xl: clamp(1.57984rem, 1.19732vw + 1.11662rem, 2.24809rem);
+    --t-s--3xl: clamp(1.88001rem, 1.90816vw + 1.14178rem, 2.945rem);
+    --t-s--4xl: clamp(2.23721rem, 2.90391vw + 1.11376rem, 3.85795rem);
+    --t-s--5xl: clamp(2.66228rem, 4.28513vw + 1.00447rem, 5.05391rem);
   }
 }
 
-@media only screen and (max-width: 619px) {
-
-  /* only mobile */
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
-    --t-b: 0.938rem;
-    /* value for typography base size on mobile */
-    --t-sc: 1.19;
-    /* value for typography scale on mobile */
+    --t-s--xs: 0.66203rem;
+    --t-s--s: 0.78782rem;
+    --t-s--m: 0.9375rem;
+    --t-s--l: 1.11562rem;
+    --t-s--xl: 1.32759rem;
+    --t-s--2xl: 1.57984rem;
+    --t-s--3xl: 1.88001rem;
+    --t-s--4xl: 2.23721rem;
+    --t-s--5xl: 2.66228rem;
+  }
+
+  @media screen and (min-width: 1512px) {
+    :root {
+      --t-s--xs: 0.58272rem;
+      --t-s--s: 0.76336rem;
+      --t-s--m: 1rem;
+      --t-s--l: 1.31rem;
+      --t-s--xl: 1.7161rem;
+      --t-s--2xl: 2.24809rem;
+      --t-s--3xl: 2.945rem;
+      --t-s--4xl: 3.85795rem;
+      --t-s--5xl: 5.05391rem;
+    }
   }
 }
 
@@ -55,49 +70,60 @@ h6 {
   font-family: 'n27bold';
 }
 
-.t-s--xs {
-  font-size: calc(var(--t-b) / (var(--t-sc) * var(--t-sc)));
+.t-s--xs,
+.t-s--s,
+.t-s--m,
+.t-s--l {
   line-height: var(--t-ln-ht--small-t);
+}
+
+.t-s--xl,
+.t-s--2xl {
+  line-height: var(--t-ln-ht--medium-t);
+}
+
+.t-s--xl,
+.t-s--2xl,
+.t-s--3xl,
+.t-s--4xl,
+.t-s--5xl {
+  line-height: var(--t-ln-ht--big-t);
+}
+
+.t-s--xs {
+  font-size: var(--t-s--xs);
 }
 
 .t-s--s {
-  font-size: calc(var(--t-b) / var(--t-sc));
-  line-height: var(--t-ln-ht--small-t);
+  font-size: var(--t-s--s);
 }
 
 .t-s--m {
-  font-size: var(--t-b);
-  line-height: var(--t-ln-ht--small-t);
+  font-size: var(--t-s--m);
 }
 
 .t-s--l {
-  font-size: calc(var(--t-b) * var(--t-sc));
-  line-height: var(--t-ln-ht--small-t);
+  font-size: var(--t-s--l);
 }
 
 .t-s--xl {
-  font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc));
-  line-height: var(--t-ln-ht--medium-t);
+  font-size: var(--t-s--xl);
 }
 
 .t-s--2xl {
-  font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc));
-  line-height: var(--t-ln-ht--medium-t);
+  font-size: var(--t-s--2xl);
 }
 
 .t-s--3xl {
-  font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
-  line-height: var(--t-ln-ht--big-t);
+  font-size: var(--t-s--3xl);
 }
 
 .t-s--4xl {
-  font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
-  line-height: var(--t-ln-ht--big-t);
+  font-size: var(--t-s--4xl);
 }
 
 .t-s--5xl {
-  font-size: calc(var(--t-b) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc) * var(--t-sc));
-  line-height: var(--t-ln-ht--big-t);
+  font-size: var(--t-s--5xl);
 }
 
 /* ----- */
@@ -142,7 +168,34 @@ h6 {
   font-family: 'n27bold_italic';
 }
 
-/* typography.css 3.0 */
+/* legacy typography scale */
+:root {
+  --t-b: 1rem;
+  /* value for typography base size on desktop */
+  --t-sc: 1.31;
+  /* value for typography scale on desktop */
+}
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+
+  /* only tablet */
+  :root {
+    --t-sc: 1.26;
+    /* value for typography scale on tablet */
+  }
+}
+
+@media only screen and (max-width: 619px) {
+
+  /* only mobile */
+  :root {
+    --t-b: 0.938rem;
+    /* value for typography base size on mobile */
+    --t-sc: 1.19;
+    /* value for typography scale on mobile */
+  }
+}
+
 /* font-import */
 @font-face {
   font-family: 'n27regular';
