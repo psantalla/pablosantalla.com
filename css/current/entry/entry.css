@@ -1,0 +1,68 @@
+/* h1 styles are defined apart - h1 is not part of the enriched structure */
+h2 {
+    font-size: var(--t-s--2xl);
+    line-height: var(--t-ln-ht--big-t);
+    margin-top: var(--sp--2xl);
+    margin-top: var(--sp--l);
+}
+
+h3 {
+    font-size: var(--t-s--xl);
+    line-height: var(--t-ln-ht--medium-t);
+}
+
+h4 {
+    font-size: var(--t-s--l);
+    line-height: var(--t-ln-ht--small-t);
+}
+
+h5 {
+    font-size: var(--t-s--m);
+    line-height: var(--t-ln-ht--small-t);
+}
+
+h6 {
+    font-size: var(--t-s--s);
+    line-height: var(--t-ln-ht--small-t);
+}
+
+p {
+    font-size: var(--t-s--m);
+    margin-bottom: var(--sp--m);
+}
+
+small {
+    font-size: var(--t-s--s);
+    opacity: 60%;
+    margin-bottom: var(--sp--m);
+}
+
+figure {
+    font-family: 'n27regular_italic';
+    /* unfinished */
+}
+
+ul {
+    margin-top: var(--sp--xs);
+    margin-bottom: var(--sp--m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp--xs);
+}
+
+ul li {
+    position: relative;
+    padding-left: var(--sp--l);
+}
+
+ul li::before {
+    position: absolute;
+    left: 0;
+    content: "— ";
+}
+
+img {
+    margin-block: var(--t-s--s);
+    border: var(--sp--2xs) solid;
+    border-radius: var(--sp--s);
+}
