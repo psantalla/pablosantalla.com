@@ -10,10 +10,6 @@
 /* button {
     cursor: pointer;
 } */
-
-
-
-
 .com-testimonial-wrapper {
     padding: var(--sp--4xl) var(--sp--xl) var(--sp--xl) var(--sp--xl);
     background-color: var(--c--alabaster);
@@ -84,6 +80,11 @@
     line-height: var(--t-ln-ht--small-t);
     text-transform: lowercase;
     transition: all 125ms;
+}
+
+.com-btn._com-btn--submit {
+    display: inline;
+    cursor: pointer;
 }
 
 .com-btn._com-btn--alt {
