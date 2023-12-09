@@ -80,6 +80,7 @@
     line-height: var(--t-ln-ht--small-t);
     text-transform: lowercase;
     transition: all 125ms;
+    cursor: pointer;
 }
 
 .com-btn._com-btn--submit {
@@ -112,6 +113,10 @@
     height: var(--sp--xl);
 }
 
+.com-btn._com-btn--sp svg {
+    width: var(--sp--xl);
+}
+
 .com-has--arrow::after {
     content: " ↗";
 }
@@ -129,6 +134,10 @@
     /* only mobile */
     .com-btn._com-btn--sp img {
         height: var(--sp--l);
+    }
+
+    .com-btn._com-btn--sp svg {
+        width: var(--sp--l);
     }
 }
 
@@ -385,3 +394,16 @@
     cursor: pointer;
     /* Cursor de puntero normal cuando está habilitado y se hace hover */
 }
+
+#com-toggle-dark-mode {
+    max-height: var(--sp--m);
+    fill: var(--c--accent);
+}
+
+#com-toggle-dark-mode path {
+    fill: var(--c--pine--70);
+}
+
+/*  */
+
+

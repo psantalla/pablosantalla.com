@@ -1,4 +1,4 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.inlineSuggest.showToolbar": "onHover"
+    "editor.inlineSuggest.showToolbar": "always"
 }

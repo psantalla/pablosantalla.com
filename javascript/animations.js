@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtiene el elemento del SVG
+  const toggleButton = document.getElementById('com-toggle-dark-mode');
+
+  // Agrega un listener de clic al SVG
+  toggleButton.addEventListener('click', function () {
+    // Obtiene el body del documento
+    const body = document.body;
+
+    // Toggle del modo oscuro
+    body.classList.toggle('dark-mode');
+  });
+});
+
+
+
+
+
+
+
 const testimonials = document.querySelectorAll('.com-testimonial');
 let currentIndex = 0;
 

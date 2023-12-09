@@ -84,6 +84,50 @@
     --c--white--10: rgba(255, 255, 255, .1);
 }
 
+.dark-mode {
+    --c--pine: rgb(255, 255, 255);
+    --c--pine--95: rgba(255, 255, 255, .95);
+    --c--pine--90: rgba(255, 255, 255, .9);
+    --c--pine--85: rgba(255, 255, 255, .85);
+    --c--pine--80: rgba(255, 255, 255, .8);
+    --c--pine--75: rgba(255, 255, 255, .75);
+    --c--pine--70: rgba(255, 255, 255, .7);
+    --c--pine--65: rgba(255, 255, 255, .65);
+    --c--pine--60: rgba(255, 255, 255, .6);
+    --c--pine--55: rgba(255, 255, 255, .55);
+    --c--pine--50: rgba(255, 255, 255, .5);
+    --c--pine--45: rgba(255, 255, 255, .45);
+    --c--pine--40: rgba(255, 255, 255, .4);
+    --c--pine--35: rgba(255, 255, 255, .35);
+    --c--pine--30: rgba(255, 255, 255, .3);
+    --c--pine--25: rgba(255, 255, 255, .25);
+    --c--pine--20: rgba(255, 255, 255, .2);
+    --c--pine--15: rgba(255, 255, 255, .15);
+    --c--pine--10: rgba(255, 255, 255, .1);
+    --c--pine--05: rgba(255, 255, 255, .05);
+    /* ----- */
+    --c--white: rgb(19, 17, 23);
+    --c--white--95: rgba(19, 17, 23, .95);
+    --c--white--90: rgba(19, 17, 23, .9);
+    --c--white--85: rgba(19, 17, 23, .85);
+    --c--white--80: rgba(19, 17, 23, .8);
+    --c--white--75: rgba(19, 17, 23, .75);
+    --c--white--70: rgba(19, 17, 23, .7);
+    --c--white--65: rgba(19, 17, 23, .65);
+    --c--white--60: rgba(19, 17, 23, .6);
+    --c--white--55: rgba(19, 17, 23, .55);
+    --c--white--50: rgba(19, 17, 23, .5);
+    --c--white--45: rgba(19, 17, 23, .45);
+    --c--white--40: rgba(19, 17, 23, .4);
+    --c--white--35: rgba(19, 17, 23, .35);
+    --c--white--30: rgba(19, 17, 23, .3);
+    --c--white--25: rgba(19, 17, 23, .25);
+    --c--white--20: rgba(19, 17, 23, .2);
+    --c--white--15: rgba(19, 17, 23, .15);
+    --c--white--10: rgba(19, 17, 23, .1);
+    --c--white--05: rgba(19, 17, 23, .05);
+}
+
 .c-el--pine {
     color: var(--c--pine);
 }
@@ -553,4 +597,164 @@
 
 .c-bor--white--10 {
     border-color: var(--c--white--10) !important;
+}
+
+/* vertor colors using fill */
+.c-vec--pine {
+    fill: var(--c--pine);
+}
+
+.c-vec--pine--90 {
+    fill: var(--c--pine--90);
+}
+
+.c-vec--pine--80 {
+    fill: var(--c--pine--80);
+}
+
+.c-vec--pine--60 {
+    fill: var(--c--pine--60);
+}
+
+.c-vec--pine--50 {
+    fill: var(--c--pine--50);
+}
+
+.c-vec--pine--40 {
+    fill: var(--c--pine--40);
+}
+
+.c-vec--pine--30 {
+    fill: var(--c--pine--30);
+}
+
+.c-vec--pine--20 {
+    fill: var(--c--pine--20);
+}
+
+.c-vec--pine--10 {
+    fill: var(--c--pine--10);
+}
+
+/* ----- */
+.c-vec--accent {
+    fill: var(--c--accent);
+}
+
+.c-vec--accent--90 {
+    fill: var(--c--accent--90);
+}
+
+.c-vec--accent--80 {
+    fill: var(--c--accent--80);
+}
+
+.c-vec--accent--70 {
+    fill: var(--c--accent--70);
+}
+
+.c-vec--accent--60 {
+    fill: var(--c--accent--60);
+}
+
+.c-vec--accent--50 {
+    fill: var(--c--accent--50);
+}
+
+.c-vec--accent--40 {
+    fill: var(--c--accent--40);
+}
+
+.c-vec--accent--30 {
+    fill: var(--c--accent--30);
+}
+
+.c-vec--accent--20 {
+    fill: var(--c--accent--20);
+}
+
+.c-vec--accent--10 {
+    fill: var(--c--accent--10);
+}
+
+/* ----- */
+.c-vec--alabaster {
+    fill: var(--c--alabaster);
+}
+
+.c-vec--alabaster--90 {
+    fill: var(--c--alabaster--90);
+}
+
+.c-vec--alabaster--80 {
+    fill: var(--c--alabaster--80);
+}
+
+.c-vec--alabaster--70 {
+    fill: var(--c--alabaster--70);
+}
+
+.c-vec--alabaster--60 {
+    fill: var(--c--alabaster--60);
+}
+
+.c-vec--alabaster--50 {
+    fill: var(--c--alabaster--50);
+}
+
+.c-vec--alabaster--40 {
+    fill: var(--c--alabaster--40);
+}
+
+.c-vec--alabaster--30 {
+    fill: var(--c--alabaster--30);
+}
+
+.c-vec--alabaster--20 {
+    fill: var(--c--alabaster--20);
+}
+
+.c-vec--alabaster--10 {
+    fill: var(--c--alabaster--10);
+}
+
+/* ----- */
+.c-vec--white {
+    fill: var(--c--white);
+}
+
+.c-vec--white--90 {
+    fill: var(--c--white--90);
+}
+
+.c-vec--white--80 {
+    fill: var(--c--white--80);
+}
+
+.c-vec--white--70 {
+    fill: var(--c--white--70);
+}
+
+.c-vec--white--60 {
+    fill: var(--c--white--60);
+}
+
+.c-vec--white--50 {
+    fill: var(--c--white--50);
+}
+
+.c-vec--white--40 {
+    fill: var(--c--white--40);
+}
+
+.c-vec--white--30 {
+    fill: var(--c--white--30);
+}
+
+.c-vec--white--20 {
+    fill: var(--c--white--20);
+}
+
+.c-vec--white--10 {
+    fill: var(--c--white--10);
 }
