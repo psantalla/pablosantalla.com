@@ -4,7 +4,8 @@
 .st-support,
 .st-blog,
 .st-cs,
-.st-about {
+.st-about,
+.st-resume {
     max-width: var(--sp--site-width);
     margin-inline: auto;
 }
@@ -17,7 +18,8 @@
     .st-support,
     .st-blog,
     .st-cs,
-    .st-about {
+    .st-about,
+    .st-resume {
         border-inline: 1px dashed var(--c--pine--60);
     }
 }
