@@ -167,8 +167,9 @@
     margin-left: 40%;
     margin-bottom: -24%;
     /* this value makes the lottie outline to sit at the bottom of the container */
-    opacity: .9;
+    opacity: .35;
     transform: scale(.8);
+    filter: blur(2px);
 }
 
 .com-pulse {
@@ -405,5 +406,3 @@
 }
 
 /*  */
-
-

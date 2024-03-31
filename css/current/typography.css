@@ -159,6 +159,10 @@ h6 {
   text-decoration: underline;
 }
 
+.t-wr--pretty {
+  text-wrap: pretty;
+}
+
 /* ----- */
 .t-var--i--r {
   /* this variation has only been applied to bold text so far */
