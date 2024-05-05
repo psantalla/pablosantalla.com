@@ -169,7 +169,7 @@
     /* this value makes the lottie outline to sit at the bottom of the container */
     opacity: .35;
     transform: scale(.8);
-    filter: blur(1.5px);
+    filter: blur(1.25px);
 }
 
 .com-pulse {
