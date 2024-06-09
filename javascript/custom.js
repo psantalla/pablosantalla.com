@@ -13,3 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         wrapper.style.minHeight = maxHeight + 'px';
     });
 });
+
+
+const currentUrl = window.location.href;
+if (currentUrl.endsWith('.html')) {
+    window.location.href = currentUrl.replace(/\.html$/, '');
+}
