@@ -1,7 +1,2 @@
 theme: jekyll-theme-cayman
-
-plugins:
-  - jekyll-redirect-from
-
-jekyll_redirect_from:
-  - /ginevida.html
+permalink: /:title
