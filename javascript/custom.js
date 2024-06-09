@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const currentUrl = window.location.href;
-if (currentUrl.endsWith('.html')) {
+
+if (currentUrl.endsWith('index.html') || currentUrl.endsWith('index')) {
+    window.location.href = currentUrl.replace(/index\.html?$|index$/, '');
+} else if (currentUrl.endsWith('.html')) {
     window.location.href = currentUrl.replace(/\.html$/, '');
 }
+
