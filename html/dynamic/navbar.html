@@ -1,3 +1,5 @@
+
+
 <div
     class="st--row st-wrap--flex sp-ga--l sp-ga--m--mobile sp-py--l st-apll--sb st-appdcl--mid sp-px--3xl sp-px--l--mobile">
     <a class="ut:cursor-cool" id="logo-link" href="/index.html">
@@ -13,15 +15,19 @@
         <!-- the logo has a class to control the size across different devices -->
         <nav class="st-row sp-ga--l sp-ga--m--mobile">
             <ul class="st-row st-wrap--flex st-appdcl--mid sp-ga--l sp-ga--m--mobile ut-ul--reset">
-                <li class="xhid xhid-mobile">
-                    <a class="t-s--m ut-link _ut-link--branch" href="/about.html">About</a>
-                </li>
-                <li class="hid hid-mobile">
-                    <a class="t-s--m ut-link _ut-link--branch" href="/#work">Work</a>
-                </li>
-                <li class="xhid-mobile">
-                    <a class="t-s--m ut-link _ut-link--branch" href="/blog.html">Blog</a>
-                </li>
+                <!-- [start] mobile menu wrapper -->
+                <div id="mobile-menu-wrapper" class="st-row st-wrap--flex st-appdcl--mid sp-ga--l sp-ga--m--mobile ut-ul--reset">
+                    <li>
+                        <a class="t-s--m ut-link _ut-link--branch" href="/about.html">About</a>
+                    </li>
+                    <li class="hid">
+                        <a class="t-s--m ut-link _ut-link--branch" href="/#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="t-s--m ut-link _ut-link--branch" href="/blog.html">Blog</a>
+                    </li>
+                </div>
+                <!-- [end] mobile menu wrapper -->
                 <li>
                     <a class="com-btn _com-btn--sp ut:cursor-cool"
                         href="mailto:pablo@pablosantalla.com?subject=pablosantalla.com%20%E2%80%94%20design%20and%2For%20development%20inquiry">
@@ -30,8 +36,8 @@
                     </a>
                 </li>
             </ul>
-            <img class="hid hid-desktop hid-tablet com-burger" src="/assets/burger.svg"
-                alt="Burger icon to indicate that a mobile menu exists.">
+            <img class="hid com-burger" src="/assets/burger-menu-dotted.svg"
+                alt="Dotted burger icon to indicate that a mobile menu exists.">
         </nav>
     </div>
 </div>
