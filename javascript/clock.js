@@ -7,11 +7,13 @@ function updateClock() {
   // Remove space between hour and 'a' or 'p'
   var modifiedTimeString = timeString.replace(" AM", "a").replace(" PM", "p");
 
-  // Get abbreviated day name
-  var dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
+  // Get abbreviated day name in Los Angeles timezone
+  var dayName = date.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'America/Los_Angeles' });
 
-  // Add icons based on time ranges
-  var hour = date.getHours();
+  // Create a date for the Los Angeles timezone to get the correct hour
+  var laDate = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+  var laDateObj = new Date(laDate);
+  var hour = laDateObj.getHours();
   var icon = "";
 
   if (hour >= 22 || hour < 7) {
