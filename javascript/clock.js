@@ -17,7 +17,7 @@ function updateClock() {
   var icon = "";
 
   if (hour >= 22 || hour < 7) {
-    icon = "🛌"; // Sleeping icon
+    icon = "Viva el Atleti 🛌"; // Sleeping icon
   } else if (hour >= 7 && hour < 8) {
     icon = "☕️"; // Coffee icon
   } else if (hour >= 8 && hour < 9) {
