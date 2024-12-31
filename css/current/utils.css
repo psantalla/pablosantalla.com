@@ -262,3 +262,15 @@
 }
 
 /*  */
+
+
+.ut-non-clickable {
+  cursor: default;
+  pointer-events: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ut-non-clickable:focus {
+  outline: none;
+}
