@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Santalla: simplicity always wins</title>
+    <meta name="description"
+        content="Thoughts on friction, overthinking, and the tools we choose. Simplicity isn’t just convenient—it’s powerful.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <meta property="og:image" content="/assets/entries/02/og.svg">
+    <script src="/javascript/custom.js"></script>
+    <script src="/javascript/clock.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        // Only load on production environment.
+        if (window.location.host !== 'pablosantalla.com')
+            window.goatcounter = { no_onload: true }
+    </script>
+    <script data-goatcounter="https://analytics.pablosantalla.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="st-entry">
+    <div class="st-col"> <!-- page wrapper, following a column structure -->
+        <header class="st-col c-bg--alabastrr">
+            <!-- nav and hero are (always) wrapped — from here i can control their color background and height -->
+            <div id="navbar-js"></div>
+            <div class="sp-py--5xl sp-py--3xl--mobile sp-px--3xl sp-px--l--mobile">
+                <div class="st-col sp-ga--2xl sp-ga--xl--mobile">
+                    <h1 class="t-s--3xl st-mw--pleasant">The gap between web design and development that shouldn't exist
+                    </h1>
+                    <div class="st-row st-appdcl--mid sp-ga--s">
+                        <img class="com-avatar--blog" src="/assets/Pablo Santalla - Cuadrado.jpg"
+                            alt="Picture of Pablo Santalla.">
+                        <p class="t-s--m"><span class="t-w--b">Pablo Santalla</span><br>Web designer and developer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="st-col sp-ga--s">
+    <img class="st-img--normalize" src="/assets/entries/04/pulitzer-ss.png"
+        alt="Screenshot of the Pulitzer WordPress theme by Anders Norén.">
+    <figure class="t-s--s t-a--c t-var--i--r ut-opacity--60 sp-px--3xl sp-px--l--mobile">
+        Screenshot of the <a class="ut-link" href="https://andersnoren.se/themes/pulitzer/" target="_blank" rel="noopener noreferrer">Pulitzer</a> theme by Anders Norén
+    </figure>
+</section>
+        <main class="st-col sp-ga--nil">
+            <section class="c-bg--white st-col sp-ga--s sp-py--4xl sp-py--xl--mobile sp-px--3xl sp-px--l--mobile">
+    <!-- block 01 -->
+    <p class="st-mw--pleasant t-s--m">
+        This is an excerpt from a reflection I’ve overthought way too much. And since it’s been ages since I last wrote here, I figured—why not just drop it?
+    </p>
+    <p class="st-mw--pleasant t-s--s t-var--i--r ut-opacity--60">
+        Content lightly edited with ChatGPT. Basic prompts for grammar fixes and trimming redundancy.
+    </p>
+</section>
+           <article class="st-col sp-ga--2xl c-bg--alabaster sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+  <div class="st-col sp-ga--l">
+    <p class="st-mw--pleasant t-s--m">
+      Technology has always been a double-edged sword for me. Software that aligns with how I think lifts me up and helps me perform at my best. Outdated tools, on the other hand, just weigh me down.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      I’ve often felt like sharing my thoughts—personal, professional, and somewhere in between—but I knew it’d probably turn into something too clunky or overcomplicated. So I usually keep them to myself. Best case? They end up in a note in Obsidian.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      Another double-edged sword of mine: I'm a purist, a perfectionist, an overthinker (just spent 15 seconds debating whether <em>purifectionist</em> was legit—just so you get the idea). What does that even mean? I’d lose a night of sleep just to understand the basics of some random idea I came up with. Sometimes it puts me way ahead of the curve; other times it pulls my attention away from actual fires.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      A couple of weeks ago, my wife asked me to set up a blog for her so she could write about pregnancy and our newborn daughter. So I swallowed my developer pride and spun up a simple WordPress site for her. And she’s rocking it—posting every few days, writing from the couch, wherever.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      Meanwhile, for me to write this tiny post? I had to sit at my desk, pull a local copy of my site from the GitHub repo, and write this thing in markdown with proper formatting. Not ideal. Not practical.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      And don’t get me wrong—sometimes you have to get your hands dirty. It’s the only way to build real skill, to be ready to row in any direction when the current changes. But right now? Honestly, I value simplicity. And I can choose it.
+    </p>
+    <p class="st-mw--pleasant t-s--m">
+      This might be the last post in this (semi-)organized chaos. I’ve been toying with the idea of using <a class="ut-link" href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">Eleventy</a> for a while, so I’ll probably go that route.
+    </p>
+    <p class="st-mw--pleasant t-s--m t-w--b">
+      Simplicity always wins.
+    </p>
+  </div>
+</article>
+        </main>
+        <div class="sp-py--4xl sp-py--2xl--mobile sp-px--3xl sp-px--l--mobile">
+            <div class="st-col sp-ga--3xl sp-ga--xl--mobile">
+                <div id="posts-recap-js"></div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-js"></div>
+        </footer>
+    </div> <!-- page wrapper ends here -->
+    </div>
+    <script src="/javascript/dynamic/navbar.js"></script>
+    <script src="/javascript/dynamic/posts-recap.js"></script>
+    <script src="/javascript/dynamic/footer.js"></script>
+    <script src="/javascript/animations.js"></script>
+</body>
+
+</html>
