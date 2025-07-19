@@ -1,7 +1,7 @@
 var navbarContainer = document.getElementById('navbar-js');
 
 // Obtener el contenido del archivo HTML del navbar
-fetch('/html/dynamic/navbar.html')
+fetch('html/dynamic/navbar.html')
   .then(function(response) {
     return response.text();
   })

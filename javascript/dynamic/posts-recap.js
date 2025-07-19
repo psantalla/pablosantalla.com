@@ -1,6 +1,6 @@
 var allpostsContainer = document.getElementById('posts-recap-js');
 
-fetch('/html/dynamic/posts-recap.html')
+fetch('html/dynamic/posts-recap.html')
   .then(response => response.text())
   .then(postsHTML => {
     const isStEntry = document.body.classList.contains('st-entry');

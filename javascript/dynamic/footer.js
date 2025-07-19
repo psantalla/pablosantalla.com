@@ -1,7 +1,7 @@
 var footerContainer = document.getElementById('footer-js');
 
 // Obtener el contenido del archivo HTML del footer
-fetch('/html/dynamic/footer.html')
+fetch('html/dynamic/footer.html')
   .then(function(response) {
     return response.text();
   })

@@ -7,7 +7,7 @@ function checkPassword() {
   // Verificar si la contraseña es correcta
   if (password === 'Albatros91011PC') {
     // Obtener el contenido del archivo HTML del contenido protegido
-    fetch('/html/dynamic/protected-content.html')
+    fetch('html/dynamic/protected-content.html')
       .then(function (response) {
         return response.text();
       })
