@@ -1,17 +1,15 @@
 var navbarContainer = document.getElementById('navbar-js');
+var pathSegments = window.location.pathname.split('/').filter(Boolean);
+var isInSubfolder = pathSegments.length > 1;
+var basePath = isInSubfolder ? '../' : '';
 
-// Obtener el contenido del archivo HTML del navbar
-fetch('html/dynamic/navbar.html')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(navbarHTML) {
-    // Mostrar el contenido del navbar en el contenedor
-    navbarContainer.innerHTML = navbarHTML;
-  })
-  .catch(function(error) {
-    console.log('Error al cargar el archivo HTML del navbar:', error);
-  });
-
-
-
+fetch(basePath + 'html/dynamic/navbar.html')
+ .then(function(response) {
+   return response.text();
+ })
+ .then(function(navbarHTML) {
+   navbarContainer.innerHTML = navbarHTML;
+ })
+ .catch(function(error) {
+   console.log('Failed to load navbar HTML:', error);
+ });

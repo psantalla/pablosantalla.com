@@ -1,14 +1,15 @@
 var footerContainer = document.getElementById('footer-js');
+var pathSegments = window.location.pathname.split('/').filter(Boolean);
+var isInSubfolder = pathSegments.length > 1;
+var basePath = isInSubfolder ? '../' : '';
 
-// Obtener el contenido del archivo HTML del footer
-fetch('html/dynamic/footer.html')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(footerHTML) {
-    // Mostrar el contenido del footer en el contenedor
-    footerContainer.innerHTML = footerHTML;
-  })
-  .catch(function(error) {
-    console.log('Error al cargar el archivo HTML del footer:', error);
-  });
+fetch(basePath + 'html/dynamic/footer.html')
+ .then(function(response) {
+   return response.text();
+ })
+ .then(function(footerHTML) {
+   footerContainer.innerHTML = footerHTML;
+ })
+ .catch(function(error) {
+   console.log('Failed to load footer HTML:', error);
+ });
