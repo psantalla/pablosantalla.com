@@ -41,3 +41,17 @@
         </nav>
     </div>
 </div>
+<script>
+var pathSegments = window.location.pathname.split('/').filter(Boolean);
+var isInSubfolder = pathSegments.includes('blog');
+var basePath = isInSubfolder ? '../' : '';
+
+// Adapt paths for GitHub Pages subdirectory structure
+document.getElementById('logo-link').href = basePath + 'index.html';
+document.querySelector('a[href="about.html"]').href = basePath + 'about.html';
+document.querySelector('a[href="blog.html"]').href = basePath + 'blog.html';
+
+document.querySelector('.com-logo').src = basePath + 'assets/logo.svg';
+document.querySelector('img[alt="Icon of an envelope."]').src = basePath + 'assets/email.svg';
+document.querySelector('.com-burger').src = basePath + 'assets/burger-menu-dotted.svg';
+</script>
